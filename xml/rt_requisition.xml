@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0"?>
 
--<FnrSearchResult xmlns="http://ihelse.net/wcf/2015/09" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:a="http://schemas.datacontract.org/2004/07/Service.Dips_Rekvisisjon">
+<FnrSearchResult xmlns="http://ihelse.net/wcf/2015/09" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:a="http://schemas.datacontract.org/2004/07/Service.Dips_Rekvisisjon">
 
 
-  -<a:Rekvisisjon>
+  <a:Rekvisisjon>
 
     <a:AVDELING>Lungeavdelingen</a:AVDELING>
 
