@@ -1,0 +1,2579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<composition p1:type="COMPOSITION" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" archetype_node_id="openEHR-EHR-COMPOSITION.export_secondary_use_dips.v1" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1">
+  <name>
+    <value>Eksport til protonregisteret</value>
+  </name>
+  <uid xsi:type="OBJECT_VERSION_ID">
+    <value>25ef449b-5145-44a4-bebe-7f2377f837db::ehr_craft::1</value>
+  </uid>
+  <archetype_details>
+    <archetype_id>
+      <value>openEHR-EHR-COMPOSITION.export_secondary_use_dips.v1</value>
+    </archetype_id>
+    <template_id>
+      <value>export_proton_registry_v01</value>
+    </template_id>
+    <rm_version>1.0.4</rm_version>
+  </archetype_details>
+  <language>
+    <terminology_id>
+      <value>openehr</value>
+    </terminology_id>
+    <code_string>nb</code_string>
+  </language>
+  <territory>
+    <terminology_id>
+      <value>openehr</value>
+    </terminology_id>
+    <code_string>NO</code_string>
+  </territory>
+  <category>
+    <value />
+    <defining_code>
+      <terminology_id>
+        <value>openehr</value>
+      </terminology_id>
+      <code_string>433</code_string>
+    </defining_code>
+  </category>
+  <composer xsi:type="PARTY_IDENTIFIED">
+    <name>unknown</name>
+  </composer>
+  <context>
+    <start_time>
+      <value>2024-10-19T22:55:52.7668508+02:00</value>
+    </start_time>
+    <end_time>
+      <value>2024-10-19T07:55:52.7713677+02:00</value>
+    </end_time>
+    <setting>
+      <value>secondary medical care</value>
+      <defining_code>
+        <terminology_id>
+          <value>openehr</value>
+        </terminology_id>
+        <code_string>232</code_string>
+      </defining_code>
+    </setting>
+    <other_context xsi:type="ITEM_TREE" archetype_node_id="at0001">
+      <name>
+        <value>Item tree</value>
+      </name>
+    </other_context>
+  </context>
+  <content xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.adhoc.v1">
+    <name>
+      <value>Sosialanamnese_generell</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-SECTION.adhoc.v1</value>
+      </archetype_id>
+      <template_id>
+        <value>export_proton_registry_v01</value>
+      </template_id>
+      <rm_version>1.0.4</rm_version>
+    </archetype_details>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.education_summary.v1">
+      <name>
+        <value>Utdanningsnivå</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.education_summary.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>export_proton_registry_v01</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <protocol xsi:type="ITEM_TREE" archetype_node_id="at0026">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0028">
+          <name>
+            <value>Sist oppdatert</value>
+          </name>
+          <value xsi:type="DV_DATE_TIME">
+            <value>2024-10-16T07:55:52.7773691+02:00</value>
+          </value>
+        </items>
+      </protocol>
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0002">
+          <name>
+            <value>Høyeste fullførte utdanningsnivå</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Universitet/Høyskole &lt;4 år</value>
+            <defining_code>
+              <terminology_id>
+                <value>Utdanningsnivå</value>
+              </terminology_id>
+              <code_string>3</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0007">
+          <name>
+            <value>Kommentar</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>dolor borisa amet gjøran elit sed tor-magne. magna tor-magne sed gøran euismod dolore diam adipiscing. lars laoreet gøran ipsum nibh gøran. martine sed tor-magne gøran aliquam adipiscing magna sverre tincidunt. ipsum nonummy magna bjørn kjetil martine borisa adipiscing nibh. </value>
+          </value>
+        </items>
+      </data>
+    </items>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.occupation_summary.v1">
+      <name>
+        <value>Arbeidsstatus</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.occupation_summary.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>export_proton_registry_v01</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <protocol xsi:type="ITEM_TREE" archetype_node_id="at0007">
+        <name>
+          <value>*Tree(en)</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0009">
+          <name>
+            <value>Sist oppdatert</value>
+          </name>
+          <value xsi:type="DV_DATE_TIME">
+            <value>2024-11-15T06:55:52.7870359+01:00</value>
+          </value>
+        </items>
+      </protocol>
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.occupation_record.v1">
+          <name>
+            <value>Yrke</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.occupation_record.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>export_proton_registry_v01</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0005">
+            <name>
+              <value>Tittel/rolle</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>runar borisa adipiscing dolore aliquam lorem gøran borisa. aliquam sit borisa sverre nibh bjørn gøran ut. ipsum ipsum sed euismod øystein erat gøran. </value>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0006">
+            <name>
+              <value>Yrkeskategori</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>borisa magna erat elit magna lorem morten team selecta gjøran. diam tincidunt tincidunt sverre kjetil kjetil dolor. lars morten ipsum euismod dolore sed dolore adipiscing. sverre adipiscing dolore sit runar laoreet gøran morten sverre erat kjetil. </value>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0004">
+          <name>
+            <value>Arbeidsstatus</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>I arbeid</value>
+            <defining_code>
+              <terminology_id>
+                <value>Arbeidsstatus</value>
+              </terminology_id>
+              <code_string>1</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.sick_note_ous.v0">
+          <name>
+            <value>Sykemelding</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.sick_note_ous.v0</value>
+            </archetype_id>
+            <template_id>
+              <value>export_proton_registry_v01</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0004">
+            <name>
+              <value>Startdato</value>
+            </name>
+            <value xsi:type="DV_DATE_TIME">
+              <value>2024-11-11T03:55:52.7823669+01:00</value>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0001">
+            <name>
+              <value>Varighet</value>
+            </name>
+            <value xsi:type="DV_DURATION">
+              <value>P0D</value>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0006">
+          <name>
+            <value>Kommentar</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>nonummy lars dolor nonummy runar martine runar nonummy. magna nibh laoreet team selecta lorem ipsum ut dolore diam aliquam runar. nonummy sed euismod sverre magna gjøran ipsum lorem adipiscing tor-magne. diam ut nibh erat kjetil martine elit. </value>
+          </value>
+        </items>
+      </data>
+    </items>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.social_network.v1">
+      <name>
+        <value>Juridisk sivilstatus</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.social_network.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>export_proton_registry_v01</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <protocol xsi:type="ITEM_TREE" archetype_node_id="at0010">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0011">
+          <name>
+            <value>Sist oppdatert</value>
+          </name>
+          <value xsi:type="DV_DATE_TIME">
+            <value>2024-11-16T13:55:52.7913289+01:00</value>
+          </value>
+        </items>
+      </protocol>
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0002">
+          <name>
+            <value>Juridisk sivilstand</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Gift//registrert partner</value>
+            <defining_code>
+              <terminology_id>
+                <value>Juridisk_sivilstand</value>
+              </terminology_id>
+              <code_string>2</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0018">
+          <name>
+            <value>Kommentar</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>tincidunt sit ut borisa elit nibh gjøran morten. magna ipsum team selecta elit kjetil adipiscing borisa elit. gjøran bjørn tor-magne runar lars aliquam lars ut martine ipsum nibh. gøran kjetil kjetil elit team selecta dolor runar aliquam amet. elit sverre lars gjøran dolor consectetuer diam adipiscing nibh. </value>
+          </value>
+        </items>
+      </data>
+    </items>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.social_network.v1">
+      <name>
+        <value>Samlivsstatus</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.social_network.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>export_proton_registry_v01</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <protocol xsi:type="ITEM_TREE" archetype_node_id="at0010">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0011">
+          <name>
+            <value>Sist oppdatert</value>
+          </name>
+          <value xsi:type="DV_DATE_TIME">
+            <value>2024-10-27T12:55:52.7953449+01:00</value>
+          </value>
+        </items>
+      </protocol>
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0002">
+          <name>
+            <value>Samlivsstatus</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Ugift/enslig</value>
+            <defining_code>
+              <terminology_id>
+                <value>Samlivsstatus</value>
+              </terminology_id>
+              <code_string>1</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0018">
+          <name>
+            <value>Kommentar</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>borisa consectetuer sit kjetil nonummy runar kjetil lorem consectetuer lars. øystein erat borisa sit dolore øystein morten. </value>
+          </value>
+        </items>
+      </data>
+    </items>
+    <items xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.adhoc.v1">
+      <name>
+        <value>Barn under 18</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-SECTION.adhoc.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>export_proton_registry_v01</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <items xsi:type="OBSERVATION" archetype_node_id="openEHR-EHR-OBSERVATION.social_context_screening.v1">
+        <name>
+          <value>Kartleggingspørsmål om sosiale forhold barn under 18</value>
+        </name>
+        <archetype_details>
+          <archetype_id>
+            <value>openEHR-EHR-OBSERVATION.social_context_screening.v1</value>
+          </archetype_id>
+          <template_id>
+            <value>export_proton_registry_v01</value>
+          </template_id>
+          <rm_version>1.0.4</rm_version>
+        </archetype_details>
+        <language>
+          <terminology_id>
+            <value>ISO_639-1</value>
+          </terminology_id>
+          <code_string>nb</code_string>
+        </language>
+        <encoding>
+          <terminology_id>
+            <value>IANA</value>
+          </terminology_id>
+          <code_string>UTF-8</code_string>
+        </encoding>
+        <subject xsi:type="PARTY_SELF" />
+        <data archetype_node_id="at0001">
+          <name>
+            <value>History</value>
+          </name>
+          <origin>
+            <value>2024-11-03T05:55:52.8196268+01:00</value>
+          </origin>
+          <events xsi:type="POINT_EVENT" archetype_node_id="at0002">
+            <name>
+              <value>Uspesifikk hendelse</value>
+            </name>
+            <time>
+              <value>2024-11-03T08:55:52.8540442+01:00</value>
+            </time>
+            <data xsi:type="ITEM_TREE" archetype_node_id="at0003">
+              <name>
+                <value>Tree</value>
+              </name>
+              <items xsi:type="CLUSTER" archetype_node_id="at0022">
+                <name>
+                  <value>Omsorgsperson for barn under 18 år</value>
+                </name>
+                <items xsi:type="ELEMENT" archetype_node_id="at0004">
+                  <name>
+                    <value>Sosialt forhold</value>
+                  </name>
+                  <value xsi:type="DV_CODED_TEXT">
+                    <value>Ansvarlig for barn under 18 år</value>
+                    <defining_code>
+                      <terminology_id>
+                        <value>no.dips.Oncology.SocialCaregiverStatus</value>
+                      </terminology_id>
+                      <code_string>AnsvarligForBarnUnder18</code_string>
+                    </defining_code>
+                  </value>
+                </items>
+              </items>
+              <items xsi:type="CLUSTER" archetype_node_id="at0022">
+                <name>
+                  <value>Omsorgsperson for personer over 18 år</value>
+                </name>
+                <items xsi:type="ELEMENT" archetype_node_id="at0004">
+                  <name>
+                    <value>Sosialt forhold</value>
+                  </name>
+                  <value xsi:type="DV_CODED_TEXT">
+                    <value>Ansvarlig for barn/andre over 18 år</value>
+                    <defining_code>
+                      <terminology_id>
+                        <value>no.dips.Oncology.SocialCaregiverStatus</value>
+                      </terminology_id>
+                      <code_string>AnsvarForAndreOver18</code_string>
+                    </defining_code>
+                  </value>
+                </items>
+              </items>
+              <items xsi:type="ELEMENT" archetype_node_id="at0034">
+                <name>
+                  <value>Kartleggingsformål</value>
+                </name>
+                <value xsi:type="DV_TEXT">
+                  <value>consectetuer dolor adipiscing gjøran diam borisa sverre kjetil. consectetuer tincidunt dolore lorem tor-magne team selecta runar elit erat lorem nibh lars. erat gjøran ipsum tincidunt gøran gjøran nibh ut. tincidunt sverre nonummy kjetil ipsum kjetil bjørn tincidunt. </value>
+                </value>
+              </items>
+            </data>
+          </events>
+        </data>
+      </items>
+    </items>
+    <items xsi:type="OBSERVATION" archetype_node_id="openEHR-EHR-OBSERVATION.progress_note.v1">
+      <name>
+        <value>Fritekst relatert til sosial anamnese</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-OBSERVATION.progress_note.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>export_proton_registry_v01</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <protocol xsi:type="ITEM_TREE" archetype_node_id="at0005">
+        <name>
+          <value>*Tree(en)</value>
+        </name>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.semistrukturert_metadata_dips.v1">
+          <name>
+            <value>Semistrukturert metadata dips#1</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.semistrukturert_metadata_dips.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>export_proton_registry_v01</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0001">
+            <name>
+              <value>Klassifisering av informasjon</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Sosial anamnese</value>
+              <defining_code>
+                <terminology_id>
+                  <value>no.dips.Freetext.Classification</value>
+                </terminology_id>
+                <code_string>01-Oncology-Sosial-anamnese</code_string>
+              </defining_code>
+            </value>
+          </items>
+        </items>
+      </protocol>
+      <data archetype_node_id="at0001">
+        <name>
+          <value>Event Series</value>
+        </name>
+        <origin>
+          <value>2024-11-09T06:55:52.8670601+01:00</value>
+        </origin>
+        <events xsi:type="POINT_EVENT" archetype_node_id="at0002">
+          <name>
+            <value>Uspesifisert hendelse</value>
+          </name>
+          <time>
+            <value>2024-11-09T05:55:52.8870559+01:00</value>
+          </time>
+          <data xsi:type="ITEM_TREE" archetype_node_id="at0003">
+            <name>
+              <value>Tree</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0004">
+              <name>
+                <value>Fritekst relatert til sosial anamnese</value>
+              </name>
+              <value xsi:type="DV_TEXT">
+                <value>erat runar runar gøran sit amet nonummy øystein. martine øystein gøran magna amet lorem elit amet kjetil lars. </value>
+              </value>
+            </items>
+          </data>
+        </events>
+      </data>
+    </items>
+    <items xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.adhoc.v1">
+      <name>
+        <value>Samlivsform</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-SECTION.adhoc.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>export_proton_registry_v01</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <items xsi:type="OBSERVATION" archetype_node_id="openEHR-EHR-OBSERVATION.social_context_screening.v1">
+        <name>
+          <value>Kartleggingspørsmål om sosiale forhold samlivsform</value>
+        </name>
+        <archetype_details>
+          <archetype_id>
+            <value>openEHR-EHR-OBSERVATION.social_context_screening.v1</value>
+          </archetype_id>
+          <template_id>
+            <value>export_proton_registry_v01</value>
+          </template_id>
+          <rm_version>1.0.4</rm_version>
+        </archetype_details>
+        <language>
+          <terminology_id>
+            <value>ISO_639-1</value>
+          </terminology_id>
+          <code_string>nb</code_string>
+        </language>
+        <encoding>
+          <terminology_id>
+            <value>IANA</value>
+          </terminology_id>
+          <code_string>UTF-8</code_string>
+        </encoding>
+        <subject xsi:type="PARTY_SELF" />
+        <data archetype_node_id="at0001">
+          <name>
+            <value>History</value>
+          </name>
+          <origin>
+            <value>2024-11-12T10:55:52.9077405+01:00</value>
+          </origin>
+          <events xsi:type="POINT_EVENT" archetype_node_id="at0002">
+            <name>
+              <value>Uspesifikk hendelse</value>
+            </name>
+            <time>
+              <value>2024-11-17T08:55:52.9437886+01:00</value>
+            </time>
+            <data xsi:type="ITEM_TREE" archetype_node_id="at0003">
+              <name>
+                <value>Tree</value>
+              </name>
+              <items xsi:type="ELEMENT" archetype_node_id="at0034">
+                <name>
+                  <value>Kartleggingsformål</value>
+                </name>
+                <value xsi:type="DV_TEXT">
+                  <value>runar adipiscing elit tor-magne consectetuer ut dolore euismod tor-magne. kjetil borisa borisa team selecta morten øystein dolor lars øystein. gjøran consectetuer dolore øystein tor-magne morten. øystein martine borisa elit sit martine laoreet euismod øystein bjørn dolore. </value>
+                </value>
+              </items>
+              <items xsi:type="CLUSTER" archetype_node_id="at0022">
+                <name>
+                  <value>Spesifikt sosialt forhold</value>
+                </name>
+                <items xsi:type="ELEMENT" archetype_node_id="at0004">
+                  <name>
+                    <value>Hvilken samlivsform har pasienten?</value>
+                  </name>
+                  <value xsi:type="DV_CODED_TEXT">
+                    <value>Bor alene (Inkl. alene med barn &lt;18)</value>
+                    <defining_code>
+                      <terminology_id>
+                        <value>samlivsform</value>
+                      </terminology_id>
+                      <code_string>1</code_string>
+                    </defining_code>
+                  </value>
+                </items>
+                <items xsi:type="ELEMENT" archetype_node_id="at0005">
+                  <name>
+                    <value>Tilstede?</value>
+                  </name>
+                  <value xsi:type="DV_TEXT">
+                    <value>lorem dolore gjøran team selecta dolore amet kjetil gøran gjøran sverre diam. nibh erat euismod tincidunt sed nonummy dolore runar gjøran martine. kjetil bjørn erat gøran kjetil elit tincidunt. amet kjetil dolor lars euismod diam gøran martine euismod amet consectetuer sit runar. magna sit sit runar aliquam dolor bjørn kjetil aliquam. </value>
+                  </value>
+                </items>
+                <items xsi:type="ELEMENT" archetype_node_id="at0025">
+                  <name>
+                    <value>Kommentar</value>
+                  </name>
+                  <value xsi:type="DV_TEXT">
+                    <value>elit consectetuer team selecta dolore elit borisa ut diam diam. diam morten martine øystein kjetil aliquam tincidunt aliquam. sverre sit borisa laoreet dolor øystein. </value>
+                  </value>
+                </items>
+              </items>
+            </data>
+          </events>
+        </data>
+      </items>
+    </items>
+  </content>
+  <content xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.adhoc.v1">
+    <name>
+      <value>Stimulantia</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-SECTION.adhoc.v1</value>
+      </archetype_id>
+      <template_id>
+        <value>export_proton_registry_v01</value>
+      </template_id>
+      <rm_version>1.0.4</rm_version>
+    </archetype_details>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.clinical_synopsis.v1">
+      <name>
+        <value>Sammendrag andre substanser</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.clinical_synopsis.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>export_proton_registry_v01</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <protocol xsi:type="ITEM_TREE" archetype_node_id="at0003">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.semistrukturert_metadata_dips.v1">
+          <name>
+            <value>Semistrukturert metadata dips#1</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.semistrukturert_metadata_dips.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>export_proton_registry_v01</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0001">
+            <name>
+              <value>Klassifisering av informasjon</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Sammendrag andre substanser</value>
+              <defining_code>
+                <terminology_id>
+                  <value>OncologyFreeTextMetadata</value>
+                </terminology_id>
+                <code_string>MONC4</code_string>
+              </defining_code>
+            </value>
+          </items>
+        </items>
+      </protocol>
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>List</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0002">
+          <name>
+            <value>Sammendrag andre substanser</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>sed tincidunt bjørn dolor tincidunt magna team selecta. sit nibh erat adipiscing aliquam nibh ipsum adipiscing nibh. diam euismod sit morten borisa adipiscing nibh elit magna øystein. ipsum lars nonummy ipsum adipiscing amet magna sit aliquam. </value>
+          </value>
+        </items>
+      </data>
+    </items>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.substance_use_summary.v1">
+      <name>
+        <value>Substansanamnese#1</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.substance_use_summary.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>export_proton_registry_v01</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <protocol xsi:type="ITEM_TREE" archetype_node_id="at0029">
+        <name>
+          <value>Item tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0031">
+          <name>
+            <value>Sist oppdatert</value>
+          </name>
+          <value xsi:type="DV_DATE_TIME">
+            <value>2024-11-13T12:55:53.0839961+01:00</value>
+          </value>
+        </items>
+      </protocol>
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>Item tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0002">
+          <name>
+            <value>Substansnavn</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>bjørn morten lorem lorem euismod laoreet sit elit magna gjøran. morten kjetil runar gøran øystein øystein. nonummy ipsum magna magna euismod ipsum laoreet laoreet. sverre sit gjøran amet dolor consectetuer kjetil gøran erat. </value>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0003">
+          <name>
+            <value>Overordnet status</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Aldri brukt</value>
+            <defining_code>
+              <terminology_id>
+                <value>local</value>
+              </terminology_id>
+              <code_string>at0004</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0007">
+          <name>
+            <value>Overordnet beskrivelse</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>dolor euismod sverre adipiscing magna gøran runar diam. bjørn nibh consectetuer consectetuer aliquam gøran lars tor-magne. ipsum sit sit adipiscing kjetil diam øystein. </value>
+          </value>
+        </items>
+      </data>
+    </items>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.alcohol_consumption_summary.v1">
+      <name>
+        <value>Alkoholanamnese</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.alcohol_consumption_summary.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>export_proton_registry_v01</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <protocol xsi:type="ITEM_TREE" archetype_node_id="at0021">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0022">
+          <name>
+            <value>Sist oppdatert</value>
+          </name>
+          <value xsi:type="DV_DATE_TIME">
+            <value>2024-11-05T17:55:52.97477+01:00</value>
+          </value>
+        </items>
+      </protocol>
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0089">
+          <name>
+            <value>Overordnet status</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Drukket tidligere</value>
+            <defining_code>
+              <terminology_id>
+                <value>local</value>
+              </terminology_id>
+              <code_string>at0005</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0043">
+          <name>
+            <value>Overordnet beskrivelse</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>borisa sit team selecta dolore ut gjøran nibh magna diam diam lars. nibh kjetil gøran team selecta nibh adipiscing team selecta tincidunt runar. gjøran dolor kjetil morten martine gjøran nonummy diam tor-magne martine laoreet. nibh amet euismod martine nibh magna euismod dolor erat elit. </value>
+          </value>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="at0064">
+          <name>
+            <value>Per episode</value>
+          </name>
+          <items xsi:type="ELEMENT" archetype_node_id="at0023">
+            <name>
+              <value>Typisk bruk (alkoholenheter)</value>
+            </name>
+            <value xsi:type="DV_QUANTITY">
+              <magnitude>27</magnitude>
+              <units>1/d</units>
+            </value>
+          </items>
+        </items>
+      </data>
+    </items>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.tobacco_smoking_summary.v1">
+      <name>
+        <value>Røykeanamnese</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.tobacco_smoking_summary.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>export_proton_registry_v01</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <protocol xsi:type="ITEM_TREE" archetype_node_id="at0021">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0022">
+          <name>
+            <value>Sist oppdatert</value>
+          </name>
+          <value xsi:type="DV_DATE_TIME">
+            <value>2024-10-24T22:55:53.0111778+02:00</value>
+          </value>
+        </items>
+      </protocol>
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0089">
+          <name>
+            <value>Overordnet status</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Røyker</value>
+            <defining_code>
+              <terminology_id>
+                <value>local</value>
+              </terminology_id>
+              <code_string>at0003</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0043">
+          <name>
+            <value>Overordnet beskrivelse</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>adipiscing sverre erat ipsum ut tincidunt øystein aliquam dolore. nibh dolore øystein tincidunt euismod tor-magne dolor gjøran sed aliquam elit. </value>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0074">
+          <name>
+            <value>Samlet pakkeår</value>
+          </name>
+          <value xsi:type="DV_COUNT">
+            <magnitude>5</magnitude>
+          </value>
+        </items>
+      </data>
+    </items>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.smokeless_tobacco_summary.v1">
+      <name>
+        <value>Røykfri tobakkanamnese</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.smokeless_tobacco_summary.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>export_proton_registry_v01</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <protocol xsi:type="ITEM_TREE" archetype_node_id="at0021">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0022">
+          <name>
+            <value>Sist oppdatert</value>
+          </name>
+          <value xsi:type="DV_DATE_TIME">
+            <value>2024-10-21T21:55:53.0382975+02:00</value>
+          </value>
+        </items>
+      </protocol>
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0089">
+          <name>
+            <value>Overordnet status</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Aldri brukt</value>
+            <defining_code>
+              <terminology_id>
+                <value>local</value>
+              </terminology_id>
+              <code_string>at0006</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0043">
+          <name>
+            <value>Overordnet beskrivelse</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>kjetil amet ut martine martine gøran øystein. martine morten tor-magne magna borisa sed sed gøran borisa. ipsum kjetil elit nibh nonummy euismod øystein laoreet nonummy. </value>
+          </value>
+        </items>
+      </data>
+    </items>
+  </content>
+  <content xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.adhoc.v1">
+    <name>
+      <value>Komorbiditet_utredning</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-SECTION.adhoc.v1</value>
+      </archetype_id>
+      <template_id>
+        <value>export_proton_registry_v01</value>
+      </template_id>
+      <rm_version>1.0.4</rm_version>
+    </archetype_details>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.precaution.v1">
+      <name>
+        <value>Forholdsregel#1</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.precaution.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>export_proton_registry_v01</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <protocol xsi:type="ITEM_TREE" archetype_node_id="at0006">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0004">
+          <name>
+            <value>Sist oppdatert</value>
+          </name>
+          <value xsi:type="DV_DATE_TIME">
+            <value>2024-11-11T12:55:53.1606058+01:00</value>
+          </value>
+        </items>
+      </protocol>
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0003">
+          <name>
+            <value>Underlag#1</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>erat øystein erat diam lars euismod. dolor nibh lars erat adipiscing diam team selecta. </value>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0013">
+          <name>
+            <value>Sykdomskategori</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Fordøyelsessystemet, sykdommer (Kap.XI; K00-K93)</value>
+            <defining_code>
+              <terminology_id>
+                <value>OncologyComorbidity</value>
+              </terminology_id>
+              <code_string>XI</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0002">
+          <name>
+            <value>Tilstand</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Psykiske lidelser og atferdsforstyrrelser (Kap.V; F00-F99)</value>
+            <defining_code>
+              <terminology_id>
+                <value>OncologyComorbidity</value>
+              </terminology_id>
+              <code_string>V</code_string>
+            </defining_code>
+          </value>
+        </items>
+      </data>
+    </items>
+    <items xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.adhoc.v1">
+      <name>
+        <value>ICD10</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-SECTION.adhoc.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>export_proton_registry_v01</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.precaution.v1">
+        <name>
+          <value>Forholdsregel#1</value>
+        </name>
+        <archetype_details>
+          <archetype_id>
+            <value>openEHR-EHR-EVALUATION.precaution.v1</value>
+          </archetype_id>
+          <template_id>
+            <value>export_proton_registry_v01</value>
+          </template_id>
+          <rm_version>1.0.4</rm_version>
+        </archetype_details>
+        <language>
+          <terminology_id>
+            <value>ISO_639-1</value>
+          </terminology_id>
+          <code_string>nb</code_string>
+        </language>
+        <encoding>
+          <terminology_id>
+            <value>IANA</value>
+          </terminology_id>
+          <code_string>UTF-8</code_string>
+        </encoding>
+        <subject xsi:type="PARTY_SELF" />
+        <protocol xsi:type="ITEM_TREE" archetype_node_id="at0006">
+          <name>
+            <value>Tree</value>
+          </name>
+          <items xsi:type="ELEMENT" archetype_node_id="at0004">
+            <name>
+              <value>Sist oppdatert</value>
+            </name>
+            <value xsi:type="DV_DATE_TIME">
+              <value>2024-10-29T13:55:53.1867315+01:00</value>
+            </value>
+          </items>
+        </protocol>
+        <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+          <name>
+            <value>Tree</value>
+          </name>
+          <items xsi:type="ELEMENT" archetype_node_id="at0002">
+            <name>
+              <value>Tilstand</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>diam tincidunt erat martine ipsum nibh lars. gjøran aliquam gøran martine magna nibh aliquam bjørn øystein diam nonummy consectetuer consectetuer. martine sit ipsum gøran sed erat runar sit nibh. diam nonummy bjørn dolore adipiscing consectetuer nonummy tincidunt diam euismod. </value>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0008">
+            <name>
+              <value>Kommentar</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>gøran morten lorem sit dolor laoreet borisa. nibh team selecta euismod kjetil øystein adipiscing ut tincidunt lars. aliquam aliquam lars dolore bjørn nibh dolore euismod dolor. </value>
+            </value>
+          </items>
+        </data>
+      </items>
+    </items>
+    <items xsi:type="OBSERVATION" archetype_node_id="openEHR-EHR-OBSERVATION.problem_screening.v1">
+      <name>
+        <value>Kartleggingsspørsmål om problemer eller diagnoser</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-OBSERVATION.problem_screening.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>export_proton_registry_v01</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <data archetype_node_id="at0001">
+        <name>
+          <value>History</value>
+        </name>
+        <origin>
+          <value>2024-11-23T17:55:53.0959859+01:00</value>
+        </origin>
+        <events xsi:type="POINT_EVENT" archetype_node_id="at0002">
+          <name>
+            <value>Uspesifisert hendelse#1</value>
+          </name>
+          <time>
+            <value>2024-10-31T18:55:53.128536+01:00</value>
+          </time>
+          <data xsi:type="ITEM_TREE" archetype_node_id="at0003">
+            <name>
+              <value>Tree</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0028">
+              <name>
+                <value>Har pasient kjent komorbiditet?</value>
+              </name>
+              <value xsi:type="DV_CODED_TEXT">
+                <value>Ja</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>local</value>
+                  </terminology_id>
+                  <code_string>at0031</code_string>
+                </defining_code>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0043">
+              <name>
+                <value>Overordnet merknad komorbiditet</value>
+              </name>
+              <value xsi:type="DV_TEXT">
+                <value>sverre erat lorem martine magna lars tincidunt magna. øystein ipsum tor-magne nonummy nibh lars laoreet laoreet aliquam. amet elit nibh erat nibh ipsum. </value>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0034">
+              <name>
+                <value>Kartleggingsformål</value>
+              </name>
+              <value xsi:type="DV_CODED_TEXT">
+                <value>Kreft utredning</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>no.dips.Oncology.ReasonForProblemScreening</value>
+                  </terminology_id>
+                  <code_string>01-KreftUtreding</code_string>
+                </defining_code>
+              </value>
+            </items>
+          </data>
+        </events>
+      </data>
+    </items>
+    <items xsi:type="OBSERVATION" archetype_node_id="openEHR-EHR-OBSERVATION.charlson_comorbidity_index.v2">
+      <name>
+        <value>Charlson Comorbidity Index (CCI)</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-OBSERVATION.charlson_comorbidity_index.v2</value>
+        </archetype_id>
+        <template_id>
+          <value>export_proton_registry_v01</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <data archetype_node_id="at0001">
+        <name>
+          <value>Event Series</value>
+        </name>
+        <origin>
+          <value>2024-10-25T03:55:53.1988524+02:00</value>
+        </origin>
+        <events xsi:type="POINT_EVENT" archetype_node_id="at0002">
+          <name>
+            <value>Uspesifisert hendelse</value>
+          </name>
+          <time>
+            <value>2024-10-15T23:55:53.2652294+02:00</value>
+          </time>
+          <data xsi:type="ITEM_TREE" archetype_node_id="at0003">
+            <name>
+              <value>Tree</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0061">
+              <name>
+                <value>Aldersgruppe</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>1</value>
+                <symbol>
+                  <value>50-59 år</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0063</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0012">
+              <name>
+                <value>Myokardinfarkt</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0013</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0009">
+              <name>
+                <value>Kronisk hjertesvikt</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0010</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0006">
+              <name>
+                <value>Perifere vaskulære sykdommer</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0007</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0015">
+              <name>
+                <value>Cerebrovaskulær hendelse</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0016</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0018">
+              <name>
+                <value>Demens</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0019</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0021">
+              <name>
+                <value>Kronisk lungesykdom</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0022</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0024">
+              <name>
+                <value>Ulcussykdom</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0025</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0027">
+              <name>
+                <value>Leversykdom</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Ingen</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0028</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0030">
+              <name>
+                <value>Bindevevssykdom</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0031</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0033">
+              <name>
+                <value>Diabetes</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Ingen eller diettkontrollert</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0034</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0036">
+              <name>
+                <value>Hemiplegi</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0037</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0039">
+              <name>
+                <value>Moderat til alvorlig nyresykdom</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0040</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0045">
+              <name>
+                <value>Solid svulst</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Ingen</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0046</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0047">
+              <name>
+                <value>Leukemi</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0049</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0050">
+              <name>
+                <value>Lymfom</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0052</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0060">
+              <name>
+                <value>AIDS</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0070</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0072">
+              <name>
+                <value>CCI totalskår</value>
+              </name>
+              <value xsi:type="DV_COUNT">
+                <magnitude>82</magnitude>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0073">
+              <name>
+                <value>Estimert overlevelse etter 10 år</value>
+              </name>
+              <value xsi:type="DV_QUANTITY">
+                <magnitude>82</magnitude>
+                <units>%</units>
+              </value>
+            </items>
+          </data>
+        </events>
+      </data>
+    </items>
+  </content>
+  <content xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1">
+    <name>
+      <value>Problem/diagnose</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-EVALUATION.problem_diagnosis.v1</value>
+      </archetype_id>
+      <template_id>
+        <value>export_proton_registry_v01</value>
+      </template_id>
+      <rm_version>1.0.4</rm_version>
+    </archetype_details>
+    <language>
+      <terminology_id>
+        <value>ISO_639-1</value>
+      </terminology_id>
+      <code_string>nb</code_string>
+    </language>
+    <encoding>
+      <terminology_id>
+        <value>IANA</value>
+      </terminology_id>
+      <code_string>UTF-8</code_string>
+    </encoding>
+    <subject xsi:type="PARTY_SELF" />
+    <protocol xsi:type="ITEM_TREE" archetype_node_id="at0032">
+      <name>
+        <value>Tree</value>
+      </name>
+      <items xsi:type="ELEMENT" archetype_node_id="at0070">
+        <name>
+          <value>Sist oppdatert</value>
+        </name>
+        <value xsi:type="DV_DATE_TIME">
+          <value>2024-11-09T23:55:53.3094189+01:00</value>
+        </value>
+      </items>
+    </protocol>
+    <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+      <name>
+        <value>structure</value>
+      </name>
+      <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.ctcae.v1">
+        <name>
+          <value>Common Terminology Criteria for Adverse Events (CTCAE)#1</value>
+        </name>
+        <archetype_details>
+          <archetype_id>
+            <value>openEHR-EHR-CLUSTER.ctcae.v1</value>
+          </archetype_id>
+          <template_id>
+            <value>export_proton_registry_v01</value>
+          </template_id>
+          <rm_version>1.0.4</rm_version>
+        </archetype_details>
+        <items xsi:type="ELEMENT" archetype_node_id="at0001">
+          <name>
+            <value>Kategori</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Blood and lymphatic system disorders</value>
+            <defining_code>
+              <terminology_id>
+                <value>MEDRA</value>
+              </terminology_id>
+              <code_string>1001</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0002">
+          <name>
+            <value>Term</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>X</value>
+            <defining_code>
+              <terminology_id>
+                <value>MEDRA</value>
+              </terminology_id>
+              <code_string>X</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0003">
+          <name>
+            <value>Kategori for grad</value>
+          </name>
+          <value xsi:type="DV_ORDINAL">
+            <value>0</value>
+            <symbol>
+              <value>Grad 0</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0021</code_string>
+              </defining_code>
+            </symbol>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0020">
+          <name>
+            <value>Beskrivelse av grad</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>A</value>
+            <defining_code>
+              <terminology_id>
+                <value>CTCAETERM</value>
+              </terminology_id>
+              <code_string>A</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0009">
+          <name>
+            <value>CTCAE- versjon</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>team selecta diam gjøran gøran laoreet gøran aliquam dolore tor-magne sed. sverre bjørn øystein elit gøran øystein. tincidunt erat lars diam ut dolore lorem. tor-magne diam laoreet laoreet aliquam sit. aliquam sed aliquam borisa lorem lars lorem amet amet sverre laoreet. </value>
+          </value>
+        </items>
+      </items>
+      <items xsi:type="ELEMENT" archetype_node_id="at0002">
+        <name>
+          <value>Problem/diagnosenavn</value>
+        </name>
+        <value xsi:type="DV_CODED_TEXT">
+          <value>Complication of procedure</value>
+          <defining_code>
+            <terminology_id>
+              <value>SNOMED-CT</value>
+            </terminology_id>
+            <code_string>116224001</code_string>
+          </defining_code>
+        </value>
+      </items>
+    </data>
+  </content>
+  <content xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1">
+    <name>
+      <value>Problem/diagnose (inkl TNM)</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-EVALUATION.problem_diagnosis.v1</value>
+      </archetype_id>
+      <template_id>
+        <value>export_proton_registry_v01</value>
+      </template_id>
+      <rm_version>1.0.4</rm_version>
+    </archetype_details>
+    <language>
+      <terminology_id>
+        <value>ISO_639-1</value>
+      </terminology_id>
+      <code_string>nb</code_string>
+    </language>
+    <encoding>
+      <terminology_id>
+        <value>IANA</value>
+      </terminology_id>
+      <code_string>UTF-8</code_string>
+    </encoding>
+    <subject xsi:type="PARTY_SELF" />
+    <protocol xsi:type="ITEM_TREE" archetype_node_id="at0032">
+      <name>
+        <value>Tree</value>
+      </name>
+      <items xsi:type="ELEMENT" archetype_node_id="at0070">
+        <name>
+          <value>Sist oppdatert</value>
+        </name>
+        <value xsi:type="DV_DATE_TIME">
+          <value>2024-11-19T15:55:53.491875+01:00</value>
+        </value>
+      </items>
+    </protocol>
+    <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+      <name>
+        <value>structure</value>
+      </name>
+      <items xsi:type="ELEMENT" archetype_node_id="at0069">
+        <name>
+          <value>Kommentar diagnose/TNM</value>
+        </name>
+        <value xsi:type="DV_TEXT">
+          <value>borisa dolor sit dolor øystein magna. øystein diam consectetuer sverre euismod dolore erat. laoreet lorem martine gjøran gøran magna tor-magne euismod consectetuer. bjørn runar kjetil amet magna dolore ut morten dolore magna. martine ut erat lars lorem diam ut lorem ipsum. </value>
+        </value>
+      </items>
+      <items xsi:type="ELEMENT" archetype_node_id="at0002">
+        <name>
+          <value>Problem/diagnosenavn</value>
+        </name>
+        <value xsi:type="DV_TEXT">
+          <value>bjørn amet euismod euismod lorem diam gjøran amet dolor tor-magne tincidunt ut. team selecta nibh tincidunt nonummy elit ipsum ipsum borisa. consectetuer øystein consectetuer nibh dolore tincidunt aliquam dolor. sed ipsum aliquam borisa laoreet team selecta ipsum. </value>
+        </value>
+      </items>
+      <items xsi:type="ELEMENT" archetype_node_id="at0012">
+        <name>
+          <value>Anatomisk lokalisering</value>
+        </name>
+        <value xsi:type="DV_CODED_TEXT">
+          <value>Begge</value>
+          <defining_code>
+            <terminology_id>
+              <value>SNOMED-CT</value>
+            </terminology_id>
+            <code_string>51440002</code_string>
+          </defining_code>
+        </value>
+      </items>
+      <items xsi:type="ELEMENT" archetype_node_id="at0003">
+        <name>
+          <value>Dato/tid for klinisk bekreftelse</value>
+        </name>
+        <value xsi:type="DV_DATE_TIME">
+          <value>2024-11-18T22:55:53.3652492+01:00</value>
+        </value>
+      </items>
+      <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.oncology_problem_details_dips.v1">
+        <name>
+          <value>Oncology problem details dips</value>
+        </name>
+        <archetype_details>
+          <archetype_id>
+            <value>openEHR-EHR-CLUSTER.oncology_problem_details_dips.v1</value>
+          </archetype_id>
+          <template_id>
+            <value>export_proton_registry_v01</value>
+          </template_id>
+          <rm_version>1.0.4</rm_version>
+        </archetype_details>
+        <items xsi:type="ELEMENT" archetype_node_id="at0001">
+          <name>
+            <value>Multiple primærtumorer</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Multiple primærtumorer</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>109359008</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0002">
+          <name>
+            <value>Beskrivelse</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>nonummy consectetuer lorem sverre tincidunt sed ipsum laoreet dolor nonummy. gjøran erat laoreet tor-magne aliquam bjørn sed nonummy kjetil diam dolor øystein. tor-magne laoreet nonummy bjørn bjørn borisa øystein elit kjetil euismod adipiscing tincidunt. diam lorem martine morten aliquam lars ipsum morten elit sverre. dolor dolor nonummy sed lars euismod amet. </value>
+          </value>
+        </items>
+      </items>
+      <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.tnm.v1">
+        <name>
+          <value>TNM-klassifikasjon klinisk</value>
+        </name>
+        <archetype_details>
+          <archetype_id>
+            <value>openEHR-EHR-CLUSTER.tnm.v1</value>
+          </archetype_id>
+          <template_id>
+            <value>export_proton_registry_v01</value>
+          </template_id>
+          <rm_version>1.0.4</rm_version>
+        </archetype_details>
+        <items xsi:type="ELEMENT" archetype_node_id="at0003">
+          <name>
+            <value>Primærtumor (T)</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>cT0</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>1228882005</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0004">
+          <name>
+            <value>Regionale lymfeknuter (N)</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>cN1b</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>1229976000</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0005">
+          <name>
+            <value>Fjernmetastase (M)</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>cM0</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>1229901006</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0027">
+          <name>
+            <value>Residiv (r)</value>
+          </name>
+          <value xsi:type="DV_BOOLEAN">
+            <value>true</value>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0030">
+          <name>
+            <value>TNM-vurdering</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>runar bjørn diam gjøran magna sverre erat amet gjøran elit runar. lars laoreet øystein morten consectetuer sed tor-magne diam. diam magna nibh amet martine aliquam gjøran kjetil adipiscing tincidunt nonummy. erat ut diam nonummy ut sed elit martine tor-magne. </value>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0032">
+          <name>
+            <value>TNM-utgave</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>AJCC TNM Versjon 8</value>
+            <defining_code>
+              <terminology_id>
+                <value>AJCC-TNM-VERSION</value>
+              </terminology_id>
+              <code_string>Edition8</code_string>
+            </defining_code>
+          </value>
+        </items>
+      </items>
+      <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.tnm-pathological.v1">
+        <name>
+          <value>TNM-klassifikasjon patologi</value>
+        </name>
+        <archetype_details>
+          <archetype_id>
+            <value>openEHR-EHR-CLUSTER.tnm-pathological.v1</value>
+          </archetype_id>
+          <template_id>
+            <value>export_proton_registry_v01</value>
+          </template_id>
+          <rm_version>1.0.4</rm_version>
+        </archetype_details>
+        <items xsi:type="ELEMENT" archetype_node_id="at0030.1">
+          <name>
+            <value>pTNM-vurdering</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>gøran euismod sed kjetil sit adipiscing adipiscing runar morten gøran. gøran gøran laoreet tor-magne nibh ut diam. nibh borisa martine bjørn euismod adipiscing lars. adipiscing magna lorem aliquam gjøran runar bjørn kjetil. sverre ut aliquam nibh sit euismod sed runar. </value>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0003.1">
+          <name>
+            <value>Primærtumor (pT)</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>pT4b</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>1229866004</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0004.1">
+          <name>
+            <value>Regionale lymfeknuter (pN)</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>pN1</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>1229951001</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0005.1">
+          <name>
+            <value>Fjernmetastase (pM)</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>pM0</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>30893008</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0027">
+          <name>
+            <value>Residiv (r)</value>
+          </name>
+          <value xsi:type="DV_BOOLEAN">
+            <value>true</value>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0032">
+          <name>
+            <value>TNM-utgave</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>AJCC TNM Versjon 8</value>
+            <defining_code>
+              <terminology_id>
+                <value>AJCC-TNM-VERSION</value>
+              </terminology_id>
+              <code_string>Edition8</code_string>
+            </defining_code>
+          </value>
+        </items>
+      </items>
+    </data>
+  </content>
+  <content xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1">
+    <name>
+      <value>Lymfeknutemetastase</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-EVALUATION.problem_diagnosis.v1</value>
+      </archetype_id>
+      <template_id>
+        <value>export_proton_registry_v01</value>
+      </template_id>
+      <rm_version>1.0.4</rm_version>
+    </archetype_details>
+    <language>
+      <terminology_id>
+        <value>ISO_639-1</value>
+      </terminology_id>
+      <code_string>nb</code_string>
+    </language>
+    <encoding>
+      <terminology_id>
+        <value>IANA</value>
+      </terminology_id>
+      <code_string>UTF-8</code_string>
+    </encoding>
+    <subject xsi:type="PARTY_SELF" />
+    <protocol xsi:type="ITEM_TREE" archetype_node_id="at0032">
+      <name>
+        <value>Tree</value>
+      </name>
+      <items xsi:type="ELEMENT" archetype_node_id="at0070">
+        <name>
+          <value>Sist oppdatert</value>
+        </name>
+        <value xsi:type="DV_DATE_TIME">
+          <value>2024-11-25T09:55:53.5361544+01:00</value>
+        </value>
+      </items>
+    </protocol>
+    <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+      <name>
+        <value>structure</value>
+      </name>
+      <items xsi:type="ELEMENT" archetype_node_id="at0002">
+        <name>
+          <value>Regional lymfeknutemetastase</value>
+        </name>
+        <value xsi:type="DV_CODED_TEXT">
+          <value>Reginoale lymfeknutemetastase</value>
+          <defining_code>
+            <terminology_id>
+              <value>SNOMED-CT</value>
+            </terminology_id>
+            <code_string>399374009</code_string>
+          </defining_code>
+        </value>
+      </items>
+      <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.clinical_evidence.v1">
+        <name>
+          <value>Utredningsmetode regionale lymfeknutemetastaser</value>
+        </name>
+        <archetype_details>
+          <archetype_id>
+            <value>openEHR-EHR-CLUSTER.clinical_evidence.v1</value>
+          </archetype_id>
+          <template_id>
+            <value>export_proton_registry_v01</value>
+          </template_id>
+          <rm_version>1.0.4</rm_version>
+        </archetype_details>
+        <items xsi:type="ELEMENT" archetype_node_id="at0022">
+          <name>
+            <value>Metode#1</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Annet</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>74964007</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0001">
+          <name>
+            <value>Spesifier annet</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>lorem elit nonummy dolor bjørn laoreet runar tor-magne laoreet sit sed. sit nibh sit amet øystein euismod bjørn amet dolore borisa team selecta. lars sverre lorem team selecta euismod sverre sit sit borisa nonummy diam. </value>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0003">
+          <name>
+            <value>Funn</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Reginoale lymfeknutemetastase</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>399374009</code_string>
+            </defining_code>
+          </value>
+        </items>
+      </items>
+    </data>
+  </content>
+  <content xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1">
+    <name>
+      <value>Fjernmetastaser</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-EVALUATION.problem_diagnosis.v1</value>
+      </archetype_id>
+      <template_id>
+        <value>export_proton_registry_v01</value>
+      </template_id>
+      <rm_version>1.0.4</rm_version>
+    </archetype_details>
+    <language>
+      <terminology_id>
+        <value>ISO_639-1</value>
+      </terminology_id>
+      <code_string>nb</code_string>
+    </language>
+    <encoding>
+      <terminology_id>
+        <value>IANA</value>
+      </terminology_id>
+      <code_string>UTF-8</code_string>
+    </encoding>
+    <subject xsi:type="PARTY_SELF" />
+    <protocol xsi:type="ITEM_TREE" archetype_node_id="at0032">
+      <name>
+        <value>Tree</value>
+      </name>
+      <items xsi:type="ELEMENT" archetype_node_id="at0070">
+        <name>
+          <value>Sist oppdatert</value>
+        </name>
+        <value xsi:type="DV_DATE_TIME">
+          <value>2024-10-29T11:55:53.6154212+01:00</value>
+        </value>
+      </items>
+    </protocol>
+    <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+      <name>
+        <value>structure</value>
+      </name>
+      <items xsi:type="ELEMENT" archetype_node_id="at0002">
+        <name>
+          <value>Fjernmetastaser</value>
+        </name>
+        <value xsi:type="DV_CODED_TEXT">
+          <value>Fjernmetastase</value>
+          <defining_code>
+            <terminology_id>
+              <value>SNOMED-CT</value>
+            </terminology_id>
+            <code_string>399409002</code_string>
+          </defining_code>
+        </value>
+      </items>
+      <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.clinical_evidence.v1">
+        <name>
+          <value>Utredningsmetode fjernmetastaser</value>
+        </name>
+        <archetype_details>
+          <archetype_id>
+            <value>openEHR-EHR-CLUSTER.clinical_evidence.v1</value>
+          </archetype_id>
+          <template_id>
+            <value>export_proton_registry_v01</value>
+          </template_id>
+          <rm_version>1.0.4</rm_version>
+        </archetype_details>
+        <items xsi:type="ELEMENT" archetype_node_id="at0022">
+          <name>
+            <value>Metode#1</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Reseksjon</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>65801008</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0001">
+          <name>
+            <value>Spesifiser annet</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>sed tor-magne borisa ipsum martine laoreet ut team selecta. tor-magne dolor amet borisa gøran borisa euismod nonummy magna. </value>
+          </value>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.anatomical_location.v1">
+          <name>
+            <value>M anatomisk lokalisajson Skjelett</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.anatomical_location.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>export_proton_registry_v01</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0001">
+            <name>
+              <value>Navn på kroppssted</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Skjelett</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>113192009</code_string>
+              </defining_code>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.anatomical_location.v1">
+          <name>
+            <value>M anatomisk lokalisajson Lever</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.anatomical_location.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>export_proton_registry_v01</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0001">
+            <name>
+              <value>Navn på kroppssted</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Lever</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>10200004</code_string>
+              </defining_code>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.anatomical_location.v1">
+          <name>
+            <value>M anatomisk lokalisajson Lunge</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.anatomical_location.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>export_proton_registry_v01</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0001">
+            <name>
+              <value>Navn på kroppssted</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Lunge</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>39607008</code_string>
+              </defining_code>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.anatomical_location.v1">
+          <name>
+            <value>M anatomisk lokalisajson CNS</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.anatomical_location.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>export_proton_registry_v01</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0001">
+            <name>
+              <value>Navn på kroppssted</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>CNS (sentralnervesystemet)</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>21483005</code_string>
+              </defining_code>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.anatomical_location.v1">
+          <name>
+            <value>M anatomisk lokalisajson Fjerne lymfeknuter</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.anatomical_location.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>export_proton_registry_v01</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0001">
+            <name>
+              <value>Navn på kroppssted</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>dolore dolor adipiscing aliquam borisa laoreet sit dolore borisa. elit consectetuer nonummy erat sit diam nibh gjøran. martine gøran ut tincidunt ut øystein lars gøran borisa sverre. kjetil erat laoreet sverre team selecta diam consectetuer diam. </value>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.anatomical_location.v1">
+          <name>
+            <value>M anatomisk lokalisajson Annet</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.anatomical_location.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>export_proton_registry_v01</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0023">
+            <name>
+              <value>Spesifiser annet</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>lars øystein elit amet gjøran amet adipiscing dolor. tor-magne borisa magna aliquam aliquam borisa erat tor-magne. diam dolore kjetil erat magna amet euismod tincidunt. gøran erat sed sit sverre amet. </value>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0001">
+            <name>
+              <value>Navn på kroppssted</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>diam gøran tincidunt sed nibh euismod lorem. borisa elit team selecta amet bjørn sverre morten amet sed sverre. </value>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0003">
+          <name>
+            <value>Funn</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Fjernmetastase</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>399409002</code_string>
+            </defining_code>
+          </value>
+        </items>
+      </items>
+    </data>
+  </content>
+  <content xsi:type="OBSERVATION" archetype_node_id="openEHR-EHR-OBSERVATION.ecog.v1">
+    <name>
+      <value>ECOG funksjonsstatus</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-OBSERVATION.ecog.v1</value>
+      </archetype_id>
+      <template_id>
+        <value>export_proton_registry_v01</value>
+      </template_id>
+      <rm_version>1.0.4</rm_version>
+    </archetype_details>
+    <language>
+      <terminology_id>
+        <value>ISO_639-1</value>
+      </terminology_id>
+      <code_string>nb</code_string>
+    </language>
+    <encoding>
+      <terminology_id>
+        <value>IANA</value>
+      </terminology_id>
+      <code_string>UTF-8</code_string>
+    </encoding>
+    <subject xsi:type="PARTY_SELF" />
+    <data archetype_node_id="at0001">
+      <name>
+        <value>Event Series</value>
+      </name>
+      <origin>
+        <value>2024-11-15T22:55:53.3224356+01:00</value>
+      </origin>
+      <events xsi:type="POINT_EVENT" archetype_node_id="at0002">
+        <name>
+          <value>Uspesifisert hendelse</value>
+        </name>
+        <time>
+          <value>2024-10-22T03:55:53.3426975+02:00</value>
+        </time>
+        <data xsi:type="ITEM_TREE" archetype_node_id="at0003">
+          <name>
+            <value>Tree</value>
+          </name>
+          <items xsi:type="ELEMENT" archetype_node_id="at0004">
+            <name>
+              <value>ECOG funksjonsstatus</value>
+            </name>
+            <value xsi:type="DV_ORDINAL">
+              <value>1</value>
+              <symbol>
+                <value>Symptomatisk, fullt oppegående</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>local</value>
+                  </terminology_id>
+                  <code_string>at0006</code_string>
+                </defining_code>
+              </symbol>
+            </value>
+          </items>
+        </data>
+      </events>
+    </data>
+  </content>
+</composition>

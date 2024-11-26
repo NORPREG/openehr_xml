@@ -1,0 +1,40 @@
+{
+  "composition": {
+    "metadata": {}
+    "content_section": {
+      "name": {},
+      "archetype_details": {},
+      "items_evaluation": {
+        "name": {},
+        "archetype_details": {},
+        "metadata": {},
+        "subject": "@PARTY_SELF",
+        "protocol_item_tree": { // looks like cluster
+          "name": "",
+          "items_element": [
+            {
+              "name": "",
+              "value": {
+                "value": "",
+                "defining_code": "" // optional
+              }
+            }
+          ],
+          "items_cluster": {
+            "name": "",
+            "archetype_details": {},
+            "items_element": [
+              {
+                "name": "",
+                "value": {
+                  "value": "",
+                  "defining_code": "" // optional
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
