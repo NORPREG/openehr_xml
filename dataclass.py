@@ -110,6 +110,7 @@ class Composition(BaseModel):
 
 xml_file ='xml/report_example_auto.xml'
 
+
 Composition.model_rebuild()
 
 with open(xml_file, 'r', encoding="utf-8") as file:
