@@ -19,9 +19,11 @@ class Value(BaseModel):
 	value: Optional[Union[str, datetime]] = None
 	magnitude: Optional[str] = None
 	units: Optional[str] = None
+	symbol: Optional["Value"]
+
 
 class Uid(BaseModel):
-	xsi_type: str = Field(None, alias="@xsi:type")
+	xsi_type: str = Field(None, alias="@xsi:type", exclude=hide_metadata)
 	value: str
 
 class Archetype_details(BaseModel):
@@ -34,11 +36,11 @@ class Category(BaseModel):
 	defining_code: Optional[Terminology_id_wrapper] = None
 
 class Composer(BaseModel):
-	xsi_type: str = Field(None, alias="@xsi:type")
+	xsi_type: str = Field(None, alias="@xsi:type", exclude=hide_metadata)
 	name: str 
 
 class Other_context(BaseModel):
-	xsi_type: str = Field(None, alias="@xsi:type")
+	xsi_type: str = Field(None, alias="@xsi:type", exclude=hide_metadata)
 	archetype_node_id: str = Field(None, alias="@archetype_node_id", exclude=hide_metadata)
 	name: Value
 
@@ -49,10 +51,10 @@ class Context(BaseModel):
 	other_context: Other_context = Field(exclude=hide_metadata)
 
 class Subject(BaseModel):
-	xsi_type: str = Field(None, alias="@xsi:type")
+	xsi_type: str = Field(None, alias="@xsi:type", exclude=hide_metadata)
 
 class Items(BaseModel):
-	xsi_type: str = Field(None, alias="@xsi:type")
+	xsi_type: str = Field(None, alias="@xsi:type", exclude=hide_metadata)
 	archetype_node_id: str = Field(None, alias="@archetype_node_id", exclude=hide_metadata)
 
 	name: Value
@@ -69,14 +71,14 @@ class Items(BaseModel):
 	value: Optional[Value] = None
 
 class Protocol(BaseModel):
-	xsi_type: str = Field(None, alias="@xsi:type")
+	xsi_type: str = Field(None, alias="@xsi:type", exclude=hide_metadata)
 	archetype_node_id: str = Field(None, alias="@archetype_node_id", exclude=hide_metadata)
 
 	name: Value 
 	items: Items 
 
 class Data(BaseModel):
-	xsi_type: str = Field(None, alias="@xsi:type")
+	xsi_type: str = Field(None, alias="@xsi:type", exclude=hide_metadata)
 	archetype_node_id: str = Field(None, alias="@archetype_node_id", exclude=hide_metadata)
 
 	language: Optional[Terminology_id_wrapper] = Field(None, exclude=hide_metadata)
@@ -85,8 +87,19 @@ class Data(BaseModel):
 	name: Value 
 	items: Optional[Union[List[Items], Items]] = None
 
+	origin: Optional[Value] = None
+	events: Optional["Events"] = None
+
+class Events(BaseModel):
+	xsi_type: str = Field(None, alias="@xsi:type", exclude=hide_metadata)
+	archetype_node_id: str = Field(None, alias="@archetype_node_id", exclude=hide_metadata)	
+
+	name: Value
+	time: Value
+	data: Data
+
 class Content(BaseModel):
-	xsi_type: str = Field(None, alias="@xsi:type")
+	xsi_type: str = Field(None, alias="@xsi:type", exclude=hide_metadata)
 	archetype_node_id: str = Field(None, alias="@archetype_node_id", exclude=hide_metadata)
 
 	name: Value 
@@ -110,15 +123,9 @@ class Composition(BaseModel):
 
 xml_file ='xml/report_example_auto.xml'
 
-
-Composition.model_rebuild()
-
-with open(xml_file, 'r', encoding="utf-8") as file:
-	xml_data = file.read().encode("utf-8")
-	data =  xmltodict.parse(xml_data)
-
-c = Composition.model_validate(data["root"]["composition"])
-pprint(c.model_dump(exclude_none=True))
-json_string = c.model_dump_json(exclude_none=True)
-with open("xml/output_strip.json", "w") as out:
-	out.write(json_string)
+Terminology_id_wrapper.update_forward_refs()
+Value.update_forward_refs()
+Items.update_forward_refs()
+Data.update_forward_refs()
+Composition.update_forward_refs()
+# Composition.model_validate()
