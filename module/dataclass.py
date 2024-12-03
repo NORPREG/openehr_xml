@@ -1,5 +1,6 @@
 from pydantic import BaseModel, Field
 from datetime import datetime
+
 import xmltodict
 from pprint import pprint
 from typing import List, Optional, Union
@@ -19,7 +20,7 @@ class Value(BaseModel):
 	value: Optional[Union[str, datetime]] = None
 	magnitude: Optional[str] = None
 	units: Optional[str] = None
-	symbol: Optional["Value"]
+	symbol: Optional["Value"] = None
 
 
 class Uid(BaseModel):
@@ -46,7 +47,7 @@ class Other_context(BaseModel):
 
 class Context(BaseModel):
 	start_time: Value
-	end_time: Optional[Value]
+	end_time: Optional[Value] = None
 	setting: Category = Field(exclude=hide_metadata)
 	other_context: Other_context = Field(exclude=hide_metadata)
 
@@ -123,9 +124,12 @@ class Composition(BaseModel):
 
 xml_file ='xml/report_example_auto.xml'
 
+"""
 Terminology_id_wrapper.update_forward_refs()
 Value.update_forward_refs()
 Items.update_forward_refs()
 Data.update_forward_refs()
 Composition.update_forward_refs()
-# Composition.model_validate()
+"""
+
+Composition.model_rebuild()

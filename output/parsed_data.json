@@ -1,0 +1,300 @@
+{
+  "p1_type": "COMPOSITION",
+  "name": "Eksport til protonregisteret",
+  "category": {
+    "defining_code": {
+      "terminology_id": "openehr",
+      "code_string": "433"
+    }
+  },
+  "composer": {
+    "name": "unknown"
+  },
+  "context": {
+    "start_time": "2024-10-19T22:55:52.7668508+02:00",
+    "end_time": "2024-10-19T07:55:52.7713677+02:00"
+  },
+  "content": {
+    "Sosialanamnese_generell": {
+      "Utdanningsnivå": {
+        "Høyeste fullførte utdanningsnivå": "Universitet/Høyskole <4 år"
+      },
+      "Arbeidsstatus": {
+        "Yrke": {
+          "Tittel/rolle": "runar borisa adipiscing dolore aliquam lorem gøran borisa. aliquam sit borisa sverre nibh bjørn gøran ut. ipsum ipsum sed euismod øystein erat gøran.",
+          "Yrkeskategori": "borisa magna erat elit magna lorem morten team selecta gjøran. diam tincidunt tincidunt sverre kjetil kjetil dolor. lars morten ipsum euismod dolore sed dolore adipiscing. sverre adipiscing dolore sit runar laoreet gøran morten sverre erat kjetil."
+        },
+        "Arbeidsstatus": "I arbeid",
+        "Sykemelding": {
+          "Startdato": "2024-11-11T03:55:52.7823669+01:00",
+          "Varighet": "P0D"
+        }
+      },
+      "Juridisk sivilstatus": {
+        "Juridisk sivilstand": "Gift//registrert partner"
+      },
+      "Samlivsstatus": {
+        "Samlivsstatus": "Ugift/enslig"
+      },
+      "Barn under 18": {
+        "Kartleggingspørsmål om sosiale forhold barn under 18": {
+          "Omsorgsperson for barn under 18 år": {
+            "Sosialt forhold": "Ansvarlig for barn under 18 år"
+          },
+          "Omsorgsperson for personer over 18 år": {
+            "Sosialt forhold": "Ansvarlig for barn/andre over 18 år"
+          },
+          "Kartleggingsformål": "consectetuer dolor adipiscing gjøran diam borisa sverre kjetil. consectetuer tincidunt dolore lorem tor-magne team selecta runar elit erat lorem nibh lars. erat gjøran ipsum tincidunt gøran gjøran nibh ut. tincidunt sverre nonummy kjetil ipsum kjetil bjørn tincidunt."
+        }
+      },
+      "Fritekst relatert til sosial anamnese": {
+        "Fritekst relatert til sosial anamnese": "erat runar runar gøran sit amet nonummy øystein. martine øystein gøran magna amet lorem elit amet kjetil lars."
+      },
+      "Samlivsform": {
+        "Kartleggingspørsmål om sosiale forhold samlivsform": {
+          "Kartleggingsformål": "runar adipiscing elit tor-magne consectetuer ut dolore euismod tor-magne. kjetil borisa borisa team selecta morten øystein dolor lars øystein. gjøran consectetuer dolore øystein tor-magne morten. øystein martine borisa elit sit martine laoreet euismod øystein bjørn dolore.",
+          "Spesifikt sosialt forhold": {
+            "Hvilken samlivsform har pasienten?": "Bor alene (Inkl. alene med barn <18)",
+            "Tilstede?": "lorem dolore gjøran team selecta dolore amet kjetil gøran gjøran sverre diam. nibh erat euismod tincidunt sed nonummy dolore runar gjøran martine. kjetil bjørn erat gøran kjetil elit tincidunt. amet kjetil dolor lars euismod diam gøran martine euismod amet consectetuer sit runar. magna sit sit runar aliquam dolor bjørn kjetil aliquam."
+          }
+        }
+      }
+    },
+    "Stimulantia": {
+      "Sammendrag andre substanser": {
+        "Sammendrag andre substanser": "sed tincidunt bjørn dolor tincidunt magna team selecta. sit nibh erat adipiscing aliquam nibh ipsum adipiscing nibh. diam euismod sit morten borisa adipiscing nibh elit magna øystein. ipsum lars nonummy ipsum adipiscing amet magna sit aliquam."
+      },
+      "Substansanamnese#1": {
+        "Substansnavn": "bjørn morten lorem lorem euismod laoreet sit elit magna gjøran. morten kjetil runar gøran øystein øystein. nonummy ipsum magna magna euismod ipsum laoreet laoreet. sverre sit gjøran amet dolor consectetuer kjetil gøran erat.",
+        "Overordnet status": "Aldri brukt",
+        "Overordnet beskrivelse": "dolor euismod sverre adipiscing magna gøran runar diam. bjørn nibh consectetuer consectetuer aliquam gøran lars tor-magne. ipsum sit sit adipiscing kjetil diam øystein."
+      },
+      "Alkoholanamnese": {
+        "Overordnet status": "Drukket tidligere",
+        "Overordnet beskrivelse": "borisa sit team selecta dolore ut gjøran nibh magna diam diam lars. nibh kjetil gøran team selecta nibh adipiscing team selecta tincidunt runar. gjøran dolor kjetil morten martine gjøran nonummy diam tor-magne martine laoreet. nibh amet euismod martine nibh magna euismod dolor erat elit.",
+        "Per episode": {
+          "name": "Typisk bruk (alkoholenheter)",
+          "magnitude": "27",
+          "units": "1/d"
+        }
+      },
+      "Røykeanamnese": [
+        {
+          "Overordnet status": "Røyker"
+        },
+        {
+          "Overordnet beskrivelse": "adipiscing sverre erat ipsum ut tincidunt øystein aliquam dolore. nibh dolore øystein tincidunt euismod tor-magne dolor gjøran sed aliquam elit."
+        },
+        {
+          "name": "Samlet pakkeår",
+          "magnitude": "5"
+        }
+      ],
+      "Røykfri tobakkanamnese": {
+        "Overordnet status": "Aldri brukt",
+        "Overordnet beskrivelse": "kjetil amet ut martine martine gøran øystein. martine morten tor-magne magna borisa sed sed gøran borisa. ipsum kjetil elit nibh nonummy euismod øystein laoreet nonummy."
+      }
+    },
+    "Komorbiditet_utredning": {
+      "Forholdsregel#1": {
+        "Underlag#1": "erat øystein erat diam lars euismod. dolor nibh lars erat adipiscing diam team selecta.",
+        "Sykdomskategori": "Fordøyelsessystemet, sykdommer (Kap.XI; K00-K93)",
+        "Tilstand": "Psykiske lidelser og atferdsforstyrrelser (Kap.V; F00-F99)"
+      },
+      "ICD10": {
+        "Forholdsregel#1": {
+          "Tilstand": "diam tincidunt erat martine ipsum nibh lars. gjøran aliquam gøran martine magna nibh aliquam bjørn øystein diam nonummy consectetuer consectetuer. martine sit ipsum gøran sed erat runar sit nibh. diam nonummy bjørn dolore adipiscing consectetuer nonummy tincidunt diam euismod."
+        }
+      },
+      "Kartleggingsspørsmål om problemer eller diagnoser": {
+        "Har pasient kjent komorbiditet?": "Ja",
+        "Overordnet merknad komorbiditet": "sverre erat lorem martine magna lars tincidunt magna. øystein ipsum tor-magne nonummy nibh lars laoreet laoreet aliquam. amet elit nibh erat nibh ipsum.",
+        "Kartleggingsformål": "Kreft utredning"
+      },
+      "Charlson Comorbidity Index (CCI)": [
+        {
+          "name": "Aldersgruppe",
+          "value": "1",
+          "symbol": "50-59 år"
+        },
+        {
+          "name": "Myokardinfarkt",
+          "value": "0",
+          "symbol": "Nei"
+        },
+        {
+          "name": "Kronisk hjertesvikt",
+          "value": "0",
+          "symbol": "Nei"
+        },
+        {
+          "name": "Perifere vaskulære sykdommer",
+          "value": "0",
+          "symbol": "Nei"
+        },
+        {
+          "name": "Cerebrovaskulær hendelse",
+          "value": "0",
+          "symbol": "Nei"
+        },
+        {
+          "name": "Demens",
+          "value": "0",
+          "symbol": "Nei"
+        },
+        {
+          "name": "Kronisk lungesykdom",
+          "value": "0",
+          "symbol": "Nei"
+        },
+        {
+          "name": "Ulcussykdom",
+          "value": "0",
+          "symbol": "Nei"
+        },
+        {
+          "name": "Leversykdom",
+          "value": "0",
+          "symbol": "Ingen"
+        },
+        {
+          "name": "Bindevevssykdom",
+          "value": "0",
+          "symbol": "Nei"
+        },
+        {
+          "name": "Diabetes",
+          "value": "0",
+          "symbol": "Ingen eller diettkontrollert"
+        },
+        {
+          "name": "Hemiplegi",
+          "value": "0",
+          "symbol": "Nei"
+        },
+        {
+          "name": "Moderat til alvorlig nyresykdom",
+          "value": "0",
+          "symbol": "Nei"
+        },
+        {
+          "name": "Solid svulst",
+          "value": "0",
+          "symbol": "Ingen"
+        },
+        {
+          "name": "Leukemi",
+          "value": "0",
+          "symbol": "Nei"
+        },
+        {
+          "name": "Lymfom",
+          "value": "0",
+          "symbol": "Nei"
+        },
+        {
+          "name": "AIDS",
+          "value": "0",
+          "symbol": "Nei"
+        },
+        {
+          "name": "CCI totalskår",
+          "magnitude": "82"
+        },
+        {
+          "name": "Estimert overlevelse etter 10 år",
+          "magnitude": "82",
+          "units": "%"
+        }
+      ]
+    },
+    "Problem/diagnose": {
+      "Common Terminology Criteria for Adverse Events (CTCAE)#1": [
+        {
+          "Kategori": "Blood and lymphatic system disorders"
+        },
+        {
+          "Term": "X"
+        },
+        {
+          "name": "Kategori for grad",
+          "value": "0",
+          "symbol": "Grad 0"
+        },
+        {
+          "Beskrivelse av grad": "A"
+        },
+        {
+          "CTCAE- versjon": "team selecta diam gjøran gøran laoreet gøran aliquam dolore tor-magne sed. sverre bjørn øystein elit gøran øystein. tincidunt erat lars diam ut dolore lorem. tor-magne diam laoreet laoreet aliquam sit. aliquam sed aliquam borisa lorem lars lorem amet amet sverre laoreet."
+        }
+      ],
+      "Problem/diagnosenavn": "Complication of procedure"
+    },
+    "Problem/diagnose (inkl TNM)": {
+      "Kommentar diagnose/TNM": "borisa dolor sit dolor øystein magna. øystein diam consectetuer sverre euismod dolore erat. laoreet lorem martine gjøran gøran magna tor-magne euismod consectetuer. bjørn runar kjetil amet magna dolore ut morten dolore magna. martine ut erat lars lorem diam ut lorem ipsum.",
+      "Problem/diagnosenavn": "bjørn amet euismod euismod lorem diam gjøran amet dolor tor-magne tincidunt ut. team selecta nibh tincidunt nonummy elit ipsum ipsum borisa. consectetuer øystein consectetuer nibh dolore tincidunt aliquam dolor. sed ipsum aliquam borisa laoreet team selecta ipsum.",
+      "Anatomisk lokalisering": "Begge",
+      "Dato/tid for klinisk bekreftelse": "2024-11-18T22:55:53.3652492+01:00",
+      "Oncology problem details dips": {
+        "Multiple primærtumorer": "Multiple primærtumorer",
+        "Beskrivelse": "nonummy consectetuer lorem sverre tincidunt sed ipsum laoreet dolor nonummy. gjøran erat laoreet tor-magne aliquam bjørn sed nonummy kjetil diam dolor øystein. tor-magne laoreet nonummy bjørn bjørn borisa øystein elit kjetil euismod adipiscing tincidunt. diam lorem martine morten aliquam lars ipsum morten elit sverre. dolor dolor nonummy sed lars euismod amet."
+      },
+      "TNM-klassifikasjon klinisk": {
+        "Primærtumor (T)": "cT0",
+        "Regionale lymfeknuter (N)": "cN1b",
+        "Fjernmetastase (M)": "cM0",
+        "Residiv (r)": "true",
+        "TNM-vurdering": "runar bjørn diam gjøran magna sverre erat amet gjøran elit runar. lars laoreet øystein morten consectetuer sed tor-magne diam. diam magna nibh amet martine aliquam gjøran kjetil adipiscing tincidunt nonummy. erat ut diam nonummy ut sed elit martine tor-magne.",
+        "TNM-utgave": "AJCC TNM Versjon 8"
+      },
+      "TNM-klassifikasjon patologi": {
+        "pTNM-vurdering": "gøran euismod sed kjetil sit adipiscing adipiscing runar morten gøran. gøran gøran laoreet tor-magne nibh ut diam. nibh borisa martine bjørn euismod adipiscing lars. adipiscing magna lorem aliquam gjøran runar bjørn kjetil. sverre ut aliquam nibh sit euismod sed runar.",
+        "Primærtumor (pT)": "pT4b",
+        "Regionale lymfeknuter (pN)": "pN1",
+        "Fjernmetastase (pM)": "pM0",
+        "Residiv (r)": "true",
+        "TNM-utgave": "AJCC TNM Versjon 8"
+      }
+    },
+    "Lymfeknutemetastase": {
+      "Regional lymfeknutemetastase": "Reginoale lymfeknutemetastase",
+      "Utredningsmetode regionale lymfeknutemetastaser": {
+        "Metode#1": "Annet",
+        "Spesifier annet": "lorem elit nonummy dolor bjørn laoreet runar tor-magne laoreet sit sed. sit nibh sit amet øystein euismod bjørn amet dolore borisa team selecta. lars sverre lorem team selecta euismod sverre sit sit borisa nonummy diam.",
+        "Funn": "Reginoale lymfeknutemetastase"
+      }
+    },
+    "Fjernmetastaser": {
+      "Fjernmetastaser": "Fjernmetastase",
+      "Utredningsmetode fjernmetastaser": {
+        "Metode#1": "Reseksjon",
+        "Spesifiser annet": "sed tor-magne borisa ipsum martine laoreet ut team selecta. tor-magne dolor amet borisa gøran borisa euismod nonummy magna.",
+        "M anatomisk lokalisajson Skjelett": {
+          "Navn på kroppssted": "Skjelett"
+        },
+        "M anatomisk lokalisajson Lever": {
+          "Navn på kroppssted": "Lever"
+        },
+        "M anatomisk lokalisajson Lunge": {
+          "Navn på kroppssted": "Lunge"
+        },
+        "M anatomisk lokalisajson CNS": {
+          "Navn på kroppssted": "CNS (sentralnervesystemet)"
+        },
+        "M anatomisk lokalisajson Fjerne lymfeknuter": {
+          "Navn på kroppssted": "dolore dolor adipiscing aliquam borisa laoreet sit dolore borisa. elit consectetuer nonummy erat sit diam nibh gjøran. martine gøran ut tincidunt ut øystein lars gøran borisa sverre. kjetil erat laoreet sverre team selecta diam consectetuer diam."
+        },
+        "M anatomisk lokalisajson Annet": {
+          "Spesifiser annet": "lars øystein elit amet gjøran amet adipiscing dolor. tor-magne borisa magna aliquam aliquam borisa erat tor-magne. diam dolore kjetil erat magna amet euismod tincidunt. gøran erat sed sit sverre amet.",
+          "Navn på kroppssted": "diam gøran tincidunt sed nibh euismod lorem. borisa elit team selecta amet bjørn sverre morten amet sed sverre."
+        },
+        "Funn": "Fjernmetastase"
+      }
+    },
+    "ECOG funksjonsstatus": {
+      "name": "ECOG funksjonsstatus",
+      "value": "1",
+      "symbol": "Symptomatisk, fullt oppegående"
+    }
+  }
+}

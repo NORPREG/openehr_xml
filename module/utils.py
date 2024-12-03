@@ -1,40 +1,5 @@
 from rich import print
 
-def find_end(d):
-	if isinstance(d, dict):
-		for key, value in d.items():
-			if isinstance(value, (dict, list)):
-				return find_end(value)
-			else:
-				return value
-
-def find(d, target_key):
-	"""Retrieve the end node value from a dictionary given a higher-level key."""
-	if isinstance(d, dict):
-		# Traverse each key-value pair in the dictionary
-		for key, value in d.items():
-			# If the current key matches the target key, and the value is not a dictionary/list, return it
-			if key == target_key:
-				if isinstance(value, (dict, list)):
-					# Recursively traverse further if value is a nested structure
-					return find_end(value)
-				else:
-					return value
-			else:
-				# Continue recursively if the key does not match
-				result = find(value, target_key)
-				if result is not None:
-					return result
-	
-	elif isinstance(d, list):
-		# Process each item in the list if the input is a list
-		for item in d:
-			result = find(item, target_key)
-			if result is not None:
-				return result
-	
-	return None  # Return None if no match is found
-
 def simplify_dict(d):
 	"""Recursively simplify and flatten a nested dictionary and lists."""
 	if isinstance(d, dict):
@@ -206,36 +171,3 @@ def convert_to_list(d):
 			d[i] = convert_to_list(d[i])
 	
 	return d
-
-def extract_datamodel(dips):
-	data_model = dict()
-
-	sa = data_model["Sosialanamnese_generell"] = dict()
-	d = dips["content"]["Sosialanamnese_generell"]
-	for k,v in d.items():
-		if k == "Barn under 18":
-			keys = [
-				"Omsorgsperson for barn under 18 år",
-				"Omsorgsperson for personer over 18 år"
-			]
-			for key in keys:
-				sa[key] = find(d, key)
-		elif "items" in v:
-			for kk, vv in v["items"].items():
-				sa[kk] = vv
-		else:
-			sa[k] = v
-
-	sa["Fritekst relatert til sosial anamnese"] = find(sa["Fritekst relatert til sosial anamnese"], "items")
-	sa["Hvilken samlivsform har pasienten?"] = find(sa["Samlivsform"], "Hvilken samlivsform har pasienten?")
-	sa["Samlivsform, tilstede?"] = find(sa["Samlivsform"], "Tilstede?")
-	del sa["Samlivsform"]
-
-	data_model["Stimulantia"] = dict()
-	st = data_model["Stimulantia"] = dict()
-	d = dips["content"]["Stimulantia"]
-
-	for k,v in d.items():
-		st[k] = v
-
-	return data_model

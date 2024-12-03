@@ -1,31 +1,33 @@
 from pprint import pprint
 import json
 import xmltodict
+from rich import print
 
 from module.dataclass import Composition
 from module.utils import (
 	simplify_dict, 
 	transform_to_header_structure, 
-	extract_datamodel,
 	remove_name_tree,
 	convert_to_list,
 	remove_comments,
 	flatten_middle_nodes
 )
 
+from module.extract_datamodel import extract_datamodel
+
 xml_file = "xml/report_example_auto.xml"
 with open(xml_file, 'r', encoding="utf-8") as file:
 	xml_data = file.read().encode("utf-8")
 	data =  xmltodict.parse(xml_data, encoding="utf-8")
 
-# c = Composition.model_validate(data["composition"])
-dips = Composition.parse_obj(data["composition"])
+# print(data)
+dips = Composition.model_validate(data["composition"])
+# dips = Composition.parse_obj(data["composition"])
 
-#datamodel = extract_datamodel(dips)
 
-# model_dump_dict = dips.model_dump(exclude_none=True)
+model_dump_dict = dips.model_dump(exclude_none=True)
 
-model_dump_dict = dips.dict(exclude_none=True)
+# model_dump_dict = dips.dict(exclude_none=True)
 
 model_dump_dict = simplify_dict(model_dump_dict)
 model_dump_dict = remove_name_tree(model_dump_dict)

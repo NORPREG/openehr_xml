@@ -1,0 +1,64 @@
+{
+  "Sosialanamnese_generell": {
+    "Utdanningsnivå": {
+      "Høyeste fullførte utdanningsnivå": "Universitet/Høyskole <4 år"
+    },
+    "Arbeidsstatus": {
+      "Yrke": {
+        "Tittel/rolle": "runar borisa adipiscing dolore aliquam lorem gøran borisa. aliquam sit borisa sverre nibh bjørn gøran ut. ipsum ipsum sed euismod øystein erat gøran.",
+        "Yrkeskategori": "borisa magna erat elit magna lorem morten team selecta gjøran. diam tincidunt tincidunt sverre kjetil kjetil dolor. lars morten ipsum euismod dolore sed dolore adipiscing. sverre adipiscing dolore sit runar laoreet gøran morten sverre erat kjetil."
+      },
+      "Arbeidsstatus": "I arbeid",
+      "Sykemelding": {
+        "Startdato": "2024-11-11T03:55:52.7823669+01:00",
+        "Varighet": "P0D"
+      }
+    },
+    "Juridisk sivilstatus": {
+      "Juridisk sivilstand": "Gift//registrert partner"
+    },
+    "Samlivsstatus": {
+      "Samlivsstatus": "Ugift/enslig"
+    },
+    "Omsorgsperson for barn under 18 år": "Ansvarlig for barn under 18 år",
+    "Omsorgsperson for personer over 18 år": "Ansvarlig for barn/andre over 18 år",
+    "Fritekst relatert til sosial anamnese": null,
+    "Hvilken samlivsform har pasienten?": "Bor alene (Inkl. alene med barn <18)",
+    "Samlivsform, tilstede?": "lorem dolore gjøran team selecta dolore amet kjetil gøran gjøran sverre diam. nibh erat euismod tincidunt sed nonummy dolore runar gjøran martine. kjetil bjørn erat gøran kjetil elit tincidunt. amet kjetil dolor lars euismod diam gøran martine euismod amet consectetuer sit runar. magna sit sit runar aliquam dolor bjørn kjetil aliquam."
+  },
+  "Stimulantia": {
+    "Sammendrag andre substanser": {
+      "Sammendrag andre substanser": "sed tincidunt bjørn dolor tincidunt magna team selecta. sit nibh erat adipiscing aliquam nibh ipsum adipiscing nibh. diam euismod sit morten borisa adipiscing nibh elit magna øystein. ipsum lars nonummy ipsum adipiscing amet magna sit aliquam."
+    },
+    "Substansanamnese#1": {
+      "Substansnavn": "bjørn morten lorem lorem euismod laoreet sit elit magna gjøran. morten kjetil runar gøran øystein øystein. nonummy ipsum magna magna euismod ipsum laoreet laoreet. sverre sit gjøran amet dolor consectetuer kjetil gøran erat.",
+      "Overordnet status": "Aldri brukt",
+      "Overordnet beskrivelse": "dolor euismod sverre adipiscing magna gøran runar diam. bjørn nibh consectetuer consectetuer aliquam gøran lars tor-magne. ipsum sit sit adipiscing kjetil diam øystein."
+    },
+    "Alkoholanamnese": {
+      "Overordnet status": "Drukket tidligere",
+      "Overordnet beskrivelse": "borisa sit team selecta dolore ut gjøran nibh magna diam diam lars. nibh kjetil gøran team selecta nibh adipiscing team selecta tincidunt runar. gjøran dolor kjetil morten martine gjøran nonummy diam tor-magne martine laoreet. nibh amet euismod martine nibh magna euismod dolor erat elit.",
+      "Per episode": {
+        "name": "Typisk bruk (alkoholenheter)",
+        "magnitude": "27",
+        "units": "1/d"
+      }
+    },
+    "Røykeanamnese": [
+      {
+        "Overordnet status": "Røyker"
+      },
+      {
+        "Overordnet beskrivelse": "adipiscing sverre erat ipsum ut tincidunt øystein aliquam dolore. nibh dolore øystein tincidunt euismod tor-magne dolor gjøran sed aliquam elit."
+      },
+      {
+        "name": "Samlet pakkeår",
+        "magnitude": "5"
+      }
+    ],
+    "Røykfri tobakkanamnese": {
+      "Overordnet status": "Aldri brukt",
+      "Overordnet beskrivelse": "kjetil amet ut martine martine gøran øystein. martine morten tor-magne magna borisa sed sed gøran borisa. ipsum kjetil elit nibh nonummy euismod øystein laoreet nonummy."
+    }
+  }
+}
