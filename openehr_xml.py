@@ -21,16 +21,10 @@ with open(xml_file, 'r', encoding="utf-8") as file:
 # c = Composition.model_validate(data["composition"])
 dips = Composition.parse_obj(data["composition"])
 
-#datamodel = extract_datamodel(dips)
-
-# model_dump_dict = dips.model_dump(exclude_none=True)
-
 model_dump_dict = dips.dict(exclude_none=True)
 
 model_dump_dict = simplify_dict(model_dump_dict)
 model_dump_dict = remove_name_tree(model_dump_dict)
-#model_dump_dict = convert_to_list(model_dump_dict)
-
 model_dump_dict = transform_to_header_structure(model_dump_dict)
 model_dump_dict = remove_comments(model_dump_dict)
 model_dump_dict = flatten_middle_nodes(model_dump_dict)
