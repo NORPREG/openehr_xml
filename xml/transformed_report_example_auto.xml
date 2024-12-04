@@ -1,0 +1,822 @@
+<openehr_document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:o="http://schemas.openehr.org/v1">
+  <metadata name="Eksport til protonregisteret" time="19.10.2024 22:55" documentId="25ef449b-5145-44a4-bebe-7f2377f837db::ehr_craft::1" templateId="export_proton_registry_v01"/>
+  <section>Sosialanamnese<openEHR-EHR-EVALUATION_education_summary_v1 nodeId="openEHR-EHR-EVALUATION.education_summary.v1" rmType="EVALUATION"><at0028 rmName="Sist oppdatert" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_DATE_TIME">
+            <value>2024-10-16T07:55:52.7773691+02:00</value>
+          </value></at0028><at0002 rmName="H&#248;yeste fullf&#248;rte utdanningsniv&#229;" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>Universitet/H&#248;yskole &lt;4 &#229;r</value>
+            <defining_code>
+              <terminology_id>
+                <value>Utdanningsniv&#229;</value>
+              </terminology_id>
+              <code_string>3</code_string>
+            </defining_code>
+          </value></at0002><at0007 rmName="Kommentar" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+            <value>dolor borisa amet gj&#248;ran elit sed tor-magne. magna tor-magne sed g&#248;ran euismod dolore diam adipiscing. lars laoreet g&#248;ran ipsum nibh g&#248;ran. martine sed tor-magne g&#248;ran aliquam adipiscing magna sverre tincidunt. ipsum nonummy magna bj&#248;rn kjetil martine borisa adipiscing nibh. </value>
+          </value></at0007></openEHR-EHR-EVALUATION_education_summary_v1><openEHR-EHR-EVALUATION_occupation_summary_v1 nodeId="openEHR-EHR-EVALUATION.occupation_summary.v1" rmType="EVALUATION"><at0009 rmName="Sist oppdatert" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_DATE_TIME">
+            <value>2024-11-15T06:55:52.7870359+01:00</value>
+          </value></at0009><openEHR-EHR-CLUSTER_occupation_record_v1 rmType="CLUSTER" rmName="Yrke"><at0005 rmName="Tittel/rolle" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+              <value>runar borisa adipiscing dolore aliquam lorem g&#248;ran borisa. aliquam sit borisa sverre nibh bj&#248;rn g&#248;ran ut. ipsum ipsum sed euismod &#248;ystein erat g&#248;ran. </value>
+            </value></at0005><at0006 rmName="Yrkeskategori" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+              <value>borisa magna erat elit magna lorem morten team selecta gj&#248;ran. diam tincidunt tincidunt sverre kjetil kjetil dolor. lars morten ipsum euismod dolore sed dolore adipiscing. sverre adipiscing dolore sit runar laoreet g&#248;ran morten sverre erat kjetil. </value>
+            </value></at0006></openEHR-EHR-CLUSTER_occupation_record_v1><at0004 rmName="Arbeidsstatus" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>I arbeid</value>
+            <defining_code>
+              <terminology_id>
+                <value>Arbeidsstatus</value>
+              </terminology_id>
+              <code_string>1</code_string>
+            </defining_code>
+          </value></at0004><openEHR-EHR-CLUSTER_sick_note_ous_v0 rmType="CLUSTER" rmName="Sykemelding"><at0004 rmName="Startdato" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_DATE_TIME">
+              <value>2024-11-11T03:55:52.7823669+01:00</value>
+            </value></at0004><at0001 rmName="Varighet" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_DURATION">
+              <value>P0D</value>
+            </value></at0001></openEHR-EHR-CLUSTER_sick_note_ous_v0><at0006 rmName="Kommentar" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+            <value>nonummy lars dolor nonummy runar martine runar nonummy. magna nibh laoreet team selecta lorem ipsum ut dolore diam aliquam runar. nonummy sed euismod sverre magna gj&#248;ran ipsum lorem adipiscing tor-magne. diam ut nibh erat kjetil martine elit. </value>
+          </value></at0006></openEHR-EHR-EVALUATION_occupation_summary_v1><openEHR-EHR-EVALUATION_social_network_v1 nodeId="openEHR-EHR-EVALUATION.social_network.v1" rmType="EVALUATION"><at0011 rmName="Sist oppdatert" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_DATE_TIME">
+            <value>2024-11-16T13:55:52.7913289+01:00</value>
+          </value></at0011><at0002 rmName="Juridisk sivilstand" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>Gift//registrert partner</value>
+            <defining_code>
+              <terminology_id>
+                <value>Juridisk_sivilstand</value>
+              </terminology_id>
+              <code_string>2</code_string>
+            </defining_code>
+          </value></at0002><at0018 rmName="Kommentar" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+            <value>tincidunt sit ut borisa elit nibh gj&#248;ran morten. magna ipsum team selecta elit kjetil adipiscing borisa elit. gj&#248;ran bj&#248;rn tor-magne runar lars aliquam lars ut martine ipsum nibh. g&#248;ran kjetil kjetil elit team selecta dolor runar aliquam amet. elit sverre lars gj&#248;ran dolor consectetuer diam adipiscing nibh. </value>
+          </value></at0018></openEHR-EHR-EVALUATION_social_network_v1><openEHR-EHR-EVALUATION_social_network_v1 nodeId="openEHR-EHR-EVALUATION.social_network.v1" rmType="EVALUATION"><at0011 rmName="Sist oppdatert" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_DATE_TIME">
+            <value>2024-10-27T12:55:52.7953449+01:00</value>
+          </value></at0011><at0002 rmName="Samlivsstatus" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>Ugift/enslig</value>
+            <defining_code>
+              <terminology_id>
+                <value>Samlivsstatus</value>
+              </terminology_id>
+              <code_string>1</code_string>
+            </defining_code>
+          </value></at0002><at0018 rmName="Kommentar" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+            <value>borisa consectetuer sit kjetil nonummy runar kjetil lorem consectetuer lars. &#248;ystein erat borisa sit dolore &#248;ystein morten. </value>
+          </value></at0018></openEHR-EHR-EVALUATION_social_network_v1><section>Barn under 18<openEHR-EHR-OBSERVATION_social_context_screening_v1 nodeId="openEHR-EHR-OBSERVATION.social_context_screening.v1" rmType="OBSERVATION"><origin>2024-11-03T05:55:52.8196268+01:00</origin><at0022 rmType="CLUSTER" rmName="Omsorgsperson for barn under 18 &#229;r"><at0004 rmName="Sosialt forhold" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+                    <value>Ansvarlig for barn under 18 &#229;r</value>
+                    <defining_code>
+                      <terminology_id>
+                        <value>no.dips.Oncology.SocialCaregiverStatus</value>
+                      </terminology_id>
+                      <code_string>AnsvarligForBarnUnder18</code_string>
+                    </defining_code>
+                  </value></at0004></at0022><at0022 rmType="CLUSTER" rmName="Omsorgsperson for personer over 18 &#229;r"><at0004 rmName="Sosialt forhold" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+                    <value>Ansvarlig for barn/andre over 18 &#229;r</value>
+                    <defining_code>
+                      <terminology_id>
+                        <value>no.dips.Oncology.SocialCaregiverStatus</value>
+                      </terminology_id>
+                      <code_string>AnsvarForAndreOver18</code_string>
+                    </defining_code>
+                  </value></at0004></at0022><at0034 rmName="Kartleggingsform&#229;l" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+                  <value>consectetuer dolor adipiscing gj&#248;ran diam borisa sverre kjetil. consectetuer tincidunt dolore lorem tor-magne team selecta runar elit erat lorem nibh lars. erat gj&#248;ran ipsum tincidunt g&#248;ran gj&#248;ran nibh ut. tincidunt sverre nonummy kjetil ipsum kjetil bj&#248;rn tincidunt. </value>
+                </value></at0034></openEHR-EHR-OBSERVATION_social_context_screening_v1></section><openEHR-EHR-OBSERVATION_progress_note_v1 nodeId="openEHR-EHR-OBSERVATION.progress_note.v1" rmType="OBSERVATION"><openEHR-EHR-CLUSTER_semistrukturert_metadata_dips_v1 rmType="CLUSTER" rmName="Semistrukturert metadata dips#1"><at0001 rmName="Klassifisering av informasjon" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+              <value>Sosial anamnese</value>
+              <defining_code>
+                <terminology_id>
+                  <value>no.dips.Freetext.Classification</value>
+                </terminology_id>
+                <code_string>01-Oncology-Sosial-anamnese</code_string>
+              </defining_code>
+            </value></at0001></openEHR-EHR-CLUSTER_semistrukturert_metadata_dips_v1><origin>2024-11-09T06:55:52.8670601+01:00</origin><at0004 rmName="Fritekst relatert til sosial anamnese" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+                <value>erat runar runar g&#248;ran sit amet nonummy &#248;ystein. martine &#248;ystein g&#248;ran magna amet lorem elit amet kjetil lars. </value>
+              </value></at0004></openEHR-EHR-OBSERVATION_progress_note_v1><section>Samlivsform<openEHR-EHR-OBSERVATION_social_context_screening_v1 nodeId="openEHR-EHR-OBSERVATION.social_context_screening.v1" rmType="OBSERVATION"><origin>2024-11-12T10:55:52.9077405+01:00</origin><at0034 rmName="Kartleggingsform&#229;l" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+                  <value>runar adipiscing elit tor-magne consectetuer ut dolore euismod tor-magne. kjetil borisa borisa team selecta morten &#248;ystein dolor lars &#248;ystein. gj&#248;ran consectetuer dolore &#248;ystein tor-magne morten. &#248;ystein martine borisa elit sit martine laoreet euismod &#248;ystein bj&#248;rn dolore. </value>
+                </value></at0034><at0022 rmType="CLUSTER" rmName="Spesifikt sosialt forhold"><at0004 rmName="Hvilken samlivsform har pasienten?" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+                    <value>Bor alene (Inkl. alene med barn &lt;18)</value>
+                    <defining_code>
+                      <terminology_id>
+                        <value>samlivsform</value>
+                      </terminology_id>
+                      <code_string>1</code_string>
+                    </defining_code>
+                  </value></at0004><at0005 rmName="Tilstede?" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+                    <value>lorem dolore gj&#248;ran team selecta dolore amet kjetil g&#248;ran gj&#248;ran sverre diam. nibh erat euismod tincidunt sed nonummy dolore runar gj&#248;ran martine. kjetil bj&#248;rn erat g&#248;ran kjetil elit tincidunt. amet kjetil dolor lars euismod diam g&#248;ran martine euismod amet consectetuer sit runar. magna sit sit runar aliquam dolor bj&#248;rn kjetil aliquam. </value>
+                  </value></at0005><at0025 rmName="Kommentar" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+                    <value>elit consectetuer team selecta dolore elit borisa ut diam diam. diam morten martine &#248;ystein kjetil aliquam tincidunt aliquam. sverre sit borisa laoreet dolor &#248;ystein. </value>
+                  </value></at0025></at0022></openEHR-EHR-OBSERVATION_social_context_screening_v1></section></section>
+  <section>Stimulantia<openEHR-EHR-EVALUATION_clinical_synopsis_v1 nodeId="openEHR-EHR-EVALUATION.clinical_synopsis.v1" rmType="EVALUATION"><openEHR-EHR-CLUSTER_semistrukturert_metadata_dips_v1 rmType="CLUSTER" rmName="Semistrukturert metadata dips#1"><at0001 rmName="Klassifisering av informasjon" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+              <value>Sammendrag andre substanser</value>
+              <defining_code>
+                <terminology_id>
+                  <value>OncologyFreeTextMetadata</value>
+                </terminology_id>
+                <code_string>MONC4</code_string>
+              </defining_code>
+            </value></at0001></openEHR-EHR-CLUSTER_semistrukturert_metadata_dips_v1><at0002 rmName="Sammendrag andre substanser" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+            <value>sed tincidunt bj&#248;rn dolor tincidunt magna team selecta. sit nibh erat adipiscing aliquam nibh ipsum adipiscing nibh. diam euismod sit morten borisa adipiscing nibh elit magna &#248;ystein. ipsum lars nonummy ipsum adipiscing amet magna sit aliquam. </value>
+          </value></at0002></openEHR-EHR-EVALUATION_clinical_synopsis_v1><openEHR-EHR-EVALUATION_substance_use_summary_v1 nodeId="openEHR-EHR-EVALUATION.substance_use_summary.v1" rmType="EVALUATION"><at0031 rmName="Sist oppdatert" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_DATE_TIME">
+            <value>2024-11-13T12:55:53.0839961+01:00</value>
+          </value></at0031><at0002 rmName="Substansnavn" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+            <value>bj&#248;rn morten lorem lorem euismod laoreet sit elit magna gj&#248;ran. morten kjetil runar g&#248;ran &#248;ystein &#248;ystein. nonummy ipsum magna magna euismod ipsum laoreet laoreet. sverre sit gj&#248;ran amet dolor consectetuer kjetil g&#248;ran erat. </value>
+          </value></at0002><at0003 rmName="Overordnet status" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>Aldri brukt</value>
+            <defining_code>
+              <terminology_id>
+                <value>local</value>
+              </terminology_id>
+              <code_string>at0004</code_string>
+            </defining_code>
+          </value></at0003><at0007 rmName="Overordnet beskrivelse" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+            <value>dolor euismod sverre adipiscing magna g&#248;ran runar diam. bj&#248;rn nibh consectetuer consectetuer aliquam g&#248;ran lars tor-magne. ipsum sit sit adipiscing kjetil diam &#248;ystein. </value>
+          </value></at0007></openEHR-EHR-EVALUATION_substance_use_summary_v1><openEHR-EHR-EVALUATION_alcohol_consumption_summary_v1 nodeId="openEHR-EHR-EVALUATION.alcohol_consumption_summary.v1" rmType="EVALUATION"><at0022 rmName="Sist oppdatert" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_DATE_TIME">
+            <value>2024-11-05T17:55:52.97477+01:00</value>
+          </value></at0022><at0089 rmName="Overordnet status" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>Drukket tidligere</value>
+            <defining_code>
+              <terminology_id>
+                <value>local</value>
+              </terminology_id>
+              <code_string>at0005</code_string>
+            </defining_code>
+          </value></at0089><at0043 rmName="Overordnet beskrivelse" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+            <value>borisa sit team selecta dolore ut gj&#248;ran nibh magna diam diam lars. nibh kjetil g&#248;ran team selecta nibh adipiscing team selecta tincidunt runar. gj&#248;ran dolor kjetil morten martine gj&#248;ran nonummy diam tor-magne martine laoreet. nibh amet euismod martine nibh magna euismod dolor erat elit. </value>
+          </value></at0043><at0064 rmType="CLUSTER" rmName="Per episode"><at0023 rmName="Typisk bruk (alkoholenheter)" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_QUANTITY">
+              <magnitude>27</magnitude>
+              <units>1/d</units>
+            </value></at0023></at0064></openEHR-EHR-EVALUATION_alcohol_consumption_summary_v1><openEHR-EHR-EVALUATION_tobacco_smoking_summary_v1 nodeId="openEHR-EHR-EVALUATION.tobacco_smoking_summary.v1" rmType="EVALUATION"><at0022 rmName="Sist oppdatert" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_DATE_TIME">
+            <value>2024-10-24T22:55:53.0111778+02:00</value>
+          </value></at0022><at0089 rmName="Overordnet status" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>R&#248;yker</value>
+            <defining_code>
+              <terminology_id>
+                <value>local</value>
+              </terminology_id>
+              <code_string>at0003</code_string>
+            </defining_code>
+          </value></at0089><at0043 rmName="Overordnet beskrivelse" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+            <value>adipiscing sverre erat ipsum ut tincidunt &#248;ystein aliquam dolore. nibh dolore &#248;ystein tincidunt euismod tor-magne dolor gj&#248;ran sed aliquam elit. </value>
+          </value></at0043><at0074 rmName="Samlet pakke&#229;r" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_COUNT">
+            <magnitude>5</magnitude>
+          </value></at0074></openEHR-EHR-EVALUATION_tobacco_smoking_summary_v1><openEHR-EHR-EVALUATION_smokeless_tobacco_summary_v1 nodeId="openEHR-EHR-EVALUATION.smokeless_tobacco_summary.v1" rmType="EVALUATION"><at0022 rmName="Sist oppdatert" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_DATE_TIME">
+            <value>2024-10-21T21:55:53.0382975+02:00</value>
+          </value></at0022><at0089 rmName="Overordnet status" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>Aldri brukt</value>
+            <defining_code>
+              <terminology_id>
+                <value>local</value>
+              </terminology_id>
+              <code_string>at0006</code_string>
+            </defining_code>
+          </value></at0089><at0043 rmName="Overordnet beskrivelse" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+            <value>kjetil amet ut martine martine g&#248;ran &#248;ystein. martine morten tor-magne magna borisa sed sed g&#248;ran borisa. ipsum kjetil elit nibh nonummy euismod &#248;ystein laoreet nonummy. </value>
+          </value></at0043></openEHR-EHR-EVALUATION_smokeless_tobacco_summary_v1></section>
+  <section>Komorbiditet<openEHR-EHR-EVALUATION_precaution_v1 nodeId="openEHR-EHR-EVALUATION.precaution.v1" rmType="EVALUATION"><at0004 rmName="Sist oppdatert" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_DATE_TIME">
+            <value>2024-11-11T12:55:53.1606058+01:00</value>
+          </value></at0004><at0003 rmName="Underlag#1" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+            <value>erat &#248;ystein erat diam lars euismod. dolor nibh lars erat adipiscing diam team selecta. </value>
+          </value></at0003><at0013 rmName="Sykdomskategori" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>Ford&#248;yelsessystemet, sykdommer (Kap.XI; K00-K93)</value>
+            <defining_code>
+              <terminology_id>
+                <value>OncologyComorbidity</value>
+              </terminology_id>
+              <code_string>XI</code_string>
+            </defining_code>
+          </value></at0013><at0002 rmName="Tilstand" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>Psykiske lidelser og atferdsforstyrrelser (Kap.V; F00-F99)</value>
+            <defining_code>
+              <terminology_id>
+                <value>OncologyComorbidity</value>
+              </terminology_id>
+              <code_string>V</code_string>
+            </defining_code>
+          </value></at0002></openEHR-EHR-EVALUATION_precaution_v1><section>ICD10<openEHR-EHR-EVALUATION_precaution_v1 nodeId="openEHR-EHR-EVALUATION.precaution.v1" rmType="EVALUATION"><at0004 rmName="Sist oppdatert" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_DATE_TIME">
+              <value>2024-10-29T13:55:53.1867315+01:00</value>
+            </value></at0004><at0002 rmName="Tilstand" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+              <value>diam tincidunt erat martine ipsum nibh lars. gj&#248;ran aliquam g&#248;ran martine magna nibh aliquam bj&#248;rn &#248;ystein diam nonummy consectetuer consectetuer. martine sit ipsum g&#248;ran sed erat runar sit nibh. diam nonummy bj&#248;rn dolore adipiscing consectetuer nonummy tincidunt diam euismod. </value>
+            </value></at0002><at0008 rmName="Kommentar" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+              <value>g&#248;ran morten lorem sit dolor laoreet borisa. nibh team selecta euismod kjetil &#248;ystein adipiscing ut tincidunt lars. aliquam aliquam lars dolore bj&#248;rn nibh dolore euismod dolor. </value>
+            </value></at0008></openEHR-EHR-EVALUATION_precaution_v1></section><openEHR-EHR-OBSERVATION_problem_screening_v1 nodeId="openEHR-EHR-OBSERVATION.problem_screening.v1" rmType="OBSERVATION"><origin>2024-11-23T17:55:53.0959859+01:00</origin><at0028 rmName="Har pasient kjent komorbiditet?" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+                <value>Ja</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>local</value>
+                  </terminology_id>
+                  <code_string>at0031</code_string>
+                </defining_code>
+              </value></at0028><at0043 rmName="Overordnet merknad komorbiditet" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+                <value>sverre erat lorem martine magna lars tincidunt magna. &#248;ystein ipsum tor-magne nonummy nibh lars laoreet laoreet aliquam. amet elit nibh erat nibh ipsum. </value>
+              </value></at0043><at0034 rmName="Kartleggingsform&#229;l" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+                <value>Kreft utredning</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>no.dips.Oncology.ReasonForProblemScreening</value>
+                  </terminology_id>
+                  <code_string>01-KreftUtreding</code_string>
+                </defining_code>
+              </value></at0034></openEHR-EHR-OBSERVATION_problem_screening_v1><openEHR-EHR-OBSERVATION_charlson_comorbidity_index_v2 nodeId="openEHR-EHR-OBSERVATION.charlson_comorbidity_index.v2" rmType="OBSERVATION"><origin>2024-10-25T03:55:53.1988524+02:00</origin><at0061 rmName="Aldersgruppe" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+                <value>1</value>
+                <symbol>
+                  <value>50-59 &#229;r</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0063</code_string>
+                  </defining_code>
+                </symbol>
+              </value></at0061><at0012 rmName="Myokardinfarkt" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0013</code_string>
+                  </defining_code>
+                </symbol>
+              </value></at0012><at0009 rmName="Kronisk hjertesvikt" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0010</code_string>
+                  </defining_code>
+                </symbol>
+              </value></at0009><at0006 rmName="Perifere vaskul&#230;re sykdommer" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0007</code_string>
+                  </defining_code>
+                </symbol>
+              </value></at0006><at0015 rmName="Cerebrovaskul&#230;r hendelse" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0016</code_string>
+                  </defining_code>
+                </symbol>
+              </value></at0015><at0018 rmName="Demens" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0019</code_string>
+                  </defining_code>
+                </symbol>
+              </value></at0018><at0021 rmName="Kronisk lungesykdom" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0022</code_string>
+                  </defining_code>
+                </symbol>
+              </value></at0021><at0024 rmName="Ulcussykdom" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0025</code_string>
+                  </defining_code>
+                </symbol>
+              </value></at0024><at0027 rmName="Leversykdom" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Ingen</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0028</code_string>
+                  </defining_code>
+                </symbol>
+              </value></at0027><at0030 rmName="Bindevevssykdom" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0031</code_string>
+                  </defining_code>
+                </symbol>
+              </value></at0030><at0033 rmName="Diabetes" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Ingen eller diettkontrollert</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0034</code_string>
+                  </defining_code>
+                </symbol>
+              </value></at0033><at0036 rmName="Hemiplegi" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0037</code_string>
+                  </defining_code>
+                </symbol>
+              </value></at0036><at0039 rmName="Moderat til alvorlig nyresykdom" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0040</code_string>
+                  </defining_code>
+                </symbol>
+              </value></at0039><at0045 rmName="Solid svulst" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Ingen</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0046</code_string>
+                  </defining_code>
+                </symbol>
+              </value></at0045><at0047 rmName="Leukemi" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0049</code_string>
+                  </defining_code>
+                </symbol>
+              </value></at0047><at0050 rmName="Lymfom" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0052</code_string>
+                  </defining_code>
+                </symbol>
+              </value></at0050><at0060 rmName="AIDS" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+                <value>0</value>
+                <symbol>
+                  <value>Nei</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0070</code_string>
+                  </defining_code>
+                </symbol>
+              </value></at0060><at0072 rmName="CCI totalsk&#229;r" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_COUNT">
+                <magnitude>82</magnitude>
+              </value></at0072><at0073 rmName="Estimert overlevelse etter 10 &#229;r" rmType="ELEMENT"><value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_QUANTITY">
+                <magnitude>82</magnitude>
+                <units>%</units>
+              </value></at0073></openEHR-EHR-OBSERVATION_charlson_comorbidity_index_v2></section>
+  <openEHR-EHR-EVALUATION_problem_diagnosis_v1 nodeId="openEHR-EHR-EVALUATION.problem_diagnosis.v1" rmType="EVALUATION">
+    <at0070 rmName="Sist oppdatert" rmType="ELEMENT">
+      <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_DATE_TIME">
+          <value>2024-11-09T23:55:53.3094189+01:00</value>
+        </value>
+    </at0070>
+    <openEHR-EHR-CLUSTER_ctcae_v1 rmType="CLUSTER" rmName="Common Terminology Criteria for Adverse Events (CTCAE)#1">
+      <at0001 rmName="Kategori" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>Blood and lymphatic system disorders</value>
+            <defining_code>
+              <terminology_id>
+                <value>MEDRA</value>
+              </terminology_id>
+              <code_string>1001</code_string>
+            </defining_code>
+          </value>
+      </at0001>
+      <at0002 rmName="Term" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>X</value>
+            <defining_code>
+              <terminology_id>
+                <value>MEDRA</value>
+              </terminology_id>
+              <code_string>X</code_string>
+            </defining_code>
+          </value>
+      </at0002>
+      <at0003 rmName="Kategori for grad" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+            <value>0</value>
+            <symbol>
+              <value>Grad 0</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0021</code_string>
+              </defining_code>
+            </symbol>
+          </value>
+      </at0003>
+      <at0020 rmName="Beskrivelse av grad" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>A</value>
+            <defining_code>
+              <terminology_id>
+                <value>CTCAETERM</value>
+              </terminology_id>
+              <code_string>A</code_string>
+            </defining_code>
+          </value>
+      </at0020>
+      <at0009 rmName="CTCAE- versjon" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+            <value>team selecta diam gj&#248;ran g&#248;ran laoreet g&#248;ran aliquam dolore tor-magne sed. sverre bj&#248;rn &#248;ystein elit g&#248;ran &#248;ystein. tincidunt erat lars diam ut dolore lorem. tor-magne diam laoreet laoreet aliquam sit. aliquam sed aliquam borisa lorem lars lorem amet amet sverre laoreet. </value>
+          </value>
+      </at0009>
+    </openEHR-EHR-CLUSTER_ctcae_v1>
+    <at0002 rmName="Problem/diagnosenavn" rmType="ELEMENT">
+      <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+          <value>Complication of procedure</value>
+          <defining_code>
+            <terminology_id>
+              <value>SNOMED-CT</value>
+            </terminology_id>
+            <code_string>116224001</code_string>
+          </defining_code>
+        </value>
+    </at0002>
+  </openEHR-EHR-EVALUATION_problem_diagnosis_v1>
+  <openEHR-EHR-EVALUATION_problem_diagnosis_v1 nodeId="openEHR-EHR-EVALUATION.problem_diagnosis.v1" rmType="EVALUATION">
+    <at0070 rmName="Sist oppdatert" rmType="ELEMENT">
+      <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_DATE_TIME">
+          <value>2024-11-19T15:55:53.491875+01:00</value>
+        </value>
+    </at0070>
+    <at0069 rmName="Kommentar diagnose/TNM" rmType="ELEMENT">
+      <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+          <value>borisa dolor sit dolor &#248;ystein magna. &#248;ystein diam consectetuer sverre euismod dolore erat. laoreet lorem martine gj&#248;ran g&#248;ran magna tor-magne euismod consectetuer. bj&#248;rn runar kjetil amet magna dolore ut morten dolore magna. martine ut erat lars lorem diam ut lorem ipsum. </value>
+        </value>
+    </at0069>
+    <at0002 rmName="Problem/diagnosenavn" rmType="ELEMENT">
+      <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+          <value>bj&#248;rn amet euismod euismod lorem diam gj&#248;ran amet dolor tor-magne tincidunt ut. team selecta nibh tincidunt nonummy elit ipsum ipsum borisa. consectetuer &#248;ystein consectetuer nibh dolore tincidunt aliquam dolor. sed ipsum aliquam borisa laoreet team selecta ipsum. </value>
+        </value>
+    </at0002>
+    <at0012 rmName="Anatomisk lokalisering" rmType="ELEMENT">
+      <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+          <value>Begge</value>
+          <defining_code>
+            <terminology_id>
+              <value>SNOMED-CT</value>
+            </terminology_id>
+            <code_string>51440002</code_string>
+          </defining_code>
+        </value>
+    </at0012>
+    <at0003 rmName="Dato/tid for klinisk bekreftelse" rmType="ELEMENT">
+      <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_DATE_TIME">
+          <value>2024-11-18T22:55:53.3652492+01:00</value>
+        </value>
+    </at0003>
+    <openEHR-EHR-CLUSTER_oncology_problem_details_dips_v1 rmType="CLUSTER" rmName="Oncology problem details dips">
+      <at0001 rmName="Multiple prim&#230;rtumorer" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>Multiple prim&#230;rtumorer</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>109359008</code_string>
+            </defining_code>
+          </value>
+      </at0001>
+      <at0002 rmName="Beskrivelse" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+            <value>nonummy consectetuer lorem sverre tincidunt sed ipsum laoreet dolor nonummy. gj&#248;ran erat laoreet tor-magne aliquam bj&#248;rn sed nonummy kjetil diam dolor &#248;ystein. tor-magne laoreet nonummy bj&#248;rn bj&#248;rn borisa &#248;ystein elit kjetil euismod adipiscing tincidunt. diam lorem martine morten aliquam lars ipsum morten elit sverre. dolor dolor nonummy sed lars euismod amet. </value>
+          </value>
+      </at0002>
+    </openEHR-EHR-CLUSTER_oncology_problem_details_dips_v1>
+    <openEHR-EHR-CLUSTER_tnm_v1 rmType="CLUSTER" rmName="TNM-klassifikasjon klinisk">
+      <at0003 rmName="Prim&#230;rtumor (T)" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>cT0</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>1228882005</code_string>
+            </defining_code>
+          </value>
+      </at0003>
+      <at0004 rmName="Regionale lymfeknuter (N)" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>cN1b</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>1229976000</code_string>
+            </defining_code>
+          </value>
+      </at0004>
+      <at0005 rmName="Fjernmetastase (M)" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>cM0</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>1229901006</code_string>
+            </defining_code>
+          </value>
+      </at0005>
+      <at0027 rmName="Residiv (r)" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_BOOLEAN">
+            <value>true</value>
+          </value>
+      </at0027>
+      <at0030 rmName="TNM-vurdering" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+            <value>runar bj&#248;rn diam gj&#248;ran magna sverre erat amet gj&#248;ran elit runar. lars laoreet &#248;ystein morten consectetuer sed tor-magne diam. diam magna nibh amet martine aliquam gj&#248;ran kjetil adipiscing tincidunt nonummy. erat ut diam nonummy ut sed elit martine tor-magne. </value>
+          </value>
+      </at0030>
+      <at0032 rmName="TNM-utgave" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>AJCC TNM Versjon 8</value>
+            <defining_code>
+              <terminology_id>
+                <value>AJCC-TNM-VERSION</value>
+              </terminology_id>
+              <code_string>Edition8</code_string>
+            </defining_code>
+          </value>
+      </at0032>
+    </openEHR-EHR-CLUSTER_tnm_v1>
+    <openEHR-EHR-CLUSTER_tnm-pathological_v1 rmType="CLUSTER" rmName="TNM-klassifikasjon patologi">
+      <at0030_1 rmName="pTNM-vurdering" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+            <value>g&#248;ran euismod sed kjetil sit adipiscing adipiscing runar morten g&#248;ran. g&#248;ran g&#248;ran laoreet tor-magne nibh ut diam. nibh borisa martine bj&#248;rn euismod adipiscing lars. adipiscing magna lorem aliquam gj&#248;ran runar bj&#248;rn kjetil. sverre ut aliquam nibh sit euismod sed runar. </value>
+          </value>
+      </at0030_1>
+      <at0003_1 rmName="Prim&#230;rtumor (pT)" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>pT4b</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>1229866004</code_string>
+            </defining_code>
+          </value>
+      </at0003_1>
+      <at0004_1 rmName="Regionale lymfeknuter (pN)" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>pN1</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>1229951001</code_string>
+            </defining_code>
+          </value>
+      </at0004_1>
+      <at0005_1 rmName="Fjernmetastase (pM)" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>pM0</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>30893008</code_string>
+            </defining_code>
+          </value>
+      </at0005_1>
+      <at0027 rmName="Residiv (r)" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_BOOLEAN">
+            <value>true</value>
+          </value>
+      </at0027>
+      <at0032 rmName="TNM-utgave" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>AJCC TNM Versjon 8</value>
+            <defining_code>
+              <terminology_id>
+                <value>AJCC-TNM-VERSION</value>
+              </terminology_id>
+              <code_string>Edition8</code_string>
+            </defining_code>
+          </value>
+      </at0032>
+    </openEHR-EHR-CLUSTER_tnm-pathological_v1>
+  </openEHR-EHR-EVALUATION_problem_diagnosis_v1>
+  <openEHR-EHR-EVALUATION_problem_diagnosis_v1 nodeId="openEHR-EHR-EVALUATION.problem_diagnosis.v1" rmType="EVALUATION">
+    <at0070 rmName="Sist oppdatert" rmType="ELEMENT">
+      <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_DATE_TIME">
+          <value>2024-11-25T09:55:53.5361544+01:00</value>
+        </value>
+    </at0070>
+    <at0002 rmName="Regional lymfeknutemetastase" rmType="ELEMENT">
+      <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+          <value>Reginoale lymfeknutemetastase</value>
+          <defining_code>
+            <terminology_id>
+              <value>SNOMED-CT</value>
+            </terminology_id>
+            <code_string>399374009</code_string>
+          </defining_code>
+        </value>
+    </at0002>
+    <openEHR-EHR-CLUSTER_clinical_evidence_v1 rmType="CLUSTER" rmName="Utredningsmetode regionale lymfeknutemetastaser">
+      <at0022 rmName="Metode#1" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>Annet</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>74964007</code_string>
+            </defining_code>
+          </value>
+      </at0022>
+      <at0001 rmName="Spesifier annet" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+            <value>lorem elit nonummy dolor bj&#248;rn laoreet runar tor-magne laoreet sit sed. sit nibh sit amet &#248;ystein euismod bj&#248;rn amet dolore borisa team selecta. lars sverre lorem team selecta euismod sverre sit sit borisa nonummy diam. </value>
+          </value>
+      </at0001>
+      <at0003 rmName="Funn" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>Reginoale lymfeknutemetastase</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>399374009</code_string>
+            </defining_code>
+          </value>
+      </at0003>
+    </openEHR-EHR-CLUSTER_clinical_evidence_v1>
+  </openEHR-EHR-EVALUATION_problem_diagnosis_v1>
+  <openEHR-EHR-EVALUATION_problem_diagnosis_v1 nodeId="openEHR-EHR-EVALUATION.problem_diagnosis.v1" rmType="EVALUATION">
+    <at0070 rmName="Sist oppdatert" rmType="ELEMENT">
+      <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_DATE_TIME">
+          <value>2024-10-29T11:55:53.6154212+01:00</value>
+        </value>
+    </at0070>
+    <at0002 rmName="Fjernmetastaser" rmType="ELEMENT">
+      <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+          <value>Fjernmetastase</value>
+          <defining_code>
+            <terminology_id>
+              <value>SNOMED-CT</value>
+            </terminology_id>
+            <code_string>399409002</code_string>
+          </defining_code>
+        </value>
+    </at0002>
+    <openEHR-EHR-CLUSTER_clinical_evidence_v1 rmType="CLUSTER" rmName="Utredningsmetode fjernmetastaser">
+      <at0022 rmName="Metode#1" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>Reseksjon</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>65801008</code_string>
+            </defining_code>
+          </value>
+      </at0022>
+      <at0001 rmName="Spesifiser annet" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+            <value>sed tor-magne borisa ipsum martine laoreet ut team selecta. tor-magne dolor amet borisa g&#248;ran borisa euismod nonummy magna. </value>
+          </value>
+      </at0001>
+      <openEHR-EHR-CLUSTER_anatomical_location_v1 rmType="CLUSTER" rmName="M anatomisk lokalisajson Skjelett">
+        <at0001 rmName="Navn p&#229; kroppssted" rmType="ELEMENT">
+          <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+              <value>Skjelett</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>113192009</code_string>
+              </defining_code>
+            </value>
+        </at0001>
+      </openEHR-EHR-CLUSTER_anatomical_location_v1>
+      <openEHR-EHR-CLUSTER_anatomical_location_v1 rmType="CLUSTER" rmName="M anatomisk lokalisajson Lever">
+        <at0001 rmName="Navn p&#229; kroppssted" rmType="ELEMENT">
+          <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+              <value>Lever</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>10200004</code_string>
+              </defining_code>
+            </value>
+        </at0001>
+      </openEHR-EHR-CLUSTER_anatomical_location_v1>
+      <openEHR-EHR-CLUSTER_anatomical_location_v1 rmType="CLUSTER" rmName="M anatomisk lokalisajson Lunge">
+        <at0001 rmName="Navn p&#229; kroppssted" rmType="ELEMENT">
+          <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+              <value>Lunge</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>39607008</code_string>
+              </defining_code>
+            </value>
+        </at0001>
+      </openEHR-EHR-CLUSTER_anatomical_location_v1>
+      <openEHR-EHR-CLUSTER_anatomical_location_v1 rmType="CLUSTER" rmName="M anatomisk lokalisajson CNS">
+        <at0001 rmName="Navn p&#229; kroppssted" rmType="ELEMENT">
+          <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+              <value>CNS (sentralnervesystemet)</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>21483005</code_string>
+              </defining_code>
+            </value>
+        </at0001>
+      </openEHR-EHR-CLUSTER_anatomical_location_v1>
+      <openEHR-EHR-CLUSTER_anatomical_location_v1 rmType="CLUSTER" rmName="M anatomisk lokalisajson Fjerne lymfeknuter">
+        <at0001 rmName="Navn p&#229; kroppssted" rmType="ELEMENT">
+          <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+              <value>dolore dolor adipiscing aliquam borisa laoreet sit dolore borisa. elit consectetuer nonummy erat sit diam nibh gj&#248;ran. martine g&#248;ran ut tincidunt ut &#248;ystein lars g&#248;ran borisa sverre. kjetil erat laoreet sverre team selecta diam consectetuer diam. </value>
+            </value>
+        </at0001>
+      </openEHR-EHR-CLUSTER_anatomical_location_v1>
+      <openEHR-EHR-CLUSTER_anatomical_location_v1 rmType="CLUSTER" rmName="M anatomisk lokalisajson Annet">
+        <at0023 rmName="Spesifiser annet" rmType="ELEMENT">
+          <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+              <value>lars &#248;ystein elit amet gj&#248;ran amet adipiscing dolor. tor-magne borisa magna aliquam aliquam borisa erat tor-magne. diam dolore kjetil erat magna amet euismod tincidunt. g&#248;ran erat sed sit sverre amet. </value>
+            </value>
+        </at0023>
+        <at0001 rmName="Navn p&#229; kroppssted" rmType="ELEMENT">
+          <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_TEXT">
+              <value>diam g&#248;ran tincidunt sed nibh euismod lorem. borisa elit team selecta amet bj&#248;rn sverre morten amet sed sverre. </value>
+            </value>
+        </at0001>
+      </openEHR-EHR-CLUSTER_anatomical_location_v1>
+      <at0003 rmName="Funn" rmType="ELEMENT">
+        <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_CODED_TEXT">
+            <value>Fjernmetastase</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>399409002</code_string>
+            </defining_code>
+          </value>
+      </at0003>
+    </openEHR-EHR-CLUSTER_clinical_evidence_v1>
+  </openEHR-EHR-EVALUATION_problem_diagnosis_v1>
+  <openEHR-EHR-OBSERVATION_ecog_v1 nodeId="openEHR-EHR-OBSERVATION.ecog.v1" rmType="OBSERVATION">
+    <origin>2024-11-15T22:55:53.3224356+01:00</origin>
+    <at0004 rmName="ECOG funksjonsstatus" rmType="ELEMENT">
+      <value xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1" xsi:type="DV_ORDINAL">
+              <value>1</value>
+              <symbol>
+                <value>Symptomatisk, fullt oppeg&#229;ende</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>local</value>
+                  </terminology_id>
+                  <code_string>at0006</code_string>
+                </defining_code>
+              </symbol>
+            </value>
+    </at0004>
+  </openEHR-EHR-OBSERVATION_ecog_v1>
+</openehr_document>
