@@ -64,23 +64,23 @@ def find(d, target_key):
 
 def extract_datamodel(dips):
 	data_model = dict()
-	d = dips["content"]["Sosialanamnese_generell"]
+	d = dips["content"]
 
-	arb = d.get("Arbeidsstatus", {})
-
-	sosialt = {
-		"Høyeste fullførte utdanningsnivå": find(d, "Høyeste fullførte utdanningsnivå"),
-		"Arbeidsstatus": find(d, "Arbeidsstatus"),
-		"Yrke tittel/rolle": find(d, "Tittel/rolle"),
-		"Yrkeskategori": find(d, "Yrkeskategori"),
+	soc = d.get("Sosialanamnese_generell")
+	arb = soc.get("Arbeidsstatus", {})
+	social = {
+		"Høyeste fullførte utdanningsnivå": find(soc, "Høyeste fullførte utdanningsnivå"),
+		"Arbeidsstatus": find(soc, "Arbeidsstatus"),
+		"Yrke tittel/rolle": find(soc, "Tittel/rolle"),
+		"Yrkeskategori": find(soc, "Yrkeskategori"),
 		"Sykemelding startdato": find(arb.get("Sykemelding", {}), "Startdato"),
 		"Sykemelding varighet": find(arb.get("Sykemelding", {}), "Varighet"),
-		"Juridisk sivilstatus": find(d, "Juridisk sivilstand"),
-		"Samlivsstatus": find(d, "Samlivsstatus"),
-		"Hvilken samlivsform har pasienten?": find(d, "Hvilken samlivsform har pasienten?"),
-		"Samlivsform, tilstede?": find(d, "Tilstede?")
+		"Juridisk sivilstatus": find(soc, "Juridisk sivilstand"),
+		"Samlivsstatus": find(soc, "Samlivsstatus"),
+		"Hvilken samlivsform har pasienten?": find(soc, "Hvilken samlivsform har pasienten?"),
+		"Samlivsform, tilstede?": find(soc, "Tilstede?")
 	}
-
+	
 	stimulantia = {
 		"Alkoholanamnese status": find(d.get("Stimulantia", {}).get("Alkoholanamnese"), "Overordnet status"),
 		"Alkoholanamnese typisk bruk verdi": find(d.get("Stimulantia", {}).get("Alkoholanamnese"), "magnitude"),
@@ -91,12 +91,23 @@ def extract_datamodel(dips):
 		"Røykfri tobakkanamnese status": find(d.get("Stimulantia", {}).get("Røykfri tobakkanamnese"), "Overordnet status")	
 	}
 
-	komorbiditet = {
+	comorb_keys = [k for k in d.get("Komorbiditet_utredning", {}) if "Forholdsregel" in k]
+
+	comorbidity = {
 		"Har pasienten kjent komorbiditet?": find(d, "Har pasient kjent komorbiditet?"),
-		# Legg til flere når jeg ser hvordan det er modellert
+
+		# Fixme. Forholdsregel#n henger ikke sammen mellom kategori og ICD10, det antok jeg
+
+		"items": [
+			{
+				"Komorbiditet kategori": d.get("Komorbiditet_utredning", {}).get(k, {}).get("Sykdomskategori"),
+				"Komorbiditet tilstand": d.get("Komorbiditet_utredning", {}).get(k, {}).get("Tilstand"),
+				"ICD10 tilstand": d.get("Komorbiditet_utredning", {}).get("ICD10", {}).get(k, {}).get("Tilstand"),
+			} for k in comorb_keys
+		]
 	}
 
-	seneffekter = list()
+	late_effects = list()
 	for k,v in d.get("Problem/diagnose", {}).items():
 		if not "CTCAE" in k:
 			continue
@@ -110,13 +121,13 @@ def extract_datamodel(dips):
 			"CTCAE versjon": find(v, "CTCAE- versjon")
 		}
 
-		seneffekter.append(ctcae)
+		late_effects.append(ctcae)
 
 	p = d.get("Problem/diagnose (inkl TNM)", {})
-	pTNM = p.get("TNM-klassifikasjon klinisk", {})
-	cTNM = p.get("TNM-klassifikasjon pataologi", {})
+	cTNM = p.get("TNM-klassifikasjon klinisk", {})
+	pTNM = p.get("TNM-klassifikasjon patologi", {})
 
-	primaer_diagnose = {
+	primary_diagnosis = {
 		"diagnose": find(p, "Problem/diagnosenavn"),
 		"Anatomisk lokalisering": find(p, "Anatomisk lokalisering"),
 		"Dato/tid for klinisk bekreftelse": find(p, "Dato/tid for klinisk bekreftelse"),
@@ -127,55 +138,44 @@ def extract_datamodel(dips):
 		"Klinisk residiv": find(cTNM, "Residiv (r)"),
 		"Klinisk TNM-vurdering": find(cTNM, "TNM-vurdering"),
 		"Klinisk TNM-utgave": find(cTNM, "TNM-utgave"),
-		"Patologisk T": find(cTNM, "Primærtumor (pT)"),
-		"Patologisk N": find(cTNM, "Regionale lymfeknuter (pN)"),
-		"Patologisk M": find(cTNM, "Fjernmetastase (pM)"),
-		"Patologisk residiv": find(cTNM, "Residiv (r)"),
-		"Patologisk TNM-vurdering": find(cTNM, "pTNM-vurdering"),
-		"Patologisk TNM-utgave": find(cTNM, "TNM-utgave"),
+		"Patologisk T": find(pTNM, "Primærtumor (pT)"),
+		"Patologisk N": find(pTNM, "Regionale lymfeknuter (pN)"),
+		"Patologisk M": find(pTNM, "Fjernmetastase (pM)"),
+		"Patologisk residiv": find(pTNM, "Residiv (r)"),
+		"Patologisk TNM-vurdering": find(pTNM, "pTNM-vurdering"),
+		"Patologisk TNM-utgave": find(pTNM, "TNM-utgave"),
 	}
 
 	utr = d.get("Lymfeknutemetastase", {}).get("Utredningsmetode regionale lymfeknutemetastaser", {})
-	lymfeknutemetastase = {
+	lymph_node_metastases = {
 		"Regional lymfeknutemetastase": find(d, "Regional lymfeknutemetastase"),
 		"Metode": [v for k,v in utr.items() if "Metode" in k],
 		"Funn": find(utr, "Funn")
 	}
 
-	data_model["sosialt"] = sosialt
+	utr = d.get("Fjernmetastaser", {}).get("Utredningsmetode fjernmetastaser", {})
+	distant_metastases = {
+		"Fjernmetastaser": find(d, "Fjernmetastaser"),
+		"Funn": find(utr, "Funn"),
+		"Metode": [v for k,v in utr.items() if "Metode" in k],
+		"Anatomisk lokalisasjon": [v.get("Navn på kroppssted") for k,v in utr.items() if "anatomisk lokalisajson" in k],
+	}
+
+	ecog = {
+		"ECOG verdi": find(d.get("ECOG funksjonsstatus", {}), "value"),
+		"ECOG symbol": find(d.get("ECOG funksjonsstatus", {}), "symbol"),
+		"ECOG tidspunkt": find(d.get("ECOG funksjonsstatus", {}), "time"),
+	}
+
+	data_model["sosialt"] = social
 	data_model["stimulantia"] = stimulantia
-	data_model["komorbiditet"] = komorbiditet
-	data_model["seneffekter"] = seneffekter
-	data_model["primærdiagnose"] = primaer_diagnose
-
-
-	sa = data_model["Sosialanamnese_generell"] = dict()
-	d = dips["content"]["Sosialanamnese_generell"]
-	for k,v in d.items():
-		if k == "Barn under 18":
-			keys = [
-				"Omsorgsperson for barn under 18 år",
-				"Omsorgsperson for personer over 18 år"
-			]
-			for key in keys:
-				sa[key] = find(d, key)
-		elif "items" in v:
-			for kk, vv in v["items"].items():
-				sa[kk] = vv
-		else:
-			sa[k] = v
-
-	sa["Fritekst relatert til sosial anamnese"] = find(sa["Fritekst relatert til sosial anamnese"], "items")
-	sa["Hvilken samlivsform har pasienten?"] = find(sa["Samlivsform"], "Hvilken samlivsform har pasienten?")
-	sa["Samlivsform, tilstede?"] = find(sa["Samlivsform"], "Tilstede?")
-	del sa["Samlivsform"]
-
-	data_model["Stimulantia"] = dict()
-	st = data_model["Stimulantia"] = dict()
-	d = dips["content"]["Stimulantia"]
-
-	for k,v in d.items():
-		st[k] = v
+	data_model["komorbiditet"] = comorbidity
+	data_model["seneffekter"] = late_effects
+	data_model["primærdiagnose"] = primary_diagnosis
+	data_model["lymeknutemetastase"] = lymph_node_metastases
+	data_model["fjernmetastaser"] = distant_metastases
+	data_model["ECOG"] = ecog
 
 	return data_model
+
 

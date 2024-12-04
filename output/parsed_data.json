@@ -38,25 +38,37 @@
       },
       "Barn under 18": {
         "Kartleggingspørsmål om sosiale forhold barn under 18": {
-          "Omsorgsperson for barn under 18 år": {
-            "Sosialt forhold": "Ansvarlig for barn under 18 år"
+          "items": {
+            "Omsorgsperson for barn under 18 år": {
+              "Sosialt forhold": "Ansvarlig for barn under 18 år"
+            },
+            "Omsorgsperson for personer over 18 år": {
+              "Sosialt forhold": "Ansvarlig for barn/andre over 18 år"
+            },
+            "Kartleggingsformål": "consectetuer dolor adipiscing gjøran diam borisa sverre kjetil. consectetuer tincidunt dolore lorem tor-magne team selecta runar elit erat lorem nibh lars. erat gjøran ipsum tincidunt gøran gjøran nibh ut. tincidunt sverre nonummy kjetil ipsum kjetil bjørn tincidunt."
           },
-          "Omsorgsperson for personer over 18 år": {
-            "Sosialt forhold": "Ansvarlig for barn/andre over 18 år"
-          },
-          "Kartleggingsformål": "consectetuer dolor adipiscing gjøran diam borisa sverre kjetil. consectetuer tincidunt dolore lorem tor-magne team selecta runar elit erat lorem nibh lars. erat gjøran ipsum tincidunt gøran gjøran nibh ut. tincidunt sverre nonummy kjetil ipsum kjetil bjørn tincidunt."
+          "origin": "2024-11-03T05:55:52.8196268+01:00",
+          "time": "2024-11-03T08:55:52.8540442+01:00"
         }
       },
       "Fritekst relatert til sosial anamnese": {
-        "Fritekst relatert til sosial anamnese": "erat runar runar gøran sit amet nonummy øystein. martine øystein gøran magna amet lorem elit amet kjetil lars."
+        "items": {
+          "Fritekst relatert til sosial anamnese": "erat runar runar gøran sit amet nonummy øystein. martine øystein gøran magna amet lorem elit amet kjetil lars."
+        },
+        "origin": "2024-11-09T06:55:52.8670601+01:00",
+        "time": "2024-11-09T05:55:52.8870559+01:00"
       },
       "Samlivsform": {
         "Kartleggingspørsmål om sosiale forhold samlivsform": {
-          "Kartleggingsformål": "runar adipiscing elit tor-magne consectetuer ut dolore euismod tor-magne. kjetil borisa borisa team selecta morten øystein dolor lars øystein. gjøran consectetuer dolore øystein tor-magne morten. øystein martine borisa elit sit martine laoreet euismod øystein bjørn dolore.",
-          "Spesifikt sosialt forhold": {
-            "Hvilken samlivsform har pasienten?": "Bor alene (Inkl. alene med barn <18)",
-            "Tilstede?": "lorem dolore gjøran team selecta dolore amet kjetil gøran gjøran sverre diam. nibh erat euismod tincidunt sed nonummy dolore runar gjøran martine. kjetil bjørn erat gøran kjetil elit tincidunt. amet kjetil dolor lars euismod diam gøran martine euismod amet consectetuer sit runar. magna sit sit runar aliquam dolor bjørn kjetil aliquam."
-          }
+          "items": {
+            "Kartleggingsformål": "runar adipiscing elit tor-magne consectetuer ut dolore euismod tor-magne. kjetil borisa borisa team selecta morten øystein dolor lars øystein. gjøran consectetuer dolore øystein tor-magne morten. øystein martine borisa elit sit martine laoreet euismod øystein bjørn dolore.",
+            "Spesifikt sosialt forhold": {
+              "Hvilken samlivsform har pasienten?": "Bor alene (Inkl. alene med barn <18)",
+              "Tilstede?": "lorem dolore gjøran team selecta dolore amet kjetil gøran gjøran sverre diam. nibh erat euismod tincidunt sed nonummy dolore runar gjøran martine. kjetil bjørn erat gøran kjetil elit tincidunt. amet kjetil dolor lars euismod diam gøran martine euismod amet consectetuer sit runar. magna sit sit runar aliquam dolor bjørn kjetil aliquam."
+            }
+          },
+          "origin": "2024-11-12T10:55:52.9077405+01:00",
+          "time": "2024-11-17T08:55:52.9437886+01:00"
         }
       }
     },
@@ -107,106 +119,114 @@
         }
       },
       "Kartleggingsspørsmål om problemer eller diagnoser": {
-        "Har pasient kjent komorbiditet?": "Ja",
-        "Overordnet merknad komorbiditet": "sverre erat lorem martine magna lars tincidunt magna. øystein ipsum tor-magne nonummy nibh lars laoreet laoreet aliquam. amet elit nibh erat nibh ipsum.",
-        "Kartleggingsformål": "Kreft utredning"
+        "items": {
+          "Har pasient kjent komorbiditet?": "Ja",
+          "Overordnet merknad komorbiditet": "sverre erat lorem martine magna lars tincidunt magna. øystein ipsum tor-magne nonummy nibh lars laoreet laoreet aliquam. amet elit nibh erat nibh ipsum.",
+          "Kartleggingsformål": "Kreft utredning"
+        },
+        "origin": "2024-11-23T17:55:53.0959859+01:00",
+        "time": "2024-10-31T18:55:53.128536+01:00"
       },
-      "Charlson Comorbidity Index (CCI)": [
-        {
-          "name": "Aldersgruppe",
-          "value": "1",
-          "symbol": "50-59 år"
-        },
-        {
-          "name": "Myokardinfarkt",
-          "value": "0",
-          "symbol": "Nei"
-        },
-        {
-          "name": "Kronisk hjertesvikt",
-          "value": "0",
-          "symbol": "Nei"
-        },
-        {
-          "name": "Perifere vaskulære sykdommer",
-          "value": "0",
-          "symbol": "Nei"
-        },
-        {
-          "name": "Cerebrovaskulær hendelse",
-          "value": "0",
-          "symbol": "Nei"
-        },
-        {
-          "name": "Demens",
-          "value": "0",
-          "symbol": "Nei"
-        },
-        {
-          "name": "Kronisk lungesykdom",
-          "value": "0",
-          "symbol": "Nei"
-        },
-        {
-          "name": "Ulcussykdom",
-          "value": "0",
-          "symbol": "Nei"
-        },
-        {
-          "name": "Leversykdom",
-          "value": "0",
-          "symbol": "Ingen"
-        },
-        {
-          "name": "Bindevevssykdom",
-          "value": "0",
-          "symbol": "Nei"
-        },
-        {
-          "name": "Diabetes",
-          "value": "0",
-          "symbol": "Ingen eller diettkontrollert"
-        },
-        {
-          "name": "Hemiplegi",
-          "value": "0",
-          "symbol": "Nei"
-        },
-        {
-          "name": "Moderat til alvorlig nyresykdom",
-          "value": "0",
-          "symbol": "Nei"
-        },
-        {
-          "name": "Solid svulst",
-          "value": "0",
-          "symbol": "Ingen"
-        },
-        {
-          "name": "Leukemi",
-          "value": "0",
-          "symbol": "Nei"
-        },
-        {
-          "name": "Lymfom",
-          "value": "0",
-          "symbol": "Nei"
-        },
-        {
-          "name": "AIDS",
-          "value": "0",
-          "symbol": "Nei"
-        },
-        {
-          "name": "CCI totalskår",
-          "magnitude": "82"
-        },
-        {
-          "name": "Estimert overlevelse etter 10 år",
-          "magnitude": "82",
-          "units": "%"
-        }
-      ]
+      "Charlson Comorbidity Index (CCI)": {
+        "items": [
+          {
+            "name": "Aldersgruppe",
+            "value": "1",
+            "symbol": "50-59 år"
+          },
+          {
+            "name": "Myokardinfarkt",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Kronisk hjertesvikt",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Perifere vaskulære sykdommer",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Cerebrovaskulær hendelse",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Demens",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Kronisk lungesykdom",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Ulcussykdom",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Leversykdom",
+            "value": "0",
+            "symbol": "Ingen"
+          },
+          {
+            "name": "Bindevevssykdom",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Diabetes",
+            "value": "0",
+            "symbol": "Ingen eller diettkontrollert"
+          },
+          {
+            "name": "Hemiplegi",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Moderat til alvorlig nyresykdom",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Solid svulst",
+            "value": "0",
+            "symbol": "Ingen"
+          },
+          {
+            "name": "Leukemi",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Lymfom",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "AIDS",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "CCI totalskår",
+            "magnitude": "82"
+          },
+          {
+            "name": "Estimert overlevelse etter 10 år",
+            "magnitude": "82",
+            "units": "%"
+          }
+        ],
+        "origin": "2024-10-25T03:55:53.1988524+02:00",
+        "time": "2024-10-15T23:55:53.2652294+02:00"
+      }
     },
     "Problem/diagnose": {
       "Common Terminology Criteria for Adverse Events (CTCAE)#1": [
@@ -226,7 +246,8 @@
         },
         {
           "CTCAE- versjon": "team selecta diam gjøran gøran laoreet gøran aliquam dolore tor-magne sed. sverre bjørn øystein elit gøran øystein. tincidunt erat lars diam ut dolore lorem. tor-magne diam laoreet laoreet aliquam sit. aliquam sed aliquam borisa lorem lars lorem amet amet sverre laoreet."
-        }
+        },
+        {}
       ],
       "Problem/diagnosenavn": "Complication of procedure"
     },
@@ -292,9 +313,13 @@
       }
     },
     "ECOG funksjonsstatus": {
-      "name": "ECOG funksjonsstatus",
-      "value": "1",
-      "symbol": "Symptomatisk, fullt oppegående"
+      "items": {
+        "name": "ECOG funksjonsstatus",
+        "value": "1",
+        "symbol": "Symptomatisk, fullt oppegående"
+      },
+      "origin": "2024-11-15T22:55:53.3224356+01:00",
+      "time": "2024-10-22T03:55:53.3426975+02:00"
     }
   }
 }

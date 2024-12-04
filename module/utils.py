@@ -123,6 +123,49 @@ def transform_to_header_structure(d):
 		# Return non-dict, non-list items as is
 		return d
 
+
+def transform_to_header_structure2(d):
+    """Transform the dictionary to the form {header: {[name: value]}}, preserving 'origin' and 'time'."""
+    if isinstance(d, dict):
+        if "name" in d and ("items" in d or "data" in d):
+            # If it's a header, recursively simplify its content
+            header_name = d["name"]
+            if isinstance(header_name, list):
+                header_name = "_".join(header_name)
+
+            content = d.get("items", d.get("data", {}))
+            simplified_content = transform_to_header_structure2(content)
+
+            # Include 'origin' and 'time' if they exist
+            additional_info = {k: v for k, v in d.items() if k in {"origin", "time"}}
+            if isinstance(simplified_content, dict):
+                simplified_content.update(additional_info)
+            elif isinstance(simplified_content, list):
+                simplified_content.append(additional_info)
+
+            return {header_name: simplified_content}
+        elif "name" in d and "value" in d and len(d) == 2:
+            # If it's a variable, return it as a {name: value} pair
+            return {d["name"]: d["value"]}
+        else:
+            # Otherwise, recurse into each value
+            return {k: transform_to_header_structure2(v) for k, v in d.items()}
+    elif isinstance(d, list):
+        # If it's a list, process each element
+        simplified_list = [transform_to_header_structure2(item) for item in d]
+        # Combine dictionaries into one if they're simple {name: value} pairs
+        combined_dict = {}
+        for item in simplified_list:
+            if isinstance(item, dict) and len(item) == 1:
+                combined_dict.update(item)
+            else:
+                # If not all are {name: value}, return as a list
+                return simplified_list
+        return combined_dict
+    else:
+        # Return non-dict, non-list items as is
+        return d
+
 def flatten_middle_nodes(d):
 	"""Recursively flatten nested dictionaries, removing middle nodes."""
 	if isinstance(d, dict):

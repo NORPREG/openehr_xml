@@ -105,6 +105,12 @@ class Content(BaseModel):
 
 	name: Value 
 	archetype_details: Archetype_details = Field(exclude=hide_metadata)
+
+	language: Optional[Terminology_id_wrapper] = Field(None, exclude=hide_metadata)
+	encoding: Optional[Terminology_id_wrapper] = Field(None, exclude=hide_metadata)
+	
+	subject: Optional[Subject] = Field(None, exclude=hide_metadata)
+
 	items: Optional[List[Items]] = None
 	data: Optional[Data] = None
 
