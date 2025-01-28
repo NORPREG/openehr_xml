@@ -1,3 +1,4 @@
+from re import T
 from module.register_datamodel import (
 	Metadata,
 	Demographics,
@@ -61,6 +62,8 @@ def find(d, target_key):
 	
 	return None  # Return None if no match is found
 
+# TODO: Klarer vi å putte alle hardkodede paths under inn i en configfil?
+
 
 def extract_datamodel(dips):
 	data_model = dict()
@@ -93,19 +96,40 @@ def extract_datamodel(dips):
 
 	comorb_keys = [k for k in d.get("Komorbiditet_utredning", {}) if "Forholdsregel" in k]
 
+	kom = d.get("Komorbiditet_utredning", {})
 	comorbidity = {
 		"Har pasienten kjent komorbiditet?": find(d, "Har pasient kjent komorbiditet?"),
 
-		# Fixme. Forholdsregel#n henger ikke sammen mellom kategori og ICD10, det antok jeg
+		# Denne er ikke god. I UI skilles det mellom kategori (ICD10 kapittel) og tilstand (ICD10 kode)
+		# Hver av dem har en kommentar ("detaljer") til seg som ikke bør lagres?
+		
+		# Alle items må parses slik at de grupperes i videre behandling
 
 		"items": [
 			{
-				"Komorbiditet kategori": d.get("Komorbiditet_utredning", {}).get(k, {}).get("Sykdomskategori"),
-				"Komorbiditet tilstand": d.get("Komorbiditet_utredning", {}).get(k, {}).get("Tilstand"),
-				"ICD10 tilstand": d.get("Komorbiditet_utredning", {}).get("ICD10", {}).get(k, {}).get("Tilstand"),
-			} for k in comorb_keys
-		]
+				"Sykdomskategori": v.get("Sykdomskategori"), 
+				"Sykdomstilstand": v.get("Tilstand"),	
+			} for k,v in kom.items() if "Forholdsregel" in k
+		],
+
+		"ICD10 symbol": [v.get("Tilstand") for k,v in kom.get("ICD10", {}).items() if "Forholdsregel" in k],
 	}
+
+	cci = {"items": []}
+
+	for item in kom.get("Charlson Comorbidity Index (CCI)", {}).get("items", []):
+		new_dict = dict()
+		new_dict["Kategori"] = item["name"]
+		if "value" in item:
+			new_dict["Verdi"] = item["value"]
+		if "symbol" in item:
+			new_dict["Symbol"] = item["symbol"]
+		if "magnitude" in item:
+			assert "value" not in item
+			new_dict["Verdi"] = item["magnitude"]
+		if "units" in item:
+			new_dict["Enhet"] = item["units"]
+		cci["items"].append(new_dict)
 
 	late_effects = list()
 	for k,v in d.get("Problem/diagnose", {}).items():
@@ -170,6 +194,7 @@ def extract_datamodel(dips):
 	data_model["sosialt"] = social
 	data_model["stimulantia"] = stimulantia
 	data_model["komorbiditet"] = comorbidity
+	data_model["CCI"] = cci
 	data_model["seneffekter"] = late_effects
 	data_model["primærdiagnose"] = primary_diagnosis
 	data_model["lymeknutemetastase"] = lymph_node_metastases

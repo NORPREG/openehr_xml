@@ -24,9 +24,109 @@
     "Har pasienten kjent komorbiditet?": "Ja",
     "items": [
       {
-        "Komorbiditet kategori": "Fordøyelsessystemet, sykdommer (Kap.XI; K00-K93)",
-        "Komorbiditet tilstand": "Psykiske lidelser og atferdsforstyrrelser (Kap.V; F00-F99)",
-        "ICD10 tilstand": "diam tincidunt erat martine ipsum nibh lars. gjøran aliquam gøran martine magna nibh aliquam bjørn øystein diam nonummy consectetuer consectetuer. martine sit ipsum gøran sed erat runar sit nibh. diam nonummy bjørn dolore adipiscing consectetuer nonummy tincidunt diam euismod."
+        "Sykdomskategori": "Fordøyelsessystemet, sykdommer (Kap.XI; K00-K93)",
+        "Sykdomstilstand": "Psykiske lidelser og atferdsforstyrrelser (Kap.V; F00-F99)"
+      }
+    ],
+    "ICD10 symbol": [
+      "diam tincidunt erat martine ipsum nibh lars. gjøran aliquam gøran martine magna nibh aliquam bjørn øystein diam nonummy consectetuer consectetuer. martine sit ipsum gøran sed erat runar sit nibh. diam nonummy bjørn dolore adipiscing consectetuer nonummy tincidunt diam euismod."
+    ]
+  },
+  "CCI": {
+    "items": [
+      {
+        "Kategori": "Aldersgruppe",
+        "Verdi": "1",
+        "Symbol": "50-59 år"
+      },
+      {
+        "Kategori": "Myokardinfarkt",
+        "Verdi": "0",
+        "Symbol": "Nei"
+      },
+      {
+        "Kategori": "Kronisk hjertesvikt",
+        "Verdi": "0",
+        "Symbol": "Nei"
+      },
+      {
+        "Kategori": "Perifere vaskulære sykdommer",
+        "Verdi": "0",
+        "Symbol": "Nei"
+      },
+      {
+        "Kategori": "Cerebrovaskulær hendelse",
+        "Verdi": "0",
+        "Symbol": "Nei"
+      },
+      {
+        "Kategori": "Demens",
+        "Verdi": "0",
+        "Symbol": "Nei"
+      },
+      {
+        "Kategori": "Kronisk lungesykdom",
+        "Verdi": "0",
+        "Symbol": "Nei"
+      },
+      {
+        "Kategori": "Ulcussykdom",
+        "Verdi": "0",
+        "Symbol": "Nei"
+      },
+      {
+        "Kategori": "Leversykdom",
+        "Verdi": "0",
+        "Symbol": "Ingen"
+      },
+      {
+        "Kategori": "Bindevevssykdom",
+        "Verdi": "0",
+        "Symbol": "Nei"
+      },
+      {
+        "Kategori": "Diabetes",
+        "Verdi": "0",
+        "Symbol": "Ingen eller diettkontrollert"
+      },
+      {
+        "Kategori": "Hemiplegi",
+        "Verdi": "0",
+        "Symbol": "Nei"
+      },
+      {
+        "Kategori": "Moderat til alvorlig nyresykdom",
+        "Verdi": "0",
+        "Symbol": "Nei"
+      },
+      {
+        "Kategori": "Solid svulst",
+        "Verdi": "0",
+        "Symbol": "Ingen"
+      },
+      {
+        "Kategori": "Leukemi",
+        "Verdi": "0",
+        "Symbol": "Nei"
+      },
+      {
+        "Kategori": "Lymfom",
+        "Verdi": "0",
+        "Symbol": "Nei"
+      },
+      {
+        "Kategori": "AIDS",
+        "Verdi": "0",
+        "Symbol": "Nei"
+      },
+      {
+        "Kategori": "CCI totalskår",
+        "Verdi": "82"
+      },
+      {
+        "Kategori": "Estimert overlevelse etter 10 år",
+        "Verdi": "82",
+        "Enhet": "%"
       }
     ]
   },

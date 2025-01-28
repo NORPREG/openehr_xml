@@ -87,9 +87,8 @@ def remove_comments(d):
 		# Return non-dict, non-list items as is
 		return d	
 
-
 def transform_to_header_structure(d):
-	"""Transform the dictionary to the form {header: {[name: value]}}."""
+	"""Transform the dictionary to the form {header: {[name: value]}}, preserving 'origin' and 'time'."""
 	if isinstance(d, dict):
 		if "name" in d and ("items" in d or "data" in d):
 			# If it's a header, recursively simplify its content
@@ -99,11 +98,24 @@ def transform_to_header_structure(d):
 
 			content = d.get("items", d.get("data", {}))
 			simplified_content = transform_to_header_structure(content)
-			
+
+			# Include 'origin' and 'time' if they exist
+			additional_info = {k: v for k, v in d.items() if k in {"origin", "time"}}
+			if isinstance(simplified_content, dict):
+				simplified_content.update(additional_info)
+			elif isinstance(simplified_content, list):
+				simplified_content.append(additional_info)
+
 			return {header_name: simplified_content}
 		elif "name" in d and "value" in d and len(d) == 2:
 			# If it's a variable, return it as a {name: value} pair
 			return {d["name"]: d["value"]}
+		elif "name" in d and "value" in d and "symbol" in d and len(d) == 3:
+			return {d["name"]: d["value"], "symbol": d["symbol"]}
+		elif "name" in d and "magnitude" in d and len(d) == 2:
+			return {d["name"]: d["magnitude"]}
+		elif "name" in d and "magnitude" in d and "units" in d and len(d) == 3:
+			return {d["name"]: d["magnitude"], "units": d["units"]}
 		else:
 			# Otherwise, recurse into each value
 			return {k: transform_to_header_structure(v) for k, v in d.items()}
@@ -122,49 +134,6 @@ def transform_to_header_structure(d):
 	else:
 		# Return non-dict, non-list items as is
 		return d
-
-
-def transform_to_header_structure2(d):
-    """Transform the dictionary to the form {header: {[name: value]}}, preserving 'origin' and 'time'."""
-    if isinstance(d, dict):
-        if "name" in d and ("items" in d or "data" in d):
-            # If it's a header, recursively simplify its content
-            header_name = d["name"]
-            if isinstance(header_name, list):
-                header_name = "_".join(header_name)
-
-            content = d.get("items", d.get("data", {}))
-            simplified_content = transform_to_header_structure2(content)
-
-            # Include 'origin' and 'time' if they exist
-            additional_info = {k: v for k, v in d.items() if k in {"origin", "time"}}
-            if isinstance(simplified_content, dict):
-                simplified_content.update(additional_info)
-            elif isinstance(simplified_content, list):
-                simplified_content.append(additional_info)
-
-            return {header_name: simplified_content}
-        elif "name" in d and "value" in d and len(d) == 2:
-            # If it's a variable, return it as a {name: value} pair
-            return {d["name"]: d["value"]}
-        else:
-            # Otherwise, recurse into each value
-            return {k: transform_to_header_structure2(v) for k, v in d.items()}
-    elif isinstance(d, list):
-        # If it's a list, process each element
-        simplified_list = [transform_to_header_structure2(item) for item in d]
-        # Combine dictionaries into one if they're simple {name: value} pairs
-        combined_dict = {}
-        for item in simplified_list:
-            if isinstance(item, dict) and len(item) == 1:
-                combined_dict.update(item)
-            else:
-                # If not all are {name: value}, return as a list
-                return simplified_list
-        return combined_dict
-    else:
-        # Return non-dict, non-list items as is
-        return d
 
 def flatten_middle_nodes(d):
 	"""Recursively flatten nested dictionaries, removing middle nodes."""
@@ -214,3 +183,33 @@ def convert_to_list(d):
 			d[i] = convert_to_list(d[i])
 	
 	return d
+
+def flatten_dicts_in_list(data):
+	"""
+	Recursively traverses a dictionary, flattens any lists containing dictionaries into a single dictionary.
+
+	Args:
+		data (dict): Input dictionary.
+
+	Returns:
+		dict: Processed dictionary with lists of dictionaries flattened.
+	"""
+	if isinstance(data, dict):
+		new_data = {}
+		for key, value in data.items():
+			if isinstance(value, list) and all(isinstance(item, dict) for item in value):
+				# Merge all dictionaries in the list into a single dictionary
+				flattened = {}
+				for item in value:
+					flattened.update(flatten_dicts_in_list(item))  # Recursively flatten nested dicts
+				new_data[key] = flattened
+			else:
+				# Recursively process the value
+				new_data[key] = flatten_dicts_in_list(value)
+		return new_data
+	elif isinstance(data, list):
+		# Recursively process list elements
+		return [flatten_dicts_in_list(item) for item in data]
+	else:
+		# Return the value as-is if it's not a list or dictionary
+		return data

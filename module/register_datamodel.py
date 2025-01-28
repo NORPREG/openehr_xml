@@ -78,7 +78,6 @@ class Comorbidity(BaseModel):
 	comorbidity_terminology_version: Optional[str] = None
 
 	comorbidity_category: Optional[str] = None
-#	comorbidity_comment: Optional[str] = None
 	comorbidity_date: date
 
 class PrimaryDiagnosis(BaseModel):

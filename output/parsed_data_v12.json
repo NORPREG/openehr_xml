@@ -1,0 +1,301 @@
+{
+  "p1_type": "COMPOSITION",
+  "name": "Eksport til protonregisteret",
+  "category": {
+    "defining_code": {
+      "terminology_id": "openehr",
+      "code_string": "434"
+    }
+  },
+  "composer": {
+    "name": "unknown"
+  },
+  "context": {
+    "start_time": "2025-01-02T15:30:00+01:00",
+    "end_time": "2025-01-03T15:30:00+01:00"
+  },
+  "content": {
+    "Sosialanamnese_generell": {
+      "Kartlegging omsorgsansvar": {
+        "items": {
+          "Omsorgsperson for barn under 18 år": {
+            "Har pasienten ansvar for barn under 18 år?": "Ja",
+            "Sosialt forhold": "Ansvarlig for barn under 18 år"
+          },
+          "Omsorgsperson for personer over 18 år": {
+            "Har pasienten ansvar for egne barn/andre over 18 år?": "Nei",
+            "Sosialt forhold": "Ansvarlig for barn/andre over 18 år"
+          }
+        },
+        "origin": "2025-01-02T15:30:00+01:00",
+        "time": "2025-01-02T15:30:00+01:00"
+      },
+      "Sosialt nettverk": {
+        "Samlivsstatus": "Gift/samboer/registrert partner"
+      },
+      "Samlivsform": {
+        "Kartleggingspørsmål om sosiale forhold samlivsform": {
+          "items": {
+            "Spesifikt sosialt forhold": {
+              "Hvilken samlivsform har pasienten?": "Bor med noen (Partner og/eller med barn >18 år, bofelleskap, venner)"
+            }
+          },
+          "origin": "2025-01-02T15:30:00+01:00",
+          "time": "2025-01-02T15:30:00+01:00"
+        }
+      },
+      "Utdanningssammendrag": {
+        "Høyeste fullførte utdanningsnivå": "Videregående"
+      },
+      "Arbeidssammendrag": {
+        "Arbeidsstatus": "I arbeid"
+      }
+    },
+    "Stimulantia": {
+      "Alkohol": {
+        "Overordnet status": "Nåværende bruker",
+        "Overordnet beskrivelse": "Test123",
+        "Per episode": {
+          "name": "Typisk bruk (alkoholenheter)",
+          "magnitude": "2",
+          "units": "1/d"
+        }
+      },
+      "Røyk": [
+        {
+          "Overordnet status": "Aldri røykt"
+        },
+        {
+          "Overordnet beskrivelse": "Bare på fest"
+        },
+        {
+          "name": "Samlet pakkeår",
+          "magnitude": "5"
+        }
+      ],
+      "Røykfri tobakk/snus": {
+        "Overordnet status": "Tidligere bruker",
+        "Overordnet beskrivelse": "Har vapet"
+      },
+      "Sammendrag andre substanser": {
+        "Substansnavn": "Annen substans",
+        "Overordnet beskrivelse": "MDMA"
+      },
+      "Substansanamnese": {
+        "Substansnavn": "X",
+        "Overordnet status": "Nåværende bruker",
+        "Overordnet beskrivelse": "På fest"
+      }
+    },
+    "Komorbiditet_utredning": {
+      "Kartlegging komorbiditet": {
+        "items": {
+          "Har pasient kjent komorbiditet?": "Usikker",
+          "Overordnet merknad komorbiditet": "Vondt i tåen",
+          "Kartleggingsformål": "Komorbiditet"
+        },
+        "origin": "2025-01-02T15:30:00+01:00",
+        "time": "2025-01-02T15:30:00+01:00"
+      },
+      "Gruppering ICD10 kapittel": {
+        "Forholdsregel#1": {
+          "Tilstand: Hovedkapitler ICD-10": "Svulster (Kap.II; C00-D48)",
+          "Detaljer": "Svulst i øret"
+        },
+        "Forholdsregel#2": {
+          "Tilstand: Hovedkapitler ICD-10": "Nervesystemet, sykdommer (Kap.VI; G00-G99)",
+          "Detaljer": "Nervøs"
+        }
+      },
+      "ICD10": {
+        "Forholdsregel#1": {
+          "Tilstand: ICD-10": "C72.3",
+          "Detaljer": "Malignant neoplasm of optic nerve"
+        },
+        "Forholdsregel#2": {
+          "Tilstand: ICD-10": "C67.4",
+          "Detaljer": "Malignant neoplasm of posterior wall of bladder"
+        }
+      },
+      "Charlson Comorbidity Index (CCI)": {
+        "items": [
+          {
+            "name": "Aldersgruppe",
+            "value": "1",
+            "symbol": "50-59 år"
+          },
+          {
+            "name": "Myokardinfarkt",
+            "value": "1",
+            "symbol": "Ja"
+          },
+          {
+            "name": "Kronisk hjertesvikt",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Perifere vaskulære sykdommer",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Cerebrovaskulær hendelse",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Demens",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Kronisk lungesykdom",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Ulcussykdom",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Leversykdom",
+            "value": "1",
+            "symbol": "Mild"
+          },
+          {
+            "name": "Bindevevssykdom",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Diabetes",
+            "value": "1",
+            "symbol": "Ukomplisert"
+          },
+          {
+            "name": "Hemiplegi",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Moderat til alvorlig nyresykdom",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Solid svulst",
+            "value": "2",
+            "symbol": "Lokalisert"
+          },
+          {
+            "name": "Leukemi",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "Lymfom",
+            "value": "0",
+            "symbol": "Nei"
+          },
+          {
+            "name": "AIDS",
+            "value": "6",
+            "symbol": "Ja"
+          },
+          {
+            "name": "CCI totalskår",
+            "magnitude": "8"
+          }
+        ],
+        "origin": "2025-01-27T10:58:00+01:00",
+        "time": "2025-01-27T10:58:00+01:00"
+      }
+    },
+    "Problem/diagnose": {
+      "Common Terminology Criteria for Adverse Events (CTCAE)#1": {
+        "Kategori": "Blood and lymphatic system disorders",
+        "Term": "X",
+        "Beskrivelse av grad": "A"
+      },
+      "Common Terminology Criteria for Adverse Events (CTCAE)#2": {
+        "Kategori": "Blood and lymphatic system disorders",
+        "Beskrivelse av grad": "A"
+      },
+      "Problem/diagnosenavn": "Complication of procedure"
+    },
+    "Problem/diagnose (inkl TNM)": {
+      "Kommentar diagnose/TNM": "Syk person",
+      "Problem/diagnosenavn": "C56.3 / Malignant neoplasm of bilateral ovaries",
+      "Anatomisk lokalisering": "Høyre",
+      "Dato/tid for klinisk bekreftelse": "2025-01-27T11:08:00+01:00",
+      "Oncology problem details dips": {
+        "Multiple primærtumorer": "Multiple primærtumorer",
+        "Beskrivelse": "Mange små svulster"
+      },
+      "TNM-klassifikasjon klinisk": {
+        "Primærtumor (T)": "cT1a",
+        "Regionale lymfeknuter (N)": "cN2c",
+        "Fjernmetastase (M)": "cM0",
+        "Residiv (r)": "true",
+        "TNM-vurdering": "cT1aN2cM0",
+        "TNM-utgave": "AJCC TNM Versjon 8"
+      },
+      "TNM-klassifikasjon patologi": {
+        "pTNM-vurdering": "pTisN2bMX",
+        "Primærtumor (pT)": "pTis",
+        "Regionale lymfeknuter (pN)": "pN2b",
+        "Fjernmetastase (pM)": "pMX",
+        "TNM-utgave": "AJCC TNM Versjon 8"
+      }
+    },
+    "Lymfeknutemetastase": {
+      "Regional lymfeknutemetastase": "Reginoale lymfeknutemetastase",
+      "Utredningsmetode regionale lymfeknutemetastaser": {
+        "Metode#1": "Bildediagnostikk",
+        "Metode#2": "Cytologi",
+        "Metode#3": "Reseksjon",
+        "Spesifier annet": "Flotte CT-bilder",
+        "Funn": "Reginoale lymfeknutemetastase"
+      }
+    },
+    "Fjernmetastaser": {
+      "Fjernmetastaser": "Fjernmetastase",
+      "Utredningsmetode fjernmetastaser": {
+        "Metode#1": "Biopsi",
+        "Metode#2": "Annet",
+        "Spesifiser annet": "Skrivefeil under",
+        "M anatomisk lokalisajson Skjelett": {
+          "Navn på kroppssted": "Skjelett"
+        },
+        "M anatomisk lokalisajson Lever": {
+          "Navn på kroppssted": "Lever"
+        },
+        "M anatomisk lokalisajson Lunge": {
+          "Navn på kroppssted": "Lunge"
+        },
+        "M anatomisk lokalisajson CNS": {
+          "Navn på kroppssted": "CNS (sentralnervesystemet)"
+        },
+        "M anatomisk lokalisajson Fjerne lymfeknuter": {
+          "Navn på kroppssted": "Fjerne lymfeknuter"
+        },
+        "M anatomisk lokalisajson Annet": {
+          "Spesifiser annet": "Hva skal her mon tro?",
+          "Navn på kroppssted": "Annet"
+        },
+        "Funn": "Fjernmetastase"
+      }
+    },
+    "ECOG funksjonsstatus": {
+      "items": {
+        "name": "ECOG funksjonsstatus",
+        "value": "0",
+        "symbol": "Asymptomatisk"
+      },
+      "origin": "2025-01-01T00:00:00+01:00",
+      "time": "2025-01-01T00:00:00+01:00"
+    }
+  }
+}
