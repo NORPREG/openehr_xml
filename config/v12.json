@@ -1,20 +1,24 @@
+// "//" means "search in tree for the following end node key
+// Ending "//" means that the key is local key (i.e. "arbeidsstatus": [//] -> [//, "arbeidsstatus"])
+
 {
 	"sheet_name": [ "name" ],
 	"start_time": [ "context", "start_time" ],
 	"end_time": [ "context", "end_time" ],
 	"composer": [ "composer", "name" ],
 	"sosialt": {
-		"Høyeste fullførte utdanningsnivå": [ "//", "Høyeste fullførte utdanningsnivå" ],
-		"Arbeidsstatus": [ "//", "Arbeidsstatus" ],
-		"Juridisk sivilstatus": [ "//", "Gift//registrert partner" ],
-		"Samlivsstatus": [ "//", "Gift//registrert partner" ],
-		"Hvilken samlivsform har pasienten?": "Bor alene (Inkl. alene med barn <18)",
-		"Samlivsform, tilstede?": "lorem dolore gjøran team selecta dolore amet kjetil gøran gjøran sverre diam. nibh erat euismod tincidunt sed nonummy dolore runar gjøran martine. kjetil bjørn erat gøran kjetil elit tincidunt. amet kjetil dolor lars euismod diam gøran martine euismod amet consectetuer sit runar. magna sit sit runar aliquam dolor bjørn kjetil aliquam."
+		"Høyeste fullførte utdanningsnivå": [ "//" ],
+		"Arbeidsstatus": [ "//" ],
+		"Samlivsstatus": [ "//" ],
+		"Samlivsform": ["//" ],
+		"Har pasienten ansvar for barn under 18 år?": ["//"],
+		"Har pasienten ansvar for egne barn/andre over 18 år?": ["//"]
 	},
 	"stimulantia": {
-		"Alkoholanamnese status": "Drukket tidligere",
-		"Alkoholanamnese typisk bruk verdi": "27",
-		"Alkoholanamnese typisk bruk enhet": "1/d",
+		"Alkoholanamnese status": ["Stimulantia", "Alkohol", "Overordnet status"],
+		"Alkoholanamnese beskrivelse": ["Stimulantia", "Alkohol", "Overordnet beskrivelse"],
+		"Alkoholanamnese typisk bruk verdi": ["//", "Typisk bruk (alkoholenheter)"],
+		"Alkoholanamnese typisk bruk enhet": ["Stimulantia", "Alkohol", "Per episode", "units"],
 		"Røykeanamnese status": "Røyker",
 		"Røykeanamnese typisk bruk verdi": "5",
 		"Røykeanamnese typisk bruk enhet": "Samlet pakkeår",
