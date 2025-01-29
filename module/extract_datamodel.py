@@ -62,8 +62,6 @@ def find(d, target_key):
 	
 	return None  # Return None if no match is found
 
-# TODO: Klarer vi å putte alle hardkodede paths under inn i en configfil?
-
 
 def extract_datamodel(dips):
 	data_model = dict()
@@ -202,5 +200,4 @@ def extract_datamodel(dips):
 	data_model["ECOG"] = ecog
 
 	return data_model
-
 

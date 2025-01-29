@@ -17,7 +17,6 @@ from module.utils import (
 
 from module.extract_datamodel import extract_datamodel
 
-#xml_file = "xml/report_example_auto.xml"
 xml_file = "xml/full_eksport_v12.xml"
 with open(xml_file, 'r', encoding="utf-8") as file:
 	xml_data = file.read().encode("utf-8")
@@ -25,23 +24,21 @@ with open(xml_file, 'r', encoding="utf-8") as file:
 
 dips = Composition.model_validate(data["composition"])
 
-
 model_dump_dict = dips.model_dump(exclude_none=True)
 model_dump_dict = simplify_dict(model_dump_dict)
 model_dump_dict = remove_name_tree(model_dump_dict)
-
 model_dump_dict = transform_to_header_structure(model_dump_dict)
-
-# model_dump_dict = remove_comments(model_dump_dict)
 model_dump_dict = flatten_middle_nodes(model_dump_dict)
 model_dump_dict = flatten_dicts_in_list(model_dump_dict)
 
-model_dump_string = json.dumps(model_dump_dict, indent=2, ensure_ascii=False)
+data_model = extract_datamodel(model_dump_dict)
+data_model_string = json.dumps(data_model, indent=2, ensure_ascii=False)
 
+"""
+model_dump_string = json.dumps(model_dump_dict, indent=2, ensure_ascii=False)
 with open("output/parsed_data_v12_v2.json", "w", encoding="utf-8") as out:
 	out.write(model_dump_string)
 
-"""
 data_model = extract_datamodel(model_dump_dict)
 data_model_string = json.dumps(data_model, indent=2, ensure_ascii=False)
 with open("output/data_model.json", "w", encoding="utf-8") as out:

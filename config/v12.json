@@ -1,192 +1,187 @@
-// "//" means "search in tree for the following end node key
-// Ending "//" means that the key is local key (i.e. "arbeidsstatus": [//] -> [//, "arbeidsstatus"])
-
 {
+	"_comment1": "Ending // means that the key is local key (i.e. arbeidsstatus: [//] -> [//, arbeidsstatus])",
+	"_comment2": "XXX## means make list of all similar items at this level",
+
 	"sheet_name": [ "name" ],
 	"start_time": [ "context", "start_time" ],
 	"end_time": [ "context", "end_time" ],
 	"composer": [ "composer", "name" ],
+
 	"sosialt": {
-		"Høyeste fullførte utdanningsnivå": [ "//" ],
-		"Arbeidsstatus": [ "//" ],
-		"Samlivsstatus": [ "//" ],
-		"Samlivsform": ["//" ],
-		"Har pasienten ansvar for barn under 18 år?": ["//"],
-		"Har pasienten ansvar for egne barn/andre over 18 år?": ["//"]
+		"_sosialt": ["content", "Sosialanamnese_generell"],
+
+		"Høyeste fullførte utdanningsnivå": [ "_sosialt", "Utdanningssammendrag", "//" ],
+		"Arbeidsstatus": [ "_sosialt", "Arbeidssammendrag", "//" ],
+		"Samlivsstatus": [ "_sosialt", "Sosialt nettverk", "//" ],
+		"Samlivsform": [ 
+				"_sosialt", 
+				"Samlivsform", 
+				"Kartleggingsspørsmål om sosial forhold samlivsform", 
+				"items", 
+				"Spesifikt sosialt sosialt forhold",
+				"Hivlken samlivsform har pasienten?"
+		],
+		"Har pasienten ansvar for barn under 18 år?": [
+				"_sosialt",
+				"Kartlegging omsorgsansvar",
+				"items",
+				"Omsorgsperson for barn under 18 år",
+				"//"
+			],
+		"Har pasienten ansvar for egne barn/andre over 18 år?": [
+				"_sosialt",
+				"Kartlegging omsorgsansvar",
+				"items",
+				"Omsorgsperson for personer over 18 år",
+				"//"
+			],
 	},
+
 	"stimulantia": {
-		"Alkoholanamnese status": ["Stimulantia", "Alkohol", "Overordnet status"],
-		"Alkoholanamnese beskrivelse": ["Stimulantia", "Alkohol", "Overordnet beskrivelse"],
-		"Alkoholanamnese typisk bruk verdi": ["//", "Typisk bruk (alkoholenheter)"],
-		"Alkoholanamnese typisk bruk enhet": ["Stimulantia", "Alkohol", "Per episode", "units"],
-		"Røykeanamnese status": "Røyker",
-		"Røykeanamnese typisk bruk verdi": "5",
-		"Røykeanamnese typisk bruk enhet": "Samlet pakkeår",
-		"Røykfri tobakkanamnese status": "Aldri brukt"
+		"_Alkohol": ["content", "Stimulantia", "Alkohol"],
+		"_Røyk": ["content", "Stimulantia", "Røyk"],
+		"_Røykfri": ["content", "Stimulantia", "Røykfri tobakk/snus"],
+		"_Andre": ["content", "Stimulantia", "Sammendrag andre substanser"],
+		"_Substansanamnese": ["content", "Stimulantia", "Substansanamnese"],
+
+		"Alkohol status":  ["_Alkohol", "Overordnet status"],
+		"Alkohol beskrivelse": ["_Alkohol", "Overordnet beskrivelse"],
+		"Alkohol typisk bruk verdi": ["_Alkohol", "Per episode", "Typisk bruk (alkoholenheter)"],
+		"Alkohol typisk bruk enhet": ["_Alkohol", "Per episode", "units"],
+		"Røyk status": ["_Røyk", "Overordnet status"],
+		"Røyk beskrivelse": ["_Røyk", "Overordnet beskrivelse"],
+		"Røyk samlet pakkeår": ["_Røyk", "Samlet pakkeår"],
+		"Røykfri tobakk status": ["_Røykfri", "Overordnet status"],
+		"Røykfri tobakk beskrivelse": ["_Røykfri", "Overordnet beskrivelse"],
+		"Andre substanser navn": ["_Andre", "Substansnavn"],
+		"Andre substanser beskrivelse": ["_Andre", "Overordnet beskrivelse"],
+		"Substansanamnese navn": ["_Substansanamnese", "Substansnavn"],
+		"Substansanamnese status": ["_Substansanamnese", "Overordnet status"],
+		"Substansanamnese beskrivelse": ["_Substansanamnese", "Overordnet beskrivelse"],
 	},
+
 	"komorbiditet": {
-		"Har pasienten kjent komorbiditet?": "Ja",
-		"items": [
-			{
-				"Sykdomskategori": "Fordøyelsessystemet, sykdommer (Kap.XI; K00-K93)",
-				"Sykdomstilstand": "Psykiske lidelser og atferdsforstyrrelser (Kap.V; F00-F99)"
-			}
-		],
-		"ICD10 symbol": [
-			"diam tincidunt erat martine ipsum nibh lars. gjøran aliquam gøran martine magna nibh aliquam bjørn øystein diam nonummy consectetuer consectetuer. martine sit ipsum gøran sed erat runar sit nibh. diam nonummy bjørn dolore adipiscing consectetuer nonummy tincidunt diam euismod."
-		]
+		"_komorb": ["content", "Komorbiditet_utredning"],
+
+		"Har pasient kjent komorbiditet?": ["_komorb", "Kartlegging komorbiditet", "items", "//"],
+		"Overordnet merknad komorbiditet": ["_komorb", "Kartlegging komorbiditet", "items", "//"],
+		"Gruppering ICD10 kapittel": {
+				"Tilstand": ["content", "Komorbiditet_utredning", "Gruppering ICD10 kapittel", "Forholdsregel##", "//"],
+				"Detaljer": ["content", "Komorbiditet_utredning", "Gruppering ICD10 kapittel", "Forholdsregel##", "//"],
+			},
+		"ICD10": {
+			"Tilstand ICD-10": ["content", "Komorbiditet_utredning", "ICD10", "Forholdsregel##", "//"],
+			"Detaljer": ["content", "Komorbiditet_utredning", "ICD10", "Forholdsregel##", "//"],
+		},
+		"Tidspunkt": ["_komorb", "Kartlegging komorbiditet", "time"]
 	},
-	"CCI": {
-		"items": [
-			{
-				"Kategori": "Aldersgruppe",
-				"Verdi": "1",
-				"Symbol": "50-59 år"
-			},
-			{
-				"Kategori": "Myokardinfarkt",
-				"Verdi": "0",
-				"Symbol": "Nei"
-			},
-			{
-				"Kategori": "Kronisk hjertesvikt",
-				"Verdi": "0",
-				"Symbol": "Nei"
-			},
-			{
-				"Kategori": "Perifere vaskulære sykdommer",
-				"Verdi": "0",
-				"Symbol": "Nei"
-			},
-			{
-				"Kategori": "Cerebrovaskulær hendelse",
-				"Verdi": "0",
-				"Symbol": "Nei"
-			},
-			{
-				"Kategori": "Demens",
-				"Verdi": "0",
-				"Symbol": "Nei"
-			},
-			{
-				"Kategori": "Kronisk lungesykdom",
-				"Verdi": "0",
-				"Symbol": "Nei"
-			},
-			{
-				"Kategori": "Ulcussykdom",
-				"Verdi": "0",
-				"Symbol": "Nei"
-			},
-			{
-				"Kategori": "Leversykdom",
-				"Verdi": "0",
-				"Symbol": "Ingen"
-			},
-			{
-				"Kategori": "Bindevevssykdom",
-				"Verdi": "0",
-				"Symbol": "Nei"
-			},
-			{
-				"Kategori": "Diabetes",
-				"Verdi": "0",
-				"Symbol": "Ingen eller diettkontrollert"
-			},
-			{
-				"Kategori": "Hemiplegi",
-				"Verdi": "0",
-				"Symbol": "Nei"
-			},
-			{
-				"Kategori": "Moderat til alvorlig nyresykdom",
-				"Verdi": "0",
-				"Symbol": "Nei"
-			},
-			{
-				"Kategori": "Solid svulst",
-				"Verdi": "0",
-				"Symbol": "Ingen"
-			},
-			{
-				"Kategori": "Leukemi",
-				"Verdi": "0",
-				"Symbol": "Nei"
-			},
-			{
-				"Kategori": "Lymfom",
-				"Verdi": "0",
-				"Symbol": "Nei"
-			},
-			{
-				"Kategori": "AIDS",
-				"Verdi": "0",
-				"Symbol": "Nei"
-			},
-			{
-				"Kategori": "CCI totalskår",
-				"Verdi": "82"
-			},
-			{
-				"Kategori": "Estimert overlevelse etter 10 år",
-				"Verdi": "82",
-				"Enhet": "%"
-			}
-		]
+
+	"Charlson Comorbidity Index (CCI)": {
+		"_cci": ["content", "Komorbiditet_utredning", "Charlson Comorbidity Index (CCI)"],
+
+		"Aldersgruppe": ["_cci", "//"],
+		"Myokardinfarkt": ["_cci" "//"],
+		"Kronisk hjertesvikt": ["_cci" "//"],
+		"Perifere vaskulære sykdommer": ["_cci" "//"],
+		"Cerebrovaskulær hendelse": ["_cci" "//"],
+		"Demens": ["_cci" "//"],
+		"Kronisk lungesykdom": ["_cci" "//"],
+		"Ulcussykdom": ["_cci" "//"],
+		"Leversykdom": ["_cci" "//"],
+		"Bindevevssykdom": ["_cci" "//"],
+		"Diabetes": ["_cci" "//"],
+		"Hemiplegi": ["_cci" "//"],
+		"Moderat til alvorlig nyresykdom": ["_cci" "//"],
+		"Solid svulst": ["_cci" "//"],
+		"Leukemi": ["_cci" "//"],
+		"Lymfom": ["_cci" "//"],
+		"AIDS": ["_cci" "//"],
+		"CCI totalskår": ["_cci" "//"],
 	},
-	"seneffekter": [
-		{
-			"Kategori": "Blood and lymphatic system disorders",
-			"Term": "X",
-			"Grad": "0",
-			"Grad symbol": "Grad 0",
-			"Beskrivelse av grad": "A",
-			"CTCAE versjon": "team selecta diam gjøran gøran laoreet gøran aliquam dolore tor-magne sed. sverre bjørn øystein elit gøran øystein. tincidunt erat lars diam ut dolore lorem. tor-magne diam laoreet laoreet aliquam sit. aliquam sed aliquam borisa lorem lars lorem amet amet sverre laoreet."
+
+	"seneffekter": {
+		"_ctcae": ["content", "Komorbiditet_utredning", "Problem/diagnose"],
+
+		"CTCAE": {
+			"Kategori": ["_ctcae", "Common Terminology Criteria for Adverse Events (CTCAE)##", "//"],
+			"Term": ["_ctcae", "Common Terminology Criteria for Adverse Events (CTCAE)##", "//"],
+			"Beskrivelse av grad": ["_ctcae", "Common Terminology Criteria for Adverse Events (CTCAE)##", "//"],
 		}
-	],
+	},
+
 	"primærdiagnose": {
-		"diagnose": "bjørn amet euismod euismod lorem diam gjøran amet dolor tor-magne tincidunt ut. team selecta nibh tincidunt nonummy elit ipsum ipsum borisa. consectetuer øystein consectetuer nibh dolore tincidunt aliquam dolor. sed ipsum aliquam borisa laoreet team selecta ipsum.",
-		"Anatomisk lokalisering": "Begge",
-		"Dato/tid for klinisk bekreftelse": "2024-11-18T22:55:53.3652492+01:00",
-		"Multiple primærtumorer": "Multiple primærtumorer",
-		"Klinisk T": "cT0",
-		"Klinisk N": "cN1b",
-		"Klinisk M": "cM0",
-		"Klinisk residiv": "true",
-		"Klinisk TNM-vurdering": "runar bjørn diam gjøran magna sverre erat amet gjøran elit runar. lars laoreet øystein morten consectetuer sed tor-magne diam. diam magna nibh amet martine aliquam gjøran kjetil adipiscing tincidunt nonummy. erat ut diam nonummy ut sed elit martine tor-magne.",
-		"Klinisk TNM-utgave": "AJCC TNM Versjon 8",
-		"Patologisk T": "pT4b",
-		"Patologisk N": "pN1",
-		"Patologisk M": "pM0",
-		"Patologisk residiv": "true",
-		"Patologisk TNM-vurdering": "gøran euismod sed kjetil sit adipiscing adipiscing runar morten gøran. gøran gøran laoreet tor-magne nibh ut diam. nibh borisa martine bjørn euismod adipiscing lars. adipiscing magna lorem aliquam gjøran runar bjørn kjetil. sverre ut aliquam nibh sit euismod sed runar.",
-		"Patologisk TNM-utgave": "AJCC TNM Versjon 8"
+		"_prim": ["content", "Problem/diagnose (inkl TNM)"],
+
+		"Problem/diagnosenavn": ["_prim", "//"],
+		"Kommentar diagnose/TNM": ["_prim", "//"],
+		"Anatomisk lokalisering": ["_prim", "//"],
+		"Dato/tid for klinisk bekreftelse": ["_prim", "//"],
+		"Multiple primærtumorer": ["_prim", "Oncology problem details dips", "Multiple primærtumorer"],
+		"Multiple primærtumorer beskrivelse": ["_prim", "Oncology problem details dips", "Beskrivelse"],
+
 	},
-	"lymeknutemetastase": {
-		"Regional lymfeknutemetastase": "Reginoale lymfeknutemetastase",
-		"Metode": [
-			"Annet"
-		],
-		"Funn": "Reginoale lymfeknutemetastase"
+
+	"TNM patologisk": {
+		"_tnm": ["content", "Problem/diagnose (inkl TNM)", "TNM-klassifikasjon patologi"],
+
+		"Primærtumor (T)": ["_tnm", "//"],
+		"Regionale lymfeknuter (N)": ["_tnm", "//"],
+		"Fjernmetastase (M)": ["_tnm", "//"],
+		"Residiv (r)": ["_tnm", "//"],
+		"TNM-vurdering": ["_tnm", "//"],
+		"TNM-utgave": ["_tnm", "//"]
 	},
-	"fjernmetastaser": {
-		"Fjernmetastaser": "Fjernmetastase",
-		"Funn": "Fjernmetastase",
-		"Metode": [
-			"Reseksjon"
-		],
-		"Anatomisk lokalisasjon": [
-			"Skjelett",
-			"Lever",
-			"Lunge",
-			"CNS (sentralnervesystemet)",
-			"dolore dolor adipiscing aliquam borisa laoreet sit dolore borisa. elit consectetuer nonummy erat sit diam nibh gjøran. martine gøran ut tincidunt ut øystein lars gøran borisa sverre. kjetil erat laoreet sverre team selecta diam consectetuer diam.",
-			"diam gøran tincidunt sed nibh euismod lorem. borisa elit team selecta amet bjørn sverre morten amet sed sverre."
-		]
+
+
+	"TNM klinisk": {
+		"_tnm": ["content", "Problem/diagnose (inkl TNM)", "TNM-klassifikasjon klinisk"],
+
+		"Primærtumor (pT)": ["_tnm", "//"],
+		"Regionale lymfeknuter (pN)": ["_tnm", "//"],
+		"Fjernmetastase (pM)": ["_tnm", "//"],
+		"Residiv (r)": ["_tnm", "//"],
+		"pTNM-vurdering": ["_tnm", "//"],
+		"TNM-utgave": ["_tnm", "//"]
+	},
+
+	"Lymfeknutemetastase": {
+		"Regional lymfeknutemetastase": ["content", "Lymfeknutemetastase", "Regional lymfeknutemetastase"],
+		"Utredningsmetode regionale lymfeknutemetastaser": {
+			"_lymfe": ["content", "Lymfeknutemetastase", "Utredningsmetode regionale lymfeknutemetastaser"],
+
+			"Metoder": {
+				"Metode": ["_lymfe", "Metode##"],
+			},
+
+			"Spesifiser annet": ["_lymfe", "//"],
+			"Funn": ["_lymfe", "//"],
+		},
+
+	"Fjernmetastaser": {
+		"Fjernmetastaser": ["content", "Fjernmetastaser", "//"],
+		"Utredningsmetoder fjernmetastaser": {
+			"_utr": ["content", "Fjernmetastaser", "Utredningsmetode fjernmetastaser"],
+
+			"Metode": ["_utr", "Metode##"],
+			"Spesifiser annet": ["_utr", "//"],
+			"Anatomisk lokalisasjon": {
+				"Navn på kroppssted": ["_utr", "M anatomisk lokalisajson Skjelett", "//"],
+				"Navn på kroppssted": ["_utr", "M anatomisk lokalisajson Lever", "//"],
+				"Navn på kroppssted": ["_utr", "M anatomisk lokalisajson Lunge", "//"],
+				"Navn på kroppssted": ["_utr", "M anatomisk lokalisajson CNS", "//"],
+				"Navn på kroppssted": ["_utr", "M anatomisk lokalisajson Fjerne lymfeknuter", "//"],
+				"Navn på kroppssted": ["_utr", "M anatomisk lokalisajson Annet", "//"],
+				"Spesifiser annet": ["_utr", "M anatomisk lokalisajson Annet", "//"],
+			},
+
+			"Funn": ["_utr", "//"]
+		}
 	},
 	"ECOG": {
-		"ECOG verdi": "1",
-		"ECOG symbol": "Symptomatisk, fullt oppegående",
-		"ECOG tidspunkt": "2024-10-22T03:55:53.3426975+02:00"
+		"_ecog": ["content", "ECOG funksjonsstatus"],
+
+		"ECOG verdi": ["_ecog", "items", "ECOG funksjonsstatus"],
+		"ECOG symbol": ["_ecog", "items", "symbol"],
+		"ECOG tidspunkt": ["_ecog", "time"]
 	}
 }
