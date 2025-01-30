@@ -19,7 +19,7 @@
 				"Kartleggingsspørsmål om sosial forhold samlivsform", 
 				"items", 
 				"Spesifikt sosialt sosialt forhold",
-				"Hivlken samlivsform har pasienten?"
+				"Hvilken samlivsform har pasienten?"
 		],
 		"Har pasienten ansvar for barn under 18 år?": [
 				"_sosialt",
@@ -176,6 +176,22 @@
 
 				"Funn": [ "_utr", "//" ]
 			}
+		},
+
+		"Målinger": {
+			"_hl": [ "content", "Målinger", "Høyde/Lengde" ],
+			"_wgt": [ "content", "Målinger", "Kroppsvekt" ],
+			"_kmi": [ "content", "Målinger", "Kroppsmasseindeks" ],
+
+			"Høyde/lengde": [ "_hl", "Simple", "//" ],
+			"Høyde/lengde enhet": [ "_hl", "Simple", "units" ],
+			"Høyde/lengde tidspunkt": [ "_hl", "time" ],
+			"Kroppsvekt": [ "_wgt", "Simple", "//" ],
+			"Kroppsvekt enhet": [ "_wgt", "Simple", "units" ],
+			"Kroppsvekt tidspunkt": [ "_wgt", "time" ],
+			"Kroppsmasseindeks": [ "_kmi", "Single", "//" ],
+			"Kroppsmasseindeks enhet": [ "_kmi", "Single", "units" ],
+			"Kroppsmasseindeks tidspunkt": [ "_kmi", "time" ]
 		},
 
 	"ECOG": {
