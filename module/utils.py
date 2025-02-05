@@ -73,20 +73,6 @@ def remove_name_tree(d):
 		# Return non-dict, non-list items as is
 		return d	
 
-def remove_comments(d):
-	"""Recursively remove all occurrences of "Kommentar"""
-	if isinstance(d, dict):
-		# Remove 'Kommentar' elements from the dictionary
-		return {k: remove_comments(v) for k, v in d.items() if k.lower() != "kommentar"}
-	
-	elif isinstance(d, list):
-		# Recursively process each element in the list
-		return [remove_comments(item) for item in d]
-	
-	else:
-		# Return non-dict, non-list items as is
-		return d	
-
 def transform_to_header_structure(d):
 	"""Transform the dictionary to the form {header: {[name: value]}}, preserving 'origin' and 'time'."""
 	if isinstance(d, dict):
@@ -163,26 +149,6 @@ def flatten_middle_nodes(d):
 	else:
 		# Return non-dict, non-list items as is
 		return d
-
-def convert_to_list(d):
-	"""Convert all 'items' and 'List' keys into lists."""
-	if isinstance(d, dict):
-		# Recursively process each key-value pair in the dictionary
-		for k, v in d.items():
-			# Check if the key is 'items' or 'List', and ensure the value is wrapped in a list
-			if k in ["items", "List", "structure"]:
-				if not isinstance(v, list):
-					d[k] = [v]  # Convert to a list if it's not already
-			else:
-				# Otherwise, continue recursively simplifying
-				d[k] = convert_to_list(v)
-
-	elif isinstance(d, list):
-		# Process each item in the list
-		for i in range(len(d)):
-			d[i] = convert_to_list(d[i])
-	
-	return d
 
 def flatten_dicts_in_list(data):
 	"""

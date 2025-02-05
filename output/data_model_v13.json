@@ -1,0 +1,169 @@
+{
+  "sheet_name": "Eksport til protonregisteret",
+  "start_time": "2025-01-15T04:50:37.1998772+01:00",
+  "end_time": "2025-01-02T16:50:37.204514+01:00",
+  "composer": "unknown",
+  "sosialt": {
+    "Høyeste fullførte utdanningsnivå": "Universitet/Høyskole ≥4 år",
+    "Arbeidsstatus": "I arbeid",
+    "Samlivsstatus": "Ugift/enslig",
+    "Samlivsform": "Bor med noen (Partner og/eller med barn >18 år, bofelleskap, venner)",
+    "Har pasienten ansvar for barn under 18 år?": "Ja",
+    "Har pasienten ansvar for egne barn/andre over 18 år?": "Nei"
+  },
+  "stimulantia": {
+    "Alkohol status": "Tidligere bruker",
+    "Alkohol beskrivelse": "dolore laoreet adipiscing ut sit aliquam. nibh magna elit ut ut laoreet consectetuer nibh ipsum.",
+    "Alkohol typisk bruk verdi": "48",
+    "Alkohol typisk bruk enhet": "1/wk",
+    "Røyk status": "Røyker",
+    "Røyk beskrivelse": "nonummy laoreet nonummy lorem ut diam nonummy aliquam ipsum. erat laoreet laoreet laoreet elit aliquam euismod lorem ut ipsum. dolor magna consectetuer nibh euismod adipiscing ut ut laoreet dolore nibh dolore consectetuer dolore.",
+    "Røyk samlet pakkeår": "79",
+    "Røykfri tobakk status": "Nåværende bruker",
+    "Røykfri tobakk beskrivelse": "erat magna magna aliquam nonummy sit laoreet nibh. dolor magna ut nonummy sed ipsum. nibh lorem aliquam erat nibh dolore diam euismod aliquam amet. ut aliquam consectetuer elit sed magna ipsum ipsum. adipiscing consectetuer nonummy ipsum amet magna nonummy dolore nibh magna.",
+    "Andre substanser beskrivelse": "nibh adipiscing euismod amet consectetuer sit consectetuer. dolore dolor adipiscing ut ut consectetuer.",
+    "Substansanamnese navn": "dolor ipsum euismod tincidunt elit dolor magna elit lorem. sit euismod amet tincidunt ipsum adipiscing magna magna. dolor euismod dolor dolore ut sit dolor. sit euismod nonummy magna erat nibh. dolor adipiscing euismod nibh sed lorem laoreet.",
+    "Substansanamnese status": "Nåværende bruker",
+    "Substansanamnese beskrivelse": "nonummy erat sed euismod ipsum dolore magna euismod ipsum nonummy consectetuer. ipsum dolor magna amet sed amet aliquam diam erat nibh lorem. magna laoreet diam diam erat diam ipsum sed sit magna."
+  },
+  "komorbiditet": {
+    "Har pasient kjent komorbiditet?": "Nei",
+    "Overordnet merknad komorbiditet": "amet erat sit aliquam amet magna consectetuer ipsum. ut sed ipsum ut adipiscing dolore dolor. sed nonummy nonummy dolore lorem sit lorem lorem tincidunt. sit sed sit consectetuer magna ipsum ipsum lorem lorem erat dolore lorem. aliquam tincidunt consectetuer sit lorem elit.",
+    "Gruppering ICD10 kapittel": {
+      "Tilstand: Hovedkapitler ICD-10": [
+        "Endokrine sykdommer, ernæringssykdommer og metabolske forstyrrelser (Kap.IV; E00-E90)",
+        "Symptomer, tegn, unormale kliniske funn og laboratoriefunn, ikke klassifisert annet sted (Kap.XVIII; R00-R99)"
+      ],
+      "Detaljer": [
+        "magna ut dolore aliquam aliquam sit lorem nonummy. elit elit aliquam tincidunt lorem ipsum. tincidunt sit dolor ipsum amet ipsum elit adipiscing. diam ut erat nonummy aliquam ipsum dolore. erat adipiscing dolore nibh sit sit adipiscing nonummy adipiscing.",
+        "elit nonummy laoreet erat euismod nibh adipiscing. ut aliquam dolor diam sed adipiscing ut laoreet ipsum euismod. sit euismod erat nibh ut adipiscing nibh nonummy dolore nibh laoreet. diam amet magna nonummy ut sit ut consectetuer. aliquam tincidunt lorem dolor amet amet."
+      ]
+    },
+    "ICD10": {
+      "Tilstand: ICD-10": [
+        "aliquam dolore laoreet ut magna amet sed consectetuer sit euismod. elit laoreet adipiscing sit erat nonummy ipsum nonummy ipsum sed amet.",
+        "dolor euismod magna magna tincidunt elit euismod consectetuer nonummy. consectetuer ut magna nibh sit tincidunt nonummy consectetuer diam adipiscing. tincidunt sed dolore consectetuer diam sit nibh dolor dolor laoreet. tincidunt lorem magna adipiscing dolore amet nonummy consectetuer sed."
+      ],
+      "Detaljer": [
+        "sed ut sed tincidunt magna nonummy lorem sed nibh. magna aliquam dolor aliquam lorem diam magna erat. adipiscing amet tincidunt laoreet ut magna ipsum sit. euismod diam euismod diam euismod sed tincidunt ipsum dolore.",
+        "euismod nibh euismod lorem ipsum ut sit erat. aliquam consectetuer euismod aliquam dolore dolore ipsum ut erat erat nibh. dolore tincidunt nibh nibh euismod aliquam ipsum."
+      ]
+    },
+    "Tidspunkt": "2025-01-15T04:50:37.1998772+01:00"
+  },
+  "Charlson Comorbidity Index (CCI)": {
+    "Aldersgruppe": "2",
+    "Myokardinfarkt": "0",
+    "Kronisk hjertesvikt": "0",
+    "Perifere vaskulære sykdommer": "0",
+    "Cerebrovaskulær hendelse": "0",
+    "Demens": "0",
+    "Kronisk lungesykdom": "0",
+    "Ulcussykdom": "0",
+    "Leversykdom": "0",
+    "Bindevevssykdom": "0",
+    "Diabetes": "1",
+    "Hemiplegi": "0",
+    "Moderat til alvorlig nyresykdom": "0",
+    "Solid svulst": "2",
+    "Leukemi": "0",
+    "Lymfom": "0",
+    "AIDS": "0",
+    "CCI totalskår": "21",
+    "Tidspunkt": "2025-01-11T14:50:37.474965+01:00"
+  },
+  "seneffekter": {
+    "CTCAE": {
+      "Kategori": [
+        "Blood and lymphatic system disorders",
+        "Blood and lymphatic system disorders",
+        "Blood and lymphatic system disorders"
+      ],
+      "Term": [
+        "X",
+        "X",
+        "X"
+      ],
+      "Beskrivelse av grad": [
+        "A",
+        "A",
+        "A"
+      ]
+    }
+  },
+  "primærdiagnose": {
+    "Problem/diagnosenavn": "ipsum nonummy magna adipiscing nibh lorem sit. dolore lorem laoreet dolor consectetuer sed laoreet. tincidunt nibh aliquam lorem ipsum dolore aliquam euismod diam diam.",
+    "Kommentar diagnose/TNM": "adipiscing sed magna consectetuer aliquam nibh nibh euismod. nibh diam magna ut consectetuer adipiscing ipsum adipiscing nibh nibh. aliquam ut aliquam nonummy dolor erat adipiscing ut. diam ut nibh erat dolore amet lorem lorem sed nibh ut lorem. sit elit ut euismod laoreet aliquam sit sed dolor.",
+    "Anatomisk lokalisering": "Midtlinje",
+    "Dato/tid for klinisk bekreftelse": "2025-01-14T13:50:37.5229629+01:00",
+    "Multiple primærtumorer": "Multiple primærtumorer",
+    "Multiple primærtumorer beskrivelse": "nibh lorem elit nonummy erat magna consectetuer euismod ipsum laoreet aliquam erat. laoreet aliquam nibh lorem tincidunt lorem erat ut tincidunt consectetuer nonummy. laoreet nonummy adipiscing dolor euismod ut euismod diam consectetuer dolore nibh ut. ipsum amet tincidunt tincidunt diam aliquam."
+  },
+  "TNM patologisk": {
+    "Primærtumor (pT)": "pT0",
+    "Regionale lymfeknuter (pN)": "pN3",
+    "Fjernmetastase (pM)": "pM0",
+    "Residiv (r)": "true",
+    "pTNM-vurdering": "euismod dolore erat tincidunt elit euismod sed amet erat tincidunt sit amet. aliquam nibh adipiscing magna consectetuer ipsum amet aliquam sit elit. dolore nibh erat adipiscing diam ut laoreet. dolor lorem laoreet sit sit laoreet. elit aliquam lorem dolor erat elit nonummy.",
+    "TNM-utgave": "AJCC TNM Versjon 8"
+  },
+  "TNM klinisk": {
+    "Primærtumor (T)": "cT3",
+    "Regionale lymfeknuter (N)": "cN0",
+    "Fjernmetastase (M)": "cM1",
+    "Residiv (r)": "true",
+    "TNM-vurdering": "elit dolor lorem erat ipsum consectetuer. ut nibh adipiscing dolore adipiscing ut sit. dolor nonummy dolore diam sed ut ipsum ut.",
+    "TNM-utgave": "AJCC TNM Versjon 8"
+  },
+  "Lymfeknutemetastase": {
+    "Regional lymfeknutemetastase": "Reginoale lymfeknutemetastase",
+    "Utredningsmetode regionale lymfeknutemetastaser": {
+      "Metoder": {
+        "Metode": [
+          "Fjerning av SN",
+          "Cytologi",
+          "Fjerning av SN"
+        ]
+      },
+      "Spesifier annet": "amet lorem adipiscing adipiscing nonummy nonummy nonummy sed nibh ipsum. dolor dolor amet adipiscing erat dolore aliquam lorem sed. magna nibh aliquam ipsum aliquam sit lorem tincidunt. aliquam ipsum lorem nonummy tincidunt euismod sed sit amet dolor nonummy.",
+      "Funn": "Reginoale lymfeknutemetastase"
+    },
+    "Fjernmetastaser": {
+      "Fjernmetastaser": "Fjernmetastase",
+      "Utredningsmetoder fjernmetastaser": {
+        "Metode": [
+          "Reseksjon",
+          "Cytologi",
+          "Bildediagnostikk"
+        ],
+        "Spesifiser annet": "dolor nibh ipsum dolore dolor nibh dolor dolore ipsum. dolore sed amet dolor erat euismod tincidunt aliquam euismod. sed nibh euismod laoreet adipiscing euismod diam erat. tincidunt elit erat dolore nonummy aliquam amet amet. dolore amet laoreet diam laoreet elit sit.",
+        "Anatomisk lokalisasjon": {
+          "Skjelett": "Skjelett",
+          "Lever": "Lever",
+          "Lunge": "Lunge",
+          "CNS": "CNS (sentralnervesystemet)",
+          "Fjerne lymfeknuter": "Fjerne lymfeknuter",
+          "Annet": "dolor adipiscing erat ut dolor laoreet aliquam sed ipsum lorem ipsum. magna adipiscing diam ipsum dolore nibh sit. diam sit magna nibh laoreet aliquam elit adipiscing elit.",
+          "Spesifiser annet": "dolor adipiscing erat ut dolor laoreet aliquam sed ipsum lorem ipsum. magna adipiscing diam ipsum dolore nibh sit. diam sit magna nibh laoreet aliquam elit adipiscing elit."
+        },
+        "Funn": "Fjernmetastase"
+      }
+    },
+    "Målinger": {
+      "Høyde/lengde": "5",
+      "Høyde/lengde enhet": "cm",
+      "Høyde/lengde tidspunkt": "2025-01-22T20:50:37.7473658+01:00",
+      "Kroppsvekt": "25",
+      "Kroppsvekt enhet": "kg",
+      "Kroppsvekt tidspunkt": "2025-01-22T20:50:37.768406+01:00",
+      "Kroppsmasseindeks": "40",
+      "Kroppsmasseindeks enhet": "kg/m2",
+      "Kroppsmasseindeks tidspunkt": "2025-01-11T04:50:37.7924027+01:00"
+    },
+    "ECOG": {
+      "ECOG verdi": "4",
+      "ECOG symbol": "Helt sengeliggende",
+      "ECOG tidspunkt": "2025-01-09T22:50:37.8574007+01:00"
+    }
+  }
+}

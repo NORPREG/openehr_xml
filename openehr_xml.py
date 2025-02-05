@@ -9,13 +9,11 @@ from module.utils import (
 	simplify_dict, 
 	transform_to_header_structure,
 	remove_name_tree,
-	convert_to_list,
-	remove_comments,
 	flatten_middle_nodes,
 	flatten_dicts_in_list
 )
 
-from module.extract_datamodel import extract_datamodel
+from module.extract_datamodel_config import extract_datamodel
 
 xml_file = "xml/full_eksport_v13.xml"
 with open(xml_file, 'r', encoding="utf-8") as file:
@@ -31,20 +29,22 @@ model_dump_dict = transform_to_header_structure(model_dump_dict)
 model_dump_dict = flatten_middle_nodes(model_dump_dict)
 model_dump_dict = flatten_dicts_in_list(model_dump_dict)
 
-# data_model = extract_datamodel(model_dump_dict)
-# data_model_string = json.dumps(data_model, indent=2, ensure_ascii=False)
-
 model_dump_string = json.dumps(model_dump_dict, indent=2, ensure_ascii=False)
 with open("output/parsed_data_v13.json", "w", encoding="utf-8") as out:
 	out.write(model_dump_string)
+
+data_model = extract_datamodel(model_dump_dict)
+data_model_string = json.dumps(data_model, indent=2, ensure_ascii=False)
+
+with open("output/data_model_v13.json", "w", encoding="utf-8") as out:
+	out.write(data_model_string)
 
 """
 
 
 data_model = extract_datamodel(model_dump_dict)
 data_model_string = json.dumps(data_model, indent=2, ensure_ascii=False)
-with open("output/data_model.json", "w", encoding="utf-8") as out:
-	out.write(data_model_string)
+
 
 pd_input = {
 	"category": list(),

@@ -1,0 +1,16 @@
+{
+	"Lymfeknutemetastase": {
+		"Regional lymfeknutemetastase": [ "content", "Lymfeknutemetastase", "Regional lymfeknutemetastase" ],
+		"Utredningsmetode regionale lymfeknutemetastaser": {
+			"_lymfe": [ "content", "Lymfeknutemetastase", "Utredningsmetode regionale lymfeknutemetastaser" ],
+
+			"Metoder": {
+				"_lymfe": [ "content", "Lymfeknutemetastase", "Utredningsmetode regionale lymfeknutemetastaser" ],
+				"Metode": [ "_lymfe", "Metode##" ]
+			},
+
+			"Spesifier annet": [ "_lymfe", "//" ],
+			"Funn": [ "_lymfe", "//" ]
+		}
+	}
+}

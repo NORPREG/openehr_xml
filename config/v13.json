@@ -8,153 +8,161 @@
 	"composer": [ "composer", "name" ],
 
 	"sosialt": {
-		"_sosialt": ["content", "Sosialanamnese_generell"],
+		"_sosialt": [ "content", "Sosialanamnese_generell" ],
 
 		"Høyeste fullførte utdanningsnivå": [ "_sosialt", "Utdanningssammendrag", "//" ],
 		"Arbeidsstatus": [ "_sosialt", "Arbeidssammendrag", "//" ],
 		"Samlivsstatus": [ "_sosialt", "Sosialt nettverk", "//" ],
-		"Samlivsform": [ 
-				"_sosialt", 
-				"Samlivsform", 
-				"Kartleggingsspørsmål om sosial forhold samlivsform", 
-				"items", 
-				"Spesifikt sosialt sosialt forhold",
-				"Hvilken samlivsform har pasienten?"
+		"Samlivsform": [
+			"_sosialt",
+			"Samlivsform",
+			"Kartleggingspørsmål om sosiale forhold samlivsform",
+			"items",
+			"Spesifikt sosialt forhold",
+			"Hvilken samlivsform har pasienten?"
 		],
 		"Har pasienten ansvar for barn under 18 år?": [
-				"_sosialt",
-				"Kartlegging omsorgsansvar",
-				"items",
-				"Omsorgsperson for barn under 18 år",
-				"//"
-			],
+			"_sosialt",
+			"Kartlegging omsorgsansvar",
+			"items",
+			"Omsorgsperson for barn under 18 år",
+			"//"
+		],
 		"Har pasienten ansvar for egne barn/andre over 18 år?": [
-				"_sosialt",
-				"Kartlegging omsorgsansvar",
-				"items",
-				"Omsorgsperson for personer over 18 år",
-				"//"
-			],
+			"_sosialt",
+			"Kartlegging omsorgsansvar",
+			"items",
+			"Omsorgsperson for personer over 18 år",
+			"//"
+		]
 	},
 
 	"stimulantia": {
-		"_Alkohol": ["content", "Stimulantia", "Alkohol"],
-		"_Røyk": ["content", "Stimulantia", "Røyk"],
-		"_Røykfri": ["content", "Stimulantia", "Røykfri tobakk/snus"],
-		"_Andre": ["content", "Stimulantia", "Sammendrag andre substanser"],
-		"_Substansanamnese": ["content", "Stimulantia", "Substansanamnese"],
+		"_Alkohol": [ "content", "Stimulantia", "Alkohol" ],
+		"_Røyk": [ "content", "Stimulantia", "Røyk" ],
+		"_Røykfri": [ "content", "Stimulantia", "Røykfri tobakk/snus" ],
+		"_Andre": [ "content", "Stimulantia", "Sammendrag andre substanser" ],
+		"_Substansanamnese": [ "content", "Stimulantia", "Substansanamnese" ],
 
-		"Alkohol status":  ["_Alkohol", "Overordnet status"],
-		"Alkohol beskrivelse": ["_Alkohol", "Overordnet beskrivelse"],
-		"Alkohol typisk bruk verdi": ["_Alkohol", "Per episode", "Typisk bruk (alkoholenheter)"],
-		"Alkohol typisk bruk enhet": ["_Alkohol", "Per episode", "units"],
-		"Røyk status": ["_Røyk", "Overordnet status"],
-		"Røyk beskrivelse": ["_Røyk", "Overordnet beskrivelse"],
-		"Røyk samlet pakkeår": ["_Røyk", "Samlet pakkeår"],
-		"Røykfri tobakk status": ["_Røykfri", "Overordnet status"],
-		"Røykfri tobakk beskrivelse": ["_Røykfri", "Overordnet beskrivelse"],
-		"Andre substanser navn": ["_Andre", "Substansnavn"],
-		"Andre substanser beskrivelse": ["_Andre", "Overordnet beskrivelse"],
-		"Substansanamnese navn": ["_Substansanamnese", "Substansnavn"],
-		"Substansanamnese status": ["_Substansanamnese", "Overordnet status"],
-		"Substansanamnese beskrivelse": ["_Substansanamnese", "Overordnet beskrivelse"],
+		"Alkohol status": [ "_Alkohol", "Overordnet status" ],
+		"Alkohol beskrivelse": [ "_Alkohol", "Overordnet beskrivelse" ],
+		"Alkohol typisk bruk verdi": [ "_Alkohol", "Per episode", "Typisk bruk (alkoholenheter)" ],
+		"Alkohol typisk bruk enhet": [ "_Alkohol", "Per episode", "units" ],
+		"Røyk status": [ "_Røyk", "Overordnet status" ],
+		"Røyk beskrivelse": [ "_Røyk", "Overordnet beskrivelse" ],
+		"Røyk samlet pakkeår": [ "_Røyk", "Samlet pakkeår" ],
+		"Røykfri tobakk status": [ "_Røykfri", "Overordnet status" ],
+		"Røykfri tobakk beskrivelse": [ "_Røykfri", "Overordnet beskrivelse" ],
+		"Andre substanser beskrivelse": [ "_Andre", "Overordnet beskrivelse" ],
+		"Substansanamnese navn": [ "_Substansanamnese", "Substansnavn" ],
+		"Substansanamnese status": [ "_Substansanamnese", "Overordnet status" ],
+		"Substansanamnese beskrivelse": [ "_Substansanamnese", "Overordnet beskrivelse" ]
 	},
 
 	"komorbiditet": {
-		"_komorb": ["content", "Komorbiditet_utredning"],
+		"_komorb": [ "content", "Komorbiditet_utredning" ],
 
-		"Har pasient kjent komorbiditet?": ["_komorb", "Kartlegging komorbiditet", "items", "//"],
-		"Overordnet merknad komorbiditet": ["_komorb", "Kartlegging komorbiditet", "items", "//"],
+		"Har pasient kjent komorbiditet?": [ "_komorb", "Kartlegging komorbiditet", "items", "//" ],
+		"Overordnet merknad komorbiditet": [ "_komorb", "Kartlegging komorbiditet", "items", "//" ],
+
 		"Gruppering ICD10 kapittel": {
-				"Tilstand": ["content", "Komorbiditet_utredning", "Gruppering ICD10 kapittel", "Forholdsregel##", "//"],
-				"Detaljer": ["content", "Komorbiditet_utredning", "Gruppering ICD10 kapittel", "Forholdsregel##", "//"],
-			},
-		"ICD10": {
-			"Tilstand ICD-10": ["content", "Komorbiditet_utredning", "ICD10", "Forholdsregel##", "//"],
-			"Detaljer": ["content", "Komorbiditet_utredning", "ICD10", "Forholdsregel##", "//"],
+			"_komorb": [ "content", "Komorbiditet_utredning" ],
+			"Tilstand: Hovedkapitler ICD-10": [ "_komorb", "Gruppering ICD10 kapittel", "Forholdsregel##", "//" ],
+			"Detaljer": [ "_komorb", "Gruppering ICD10 kapittel", "Forholdsregel##", "//" ]
 		},
-		"Tidspunkt": ["_komorb", "Kartlegging komorbiditet", "time"]
+		"ICD10": {
+			"_komorb": [ "content", "Komorbiditet_utredning" ],
+
+			"Tilstand: ICD-10": [ "_komorb", "ICD10", "Forholdsregel##", "//" ],
+			"Detaljer": [ "_komorb", "ICD10", "Forholdsregel##", "//" ]
+		},
+		"Tidspunkt": [ "_komorb", "Kartlegging komorbiditet", "time" ]
 	},
 
 	"Charlson Comorbidity Index (CCI)": {
-		"_cci": ["content", "Komorbiditet_utredning", "Charlson Comorbidity Index (CCI)"],
+		"_cci": [ "content", "Komorbiditet_utredning", "Charlson Comorbidity Index (CCI)", "items" ],
 
-		"Aldersgruppe": ["_cci", "//"],
-		"Myokardinfarkt": ["_cci" "//"],
-		"Kronisk hjertesvikt": ["_cci" "//"],
-		"Perifere vaskulære sykdommer": ["_cci" "//"],
-		"Cerebrovaskulær hendelse": ["_cci" "//"],
-		"Demens": ["_cci" "//"],
-		"Kronisk lungesykdom": ["_cci" "//"],
-		"Ulcussykdom": ["_cci" "//"],
-		"Leversykdom": ["_cci" "//"],
-		"Bindevevssykdom": ["_cci" "//"],
-		"Diabetes": ["_cci" "//"],
-		"Hemiplegi": ["_cci" "//"],
-		"Moderat til alvorlig nyresykdom": ["_cci" "//"],
-		"Solid svulst": ["_cci" "//"],
-		"Leukemi": ["_cci" "//"],
-		"Lymfom": ["_cci" "//"],
-		"AIDS": ["_cci" "//"],
-		"CCI totalskår": ["_cci" "//"],
+		"Aldersgruppe": [ "_cci", "//" ],
+		"Myokardinfarkt": [ "_cci", "//" ],
+		"Kronisk hjertesvikt": [ "_cci", "//" ],
+		"Perifere vaskulære sykdommer": [ "_cci", "//" ],
+		"Cerebrovaskulær hendelse": [ "_cci", "//" ],
+		"Demens": [ "_cci", "//" ],
+		"Kronisk lungesykdom": [ "_cci", "//" ],
+		"Ulcussykdom": [ "_cci", "//" ],
+		"Leversykdom": [ "_cci", "//" ],
+		"Bindevevssykdom": [ "_cci", "//" ],
+		"Diabetes": [ "_cci", "//" ],
+		"Hemiplegi": [ "_cci", "//" ],
+		"Moderat til alvorlig nyresykdom": [ "_cci", "//" ],
+		"Solid svulst": [ "_cci", "//" ],
+		"Leukemi": [ "_cci", "//" ],
+		"Lymfom": [ "_cci", "//" ],
+		"AIDS": [ "_cci", "//" ],
+		"CCI totalskår": [ "_cci", "//" ],
+		"Tidspunkt": ["content", "Komorbiditet_utredning", "Charlson Comorbidity Index (CCI)", "time"]
 	},
 
 	"seneffekter": {
-		"_ctcae": ["content", "Komorbiditet_utredning", "Problem/diagnose"],
-
 		"CTCAE": {
-			"Kategori": ["_ctcae", "Common Terminology Criteria for Adverse Events (CTCAE)##", "//"],
-			"Term": ["_ctcae", "Common Terminology Criteria for Adverse Events (CTCAE)##", "//"],
-			"Beskrivelse av grad": ["_ctcae", "Common Terminology Criteria for Adverse Events (CTCAE)##", "//"],
+			"_ctcae": [
+				"content",
+				"Problem/diagnose",
+				"Common Terminology Criteria for Adverse Events (CTCAE)##"
+			],
+
+			"Kategori": [ "_ctcae", "//" ],
+			"Term": [ "_ctcae", "//" ],
+			"Beskrivelse av grad": [ "_ctcae", "//" ]
 		}
 	},
 
 	"primærdiagnose": {
-		"_prim": ["content", "Problem/diagnose (inkl TNM)"],
+		"_prim": [ "content", "Problem/diagnose (inkl TNM)" ],
 
-		"Problem/diagnosenavn": ["_prim", "//"],
-		"Kommentar diagnose/TNM": ["_prim", "//"],
-		"Anatomisk lokalisering": ["_prim", "//"],
-		"Dato/tid for klinisk bekreftelse": ["_prim", "//"],
-		"Multiple primærtumorer": ["_prim", "Oncology problem details dips", "Multiple primærtumorer"],
-		"Multiple primærtumorer beskrivelse": ["_prim", "Oncology problem details dips", "Beskrivelse"],
-
+		"Problem/diagnosenavn": [ "_prim", "//" ],
+		"Kommentar diagnose/TNM": [ "_prim", "//" ],
+		"Anatomisk lokalisering": [ "_prim", "//" ],
+		"Dato/tid for klinisk bekreftelse": [ "_prim", "//" ],
+		"Multiple primærtumorer": [ "_prim", "Oncology problem details dips", "Multiple primærtumorer" ],
+		"Multiple primærtumorer beskrivelse": [ "_prim", "Oncology problem details dips", "Beskrivelse" ]
 	},
 
 	"TNM patologisk": {
-		"_tnm": ["content", "Problem/diagnose (inkl TNM)", "TNM-klassifikasjon patologi"],
+		"_tnm": [ "content", "Problem/diagnose (inkl TNM)", "TNM-klassifikasjon patologi" ],
 
-		"Primærtumor (T)": ["_tnm", "//"],
-		"Regionale lymfeknuter (N)": ["_tnm", "//"],
-		"Fjernmetastase (M)": ["_tnm", "//"],
-		"Residiv (r)": ["_tnm", "//"],
-		"TNM-vurdering": ["_tnm", "//"],
-		"TNM-utgave": ["_tnm", "//"]
+		"Primærtumor (pT)": [ "_tnm", "//" ],
+		"Regionale lymfeknuter (pN)": [ "_tnm", "//" ],
+		"Fjernmetastase (pM)": [ "_tnm", "//" ],
+		"Residiv (r)": [ "_tnm", "//" ],
+		"pTNM-vurdering": [ "_tnm", "//" ],
+		"TNM-utgave": [ "_tnm", "//" ]
 	},
 
 
 	"TNM klinisk": {
-		"_tnm": ["content", "Problem/diagnose (inkl TNM)", "TNM-klassifikasjon klinisk"],
+		"_tnm": [ "content", "Problem/diagnose (inkl TNM)", "TNM-klassifikasjon klinisk" ],
 
-		"Primærtumor (pT)": ["_tnm", "//"],
-		"Regionale lymfeknuter (pN)": ["_tnm", "//"],
-		"Fjernmetastase (pM)": ["_tnm", "//"],
-		"Residiv (r)": ["_tnm", "//"],
-		"pTNM-vurdering": ["_tnm", "//"],
-		"TNM-utgave": ["_tnm", "//"]
+		"Primærtumor (T)": [ "_tnm", "//" ],
+		"Regionale lymfeknuter (N)": [ "_tnm", "//" ],
+		"Fjernmetastase (M)": [ "_tnm", "//" ],
+		"Residiv (r)": [ "_tnm", "//" ],
+		"TNM-vurdering": [ "_tnm", "//" ],
+		"TNM-utgave": [ "_tnm", "//" ]
 	},
 
 	"Lymfeknutemetastase": {
-		"Regional lymfeknutemetastase": ["content", "Lymfeknutemetastase", "Regional lymfeknutemetastase"],
+		"Regional lymfeknutemetastase": [ "content", "Lymfeknutemetastase", "Regional lymfeknutemetastase" ],
 		"Utredningsmetode regionale lymfeknutemetastaser": {
-			"_lymfe": ["content", "Lymfeknutemetastase", "Utredningsmetode regionale lymfeknutemetastaser"],
+			"_lymfe": [ "content", "Lymfeknutemetastase", "Utredningsmetode regionale lymfeknutemetastaser" ],
 
 			"Metoder": {
-				"Metode": ["_lymfe", "Metode##"]
+				"_lymfe": [ "content", "Lymfeknutemetastase", "Utredningsmetode regionale lymfeknutemetastaser" ],
+				"Metode": [ "_lymfe", "Metode##" ]
 			},
 
-			"Spesifiser annet": ["_lymfe", "//"],
-			"Funn": ["_lymfe", "//"]
+			"Spesifier annet": [ "_lymfe", "//" ],
+			"Funn": [ "_lymfe", "//" ]
 		},
 
 		"Fjernmetastaser": {
@@ -165,12 +173,14 @@
 				"Metode": [ "_utr", "Metode##" ],
 				"Spesifiser annet": [ "_utr", "//" ],
 				"Anatomisk lokalisasjon": {
-					"Skjelett": [ "_utr", "M anatomisk lokalisajson Skjelett", "//" ],
-					"Lever": [ "_utr", "M anatomisk lokalisajson Lever", "//" ],
-					"Lunge": [ "_utr", "M anatomisk lokalisajson Lunge", "//" ],
-					"CNS": [ "_utr", "M anatomisk lokalisajson CNS", "//" ],
-					"Fjerne lymfeknuter": [ "_utr", "M anatomisk lokalisajson Fjerne lymfeknuter", "//" ],
-					"Annet": [ "_utr", "M anatomisk lokalisajson Annet", "//" ],
+					"_utr": [ "content", "Fjernmetastaser", "Utredningsmetode fjernmetastaser" ],
+
+					"Skjelett": [ "_utr", "M anatomisk lokalisajson Skjelett", "Navn på kroppssted" ],
+					"Lever": [ "_utr", "M anatomisk lokalisajson Lever", "Navn på kroppssted" ],
+					"Lunge": [ "_utr", "M anatomisk lokalisajson Lunge", "Navn på kroppssted" ],
+					"CNS": [ "_utr", "M anatomisk lokalisajson CNS", "Navn på kroppssted" ],
+					"Fjerne lymfeknuter": [ "_utr", "M anatomisk lokalisajson Fjerne lymfeknuter", "Navn på kroppssted" ],
+					"Annet": [ "_utr", "M anatomisk lokalisajson Annet", "Spesifiser annet" ],
 					"Spesifiser annet": [ "_utr", "M anatomisk lokalisajson Annet", "//" ]
 				},
 
@@ -194,11 +204,12 @@
 			"Kroppsmasseindeks tidspunkt": [ "_kmi", "time" ]
 		},
 
-	"ECOG": {
-		"_ecog": ["content", "ECOG funksjonsstatus"],
+		"ECOG": {
+			"_ecog": [ "content", "Målinger", "ECOG funksjonsstatus" ],
 
-		"ECOG verdi": ["_ecog", "items", "ECOG funksjonsstatus"],
-		"ECOG symbol": ["_ecog", "items", "symbol"],
-		"ECOG tidspunkt": ["_ecog", "time"]
+			"ECOG verdi": [ "_ecog", "items", "ECOG funksjonsstatus" ],
+			"ECOG symbol": [ "_ecog", "items", "symbol" ],
+			"ECOG tidspunkt": [ "_ecog", "time" ]
+		}
 	}
 }
