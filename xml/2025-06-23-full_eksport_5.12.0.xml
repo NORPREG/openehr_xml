@@ -1,0 +1,2661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<composition p1:type="COMPOSITION" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" archetype_node_id="openEHR-EHR-COMPOSITION.export_secondary_use_dips.v1" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openehr.org/v1">
+  <name>
+    <value>NORPREG_TEST</value>
+  </name>
+  <uid xsi:type="OBJECT_VERSION_ID">
+    <value>4dd4146a-7e09-4b50-89c8-87616eb8f0e2::fqm::1</value>
+  </uid>
+  <archetype_details>
+    <archetype_id>
+      <value>openEHR-EHR-COMPOSITION.export_secondary_use_dips.v1</value>
+    </archetype_id>
+    <template_id>
+      <value>samleskjema_sjk_v0.4.0</value>
+    </template_id>
+    <rm_version>1.0.4</rm_version>
+  </archetype_details>
+  <language>
+    <terminology_id>
+      <value>openehr</value>
+    </terminology_id>
+    <code_string>nb</code_string>
+  </language>
+  <territory>
+    <terminology_id>
+      <value>openehr</value>
+    </terminology_id>
+    <code_string>NO</code_string>
+  </territory>
+  <category>
+    <value />
+    <defining_code>
+      <terminology_id>
+        <value>openehr</value>
+      </terminology_id>
+      <code_string>434</code_string>
+    </defining_code>
+  </category>
+  <composer xsi:type="PARTY_IDENTIFIED">
+    <name>unknown</name>
+  </composer>
+  <context>
+    <start_time>
+      <value>2025-06-23T12:24:35.9709272+02:00</value>
+    </start_time>
+    <setting>
+      <value>secondary medical care</value>
+      <defining_code>
+        <terminology_id>
+          <value>openehr</value>
+        </terminology_id>
+        <code_string>232</code_string>
+      </defining_code>
+    </setting>
+    <other_context xsi:type="ITEM_TREE" archetype_node_id="at0001">
+      <name>
+        <value>Item tree</value>
+      </name>
+      <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.template_semver_dips.v1">
+        <name>
+          <value>Template versjonsinformasjon</value>
+        </name>
+        <archetype_details>
+          <archetype_id>
+            <value>openEHR-EHR-CLUSTER.template_semver_dips.v1</value>
+          </archetype_id>
+          <template_id>
+            <value>samleskjema_sjk_v0.4.0</value>
+          </template_id>
+          <rm_version>1.0.4</rm_version>
+        </archetype_details>
+        <items xsi:type="ELEMENT" archetype_node_id="at0001">
+          <name>
+            <value>Navn</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Eksport til protonregisteret</value>
+            <defining_code>
+              <terminology_id>
+                <value>no.onk.export</value>
+              </terminology_id>
+              <code_string>PROT</code_string>
+            </defining_code>
+          </value>
+        </items>
+      </items>
+      <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.clinical_context_dips.v1">
+        <name>
+          <value>Klinisk kontekst</value>
+        </name>
+        <archetype_details>
+          <archetype_id>
+            <value>openEHR-EHR-CLUSTER.clinical_context_dips.v1</value>
+          </archetype_id>
+          <template_id>
+            <value>samleskjema_sjk_v0.4.0</value>
+          </template_id>
+          <rm_version>1.0.4</rm_version>
+        </archetype_details>
+        <items xsi:type="ELEMENT" archetype_node_id="at0001">
+          <name>
+            <value>Forløpstype</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Kreft i fordøyelsessystemet</value>
+            <defining_code>
+              <terminology_id>
+                <value>no.onk.forlopstype</value>
+              </terminology_id>
+              <code_string>6</code_string>
+            </defining_code>
+          </value>
+        </items>
+      </items>
+    </other_context>
+  </context>
+  <content xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.adhoc.v1">
+    <name>
+      <value>Samtykke informasjon gitt og studier</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-SECTION.adhoc.v1</value>
+      </archetype_id>
+      <template_id>
+        <value>samleskjema_sjk_v0.4.0</value>
+      </template_id>
+      <rm_version>1.0.4</rm_version>
+    </archetype_details>
+    <items xsi:type="ACTION" archetype_node_id="openEHR-EHR-ACTION.informed_consent_dips.v1">
+      <name>
+        <value>Reservasjon til Norsk proton og stråleterapiregister</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-ACTION.informed_consent_dips.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <time>
+        <value>2025-06-23T12:24:35.9709272+02:00</value>
+      </time>
+      <description xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0002">
+          <name>
+            <value>Prosedyre/utprøving/aktivitet</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Informert pasienten om reservasjonsrett til Norsk proton- og stråleterapiregister (medisinsk kvalitetsregister)</value>
+            <defining_code>
+              <terminology_id>
+                <value>OncologyConsents</value>
+              </terminology_id>
+              <code_string>01</code_string>
+            </defining_code>
+          </value>
+        </items>
+      </description>
+      <ism_transition>
+        <current_state>
+          <value>active</value>
+          <defining_code>
+            <terminology_id>
+              <value>openehr</value>
+            </terminology_id>
+            <code_string>245</code_string>
+          </defining_code>
+        </current_state>
+        <careflow_step>
+          <value>Informert samtykke forespurt</value>
+          <defining_code>
+            <terminology_id>
+              <value>local</value>
+            </terminology_id>
+            <code_string>at0014</code_string>
+          </defining_code>
+        </careflow_step>
+      </ism_transition>
+    </items>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.precaution.v1">
+      <name>
+        <value>Studier#1</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.precaution.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <protocol xsi:type="ITEM_TREE" archetype_node_id="at0006">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.person.v1">
+          <name>
+            <value>Person</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.person.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>samleskjema_sjk_v0.4.0</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0001">
+            <name>
+              <value>Navn</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>diam sit lorem sed sed diam laoreet sit. erat ipsum lorem nibh dolor nibh amet ipsum. </value>
+            </value>
+          </items>
+        </items>
+      </protocol>
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0002">
+          <name>
+            <value>Navn på studie</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>ipsum</value>
+            <defining_code>
+              <terminology_id>
+                <value>local</value>
+              </terminology_id>
+              <code_string>lorem</code_string>
+            </defining_code>
+          </value>
+        </items>
+      </data>
+    </items>
+  </content>
+  <content xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.adhoc.v1">
+    <name>
+      <value>Komorbiditet_utredning</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-SECTION.adhoc.v1</value>
+      </archetype_id>
+      <template_id>
+        <value>samleskjema_sjk_v0.4.0</value>
+      </template_id>
+      <rm_version>1.0.4</rm_version>
+    </archetype_details>
+    <items xsi:type="OBSERVATION" archetype_node_id="openEHR-EHR-OBSERVATION.problem_screening.v1">
+      <name>
+        <value>Kartlegging komorbiditet</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-OBSERVATION.problem_screening.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <data archetype_node_id="at0001">
+        <name>
+          <value>History</value>
+        </name>
+        <origin>
+          <value>2025-06-23T12:24:35.9709272+02:00</value>
+        </origin>
+        <events xsi:type="POINT_EVENT" archetype_node_id="at0002">
+          <name>
+            <value>Uspesifisert hendelse</value>
+          </name>
+          <time>
+            <value>2025-06-23T12:24:35.9709272+02:00</value>
+          </time>
+          <data xsi:type="ITEM_TREE" archetype_node_id="at0003">
+            <name>
+              <value>Tree</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0028">
+              <name>
+                <value>Har pasient kjent komorbiditet?</value>
+              </name>
+              <value xsi:type="DV_CODED_TEXT">
+                <value>Ja</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>local</value>
+                  </terminology_id>
+                  <code_string>at0031</code_string>
+                </defining_code>
+              </value>
+            </items>
+          </data>
+        </events>
+      </data>
+    </items>
+    <items xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.adhoc.v1">
+      <name>
+        <value>Gruppering ICD10 kapittel</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-SECTION.adhoc.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.precaution.v1">
+        <name>
+          <value>Hovedkapittel ICD-10#1</value>
+        </name>
+        <archetype_details>
+          <archetype_id>
+            <value>openEHR-EHR-EVALUATION.precaution.v1</value>
+          </archetype_id>
+          <template_id>
+            <value>samleskjema_sjk_v0.4.0</value>
+          </template_id>
+          <rm_version>1.0.4</rm_version>
+        </archetype_details>
+        <language>
+          <terminology_id>
+            <value>ISO_639-1</value>
+          </terminology_id>
+          <code_string>nb</code_string>
+        </language>
+        <encoding>
+          <terminology_id>
+            <value>IANA</value>
+          </terminology_id>
+          <code_string>UTF-8</code_string>
+        </encoding>
+        <subject xsi:type="PARTY_SELF" />
+        <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+          <name>
+            <value>Tree</value>
+          </name>
+          <items xsi:type="ELEMENT" archetype_node_id="at0002">
+            <name>
+              <value>Tilstand: Hovedkapitler ICD-10</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Åndedrettssystemet, sykdommer (Kap.X; J00-J99)</value>
+              <defining_code>
+                <terminology_id>
+                  <value>no.icd10.kapitler</value>
+                </terminology_id>
+                <code_string>X</code_string>
+              </defining_code>
+            </value>
+          </items>
+        </data>
+      </items>
+      <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.precaution.v1">
+        <name>
+          <value>Hovedkapittel ICD-10#2</value>
+        </name>
+        <archetype_details>
+          <archetype_id>
+            <value>openEHR-EHR-EVALUATION.precaution.v1</value>
+          </archetype_id>
+          <template_id>
+            <value>samleskjema_sjk_v0.4.0</value>
+          </template_id>
+          <rm_version>1.0.4</rm_version>
+        </archetype_details>
+        <language>
+          <terminology_id>
+            <value>ISO_639-1</value>
+          </terminology_id>
+          <code_string>nb</code_string>
+        </language>
+        <encoding>
+          <terminology_id>
+            <value>IANA</value>
+          </terminology_id>
+          <code_string>UTF-8</code_string>
+        </encoding>
+        <subject xsi:type="PARTY_SELF" />
+        <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+          <name>
+            <value>Tree</value>
+          </name>
+          <items xsi:type="ELEMENT" archetype_node_id="at0002">
+            <name>
+              <value>Tilstand: Hovedkapitler ICD-10</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Øyet og øyets omgivelser, sykdommer (Kap.VII; H00-H59)</value>
+              <defining_code>
+                <terminology_id>
+                  <value>no.icd10.kapitler</value>
+                </terminology_id>
+                <code_string>VII</code_string>
+              </defining_code>
+            </value>
+          </items>
+        </data>
+      </items>
+    </items>
+    <items xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.adhoc.v1">
+      <name>
+        <value>ICD10</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-SECTION.adhoc.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.precaution.v1">
+        <name>
+          <value>TIlstand ICD-10#1</value>
+        </name>
+        <archetype_details>
+          <archetype_id>
+            <value>openEHR-EHR-EVALUATION.precaution.v1</value>
+          </archetype_id>
+          <template_id>
+            <value>samleskjema_sjk_v0.4.0</value>
+          </template_id>
+          <rm_version>1.0.4</rm_version>
+        </archetype_details>
+        <language>
+          <terminology_id>
+            <value>ISO_639-1</value>
+          </terminology_id>
+          <code_string>nb</code_string>
+        </language>
+        <encoding>
+          <terminology_id>
+            <value>IANA</value>
+          </terminology_id>
+          <code_string>UTF-8</code_string>
+        </encoding>
+        <subject xsi:type="PARTY_SELF" />
+        <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+          <name>
+            <value>Tree</value>
+          </name>
+          <items xsi:type="ELEMENT" archetype_node_id="at0002">
+            <name>
+              <value>Tilstand: ICD-10</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>ipsum diam ipsum diam lorem laoreet nibh euismod nibh ipsum. dolore aliquam elit adipiscing diam diam euismod. erat dolor euismod aliquam aliquam diam nibh elit erat. amet nonummy tincidunt sit nibh consectetuer erat lorem ipsum adipiscing diam elit. </value>
+            </value>
+          </items>
+        </data>
+      </items>
+    </items>
+  </content>
+  <content xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.adhoc.v1">
+    <name>
+      <value>Tidligere kreftbehandling</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-SECTION.adhoc.v1</value>
+      </archetype_id>
+      <template_id>
+        <value>samleskjema_sjk_v0.4.0</value>
+      </template_id>
+      <rm_version>1.0.4</rm_version>
+    </archetype_details>
+    <items xsi:type="OBSERVATION" archetype_node_id="openEHR-EHR-OBSERVATION.procedure_screening.v1">
+      <name>
+        <value>Kartlegging om tidligere kreftbehandling</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-OBSERVATION.procedure_screening.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <data archetype_node_id="at0001">
+        <name>
+          <value>History</value>
+        </name>
+        <origin>
+          <value>2025-06-23T12:24:35.9709272+02:00</value>
+        </origin>
+        <events xsi:type="POINT_EVENT" archetype_node_id="at0002">
+          <name>
+            <value>Uspesifisert hendelse</value>
+          </name>
+          <time>
+            <value>2025-06-23T12:24:35.9709272+02:00</value>
+          </time>
+          <data xsi:type="ITEM_TREE" archetype_node_id="at0003">
+            <name>
+              <value>Tree</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0028">
+              <name>
+                <value>Har pasienten hatt tidligere kreftbehandling?</value>
+              </name>
+              <value xsi:type="DV_CODED_TEXT">
+                <value>Ja</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>local</value>
+                  </terminology_id>
+                  <code_string>at0031</code_string>
+                </defining_code>
+              </value>
+            </items>
+            <items xsi:type="CLUSTER" archetype_node_id="at0022">
+              <name>
+                <value>Spesifikk kreftbehandling#1</value>
+              </name>
+              <items xsi:type="ELEMENT" archetype_node_id="at0037">
+                <name>
+                  <value>Behandlingsstart</value>
+                </name>
+                <value xsi:type="DV_DATE_TIME">
+                  <value>2025-05-22T00:00:00+02:00</value>
+                </value>
+              </items>
+              <items xsi:type="ELEMENT" archetype_node_id="at0037">
+                <name>
+                  <value>Behandlingsslutt</value>
+                </name>
+                <value xsi:type="DV_DATE_TIME">
+                  <value>2025-06-19T00:00:00+02:00</value>
+                </value>
+              </items>
+              <items xsi:type="ELEMENT" archetype_node_id="at0004">
+                <name>
+                  <value>Prosedyrenavn</value>
+                </name>
+                <value xsi:type="DV_CODED_TEXT">
+                  <value>Kirurgisk fjerning</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>SNOMED-CT</value>
+                    </terminology_id>
+                    <code_string>128303001</code_string>
+                  </defining_code>
+                </value>
+              </items>
+            </items>
+            <items xsi:type="CLUSTER" archetype_node_id="at0022">
+              <name>
+                <value>Spesifikk kreftbehandling#2</value>
+              </name>
+              <items xsi:type="ELEMENT" archetype_node_id="at0037">
+                <name>
+                  <value>Behandlingsstart</value>
+                </name>
+                <value xsi:type="DV_DATE_TIME">
+                  <value>2025-06-23T00:00:00+02:00</value>
+                </value>
+              </items>
+              <items xsi:type="ELEMENT" archetype_node_id="at0037">
+                <name>
+                  <value>Behandlingsslutt</value>
+                </name>
+                <value xsi:type="DV_DATE_TIME">
+                  <value>2025-06-23T00:00:00+02:00</value>
+                </value>
+              </items>
+              <items xsi:type="ELEMENT" archetype_node_id="at0004">
+                <name>
+                  <value>Prosedyrenavn</value>
+                </name>
+                <value xsi:type="DV_CODED_TEXT">
+                  <value>Fotonterapi - Stråle (ekstern)</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>SNOMED-CT</value>
+                    </terminology_id>
+                    <code_string>1156506007</code_string>
+                  </defining_code>
+                </value>
+              </items>
+            </items>
+          </data>
+        </events>
+      </data>
+    </items>
+  </content>
+  <content xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.adhoc.v1">
+    <name>
+      <value>Bivirkningsregistrering</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-SECTION.adhoc.v1</value>
+      </archetype_id>
+      <template_id>
+        <value>samleskjema_sjk_v0.4.0</value>
+      </template_id>
+      <rm_version>1.0.4</rm_version>
+    </archetype_details>
+    <items xsi:type="OBSERVATION" archetype_node_id="openEHR-EHR-OBSERVATION.problem_screening.v1">
+      <name>
+        <value>Bivirkninger av behandling</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-OBSERVATION.problem_screening.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <data archetype_node_id="at0001">
+        <name>
+          <value>History</value>
+        </name>
+        <origin>
+          <value>2025-06-23T12:24:35.9709272+02:00</value>
+        </origin>
+        <events xsi:type="POINT_EVENT" archetype_node_id="at0002">
+          <name>
+            <value>Uspesifisert hendelse</value>
+          </name>
+          <time>
+            <value>2025-06-23T12:24:35.9709272+02:00</value>
+          </time>
+          <data xsi:type="ITEM_TREE" archetype_node_id="at0003">
+            <name>
+              <value>Tree</value>
+            </name>
+            <items xsi:type="CLUSTER" archetype_node_id="at0022">
+              <name>
+                <value>Spesifikt problem eller diagnose</value>
+              </name>
+              <items xsi:type="ELEMENT" archetype_node_id="at0005">
+                <name>
+                  <value>Har det oppstått bivirkninger som følge av behandling siden siste kontakt?</value>
+                </name>
+                <value xsi:type="DV_CODED_TEXT">
+                  <value>Ja</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0023</code_string>
+                  </defining_code>
+                </value>
+              </items>
+              <items xsi:type="ELEMENT" archetype_node_id="at0004">
+                <name>
+                  <value>Problem/diagnosenavn</value>
+                </name>
+                <value xsi:type="DV_CODED_TEXT">
+                  <value>Complication of procedure</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>SNOMED-CT</value>
+                    </terminology_id>
+                    <code_string>116224001</code_string>
+                  </defining_code>
+                </value>
+              </items>
+            </items>
+          </data>
+        </events>
+      </data>
+    </items>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1">
+      <name>
+        <value>Problem/diagnose</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.problem_diagnosis.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>structure</value>
+        </name>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.ctcae.v1">
+          <name>
+            <value>Common Terminology Criteria for Adverse Events (CTCAE)#1</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.ctcae.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>samleskjema_sjk_v0.4.0</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0001">
+            <name>
+              <value>Kategori</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Immune system disorders</value>
+              <defining_code>
+                <terminology_id>
+                  <value>MEDRA</value>
+                </terminology_id>
+                <code_string>10021428</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0002">
+            <name>
+              <value>Term</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Immune system disorders - Other, specify</value>
+              <defining_code>
+                <terminology_id>
+                  <value>MEDRA</value>
+                </terminology_id>
+                <code_string>10021428</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0003">
+            <name>
+              <value>Kategori for grad</value>
+            </name>
+            <value xsi:type="DV_ORDINAL">
+              <value>3</value>
+              <symbol>
+                <value>Grad 3</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>local</value>
+                  </terminology_id>
+                  <code_string>at0017</code_string>
+                </defining_code>
+              </symbol>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0020">
+            <name>
+              <value>Beskrivelse av grad</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>3 Severe or medically significant but not immediately life-threatening; hospitalization or prolongation of existing hospitalization indicated; limiting self care ADL</value>
+              <defining_code>
+                <terminology_id>
+                  <value>CTCAETERM</value>
+                </terminology_id>
+                <code_string>3-10021428</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0009">
+            <name>
+              <value>CTCAE- versjon</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>CTCAE_5.0</value>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.ctcae.v1">
+          <name>
+            <value>Common Terminology Criteria for Adverse Events (CTCAE)#2</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.ctcae.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>samleskjema_sjk_v0.4.0</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0001">
+            <name>
+              <value>Kategori</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>General disorders and administration site conditions</value>
+              <defining_code>
+                <terminology_id>
+                  <value>MEDRA</value>
+                </terminology_id>
+                <code_string>10018065</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0002">
+            <name>
+              <value>Term</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Fatigue</value>
+              <defining_code>
+                <terminology_id>
+                  <value>MEDRA</value>
+                </terminology_id>
+                <code_string>10016256</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0003">
+            <name>
+              <value>Kategori for grad</value>
+            </name>
+            <value xsi:type="DV_ORDINAL">
+              <value>2</value>
+              <symbol>
+                <value>Grad 2</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>local</value>
+                  </terminology_id>
+                  <code_string>at0016</code_string>
+                </defining_code>
+              </symbol>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0020">
+            <name>
+              <value>Beskrivelse av grad</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>2 Fatigue not relieved by rest; limiting instrumental ADL</value>
+              <defining_code>
+                <terminology_id>
+                  <value>CTCAETERM</value>
+                </terminology_id>
+                <code_string>2-10016256</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0009">
+            <name>
+              <value>CTCAE- versjon</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>CTCAE_5.0</value>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0002">
+          <name>
+            <value>Problem/diagnosenavn</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Complication of procedure</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>116224001</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0005">
+          <name>
+            <value>Alvorlighetsgrad</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Moderat</value>
+            <defining_code>
+              <terminology_id>
+                <value>local</value>
+              </terminology_id>
+              <code_string>at0048</code_string>
+            </defining_code>
+          </value>
+        </items>
+      </data>
+    </items>
+  </content>
+  <content xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.adhoc.v1">
+    <name>
+      <value>Målinger</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-SECTION.adhoc.v1</value>
+      </archetype_id>
+      <template_id>
+        <value>samleskjema_sjk_v0.4.0</value>
+      </template_id>
+      <rm_version>1.0.4</rm_version>
+    </archetype_details>
+    <items xsi:type="OBSERVATION" archetype_node_id="openEHR-EHR-OBSERVATION.height.v2">
+      <name>
+        <value>Høyde/Lengde</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-OBSERVATION.height.v2</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <data archetype_node_id="at0001">
+        <name>
+          <value>history</value>
+        </name>
+        <origin>
+          <value>2025-05-23T02:09:55.9786464+02:00</value>
+        </origin>
+        <events xsi:type="POINT_EVENT" archetype_node_id="at0002">
+          <name>
+            <value>Uspesifisert hendelse</value>
+          </name>
+          <time>
+            <value>2025-05-23T02:09:55.9786464+02:00</value>
+          </time>
+          <data xsi:type="ITEM_TREE" archetype_node_id="at0003">
+            <name>
+              <value>Simple</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0004">
+              <name>
+                <value>Høyde/lengde</value>
+              </name>
+              <value xsi:type="DV_QUANTITY">
+                <magnitude>97</magnitude>
+                <units>cm</units>
+              </value>
+            </items>
+          </data>
+        </events>
+      </data>
+    </items>
+    <items xsi:type="OBSERVATION" archetype_node_id="openEHR-EHR-OBSERVATION.body_weight.v2">
+      <name>
+        <value>Kroppsvekt</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-OBSERVATION.body_weight.v2</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <data archetype_node_id="at0002">
+        <name>
+          <value>history</value>
+        </name>
+        <origin>
+          <value>2025-06-05T17:09:55.9796452+02:00</value>
+        </origin>
+        <events xsi:type="POINT_EVENT" archetype_node_id="at0003">
+          <name>
+            <value>Uspesifisert hendelse</value>
+          </name>
+          <time>
+            <value>2025-06-05T17:09:55.9796452+02:00</value>
+          </time>
+          <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+            <name>
+              <value>Simple</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0004">
+              <name>
+                <value>Kroppsvekt</value>
+              </name>
+              <value xsi:type="DV_QUANTITY">
+                <magnitude>79</magnitude>
+                <units>kg</units>
+              </value>
+            </items>
+          </data>
+        </events>
+      </data>
+    </items>
+    <items xsi:type="OBSERVATION" archetype_node_id="openEHR-EHR-OBSERVATION.ecog.v1">
+      <name>
+        <value>ECOG funksjonsstatus</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-OBSERVATION.ecog.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <data archetype_node_id="at0001">
+        <name>
+          <value>Event Series</value>
+        </name>
+        <origin>
+          <value>2025-06-14T17:09:55.981647+02:00</value>
+        </origin>
+        <events xsi:type="POINT_EVENT" archetype_node_id="at0002">
+          <name>
+            <value>Uspesifisert hendelse</value>
+          </name>
+          <time>
+            <value>2025-06-14T17:09:55.981647+02:00</value>
+          </time>
+          <data xsi:type="ITEM_TREE" archetype_node_id="at0003">
+            <name>
+              <value>Tree</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0004">
+              <name>
+                <value>ECOG funksjonsstatus</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>2</value>
+                <symbol>
+                  <value>Symptomatisk, sengeliggende &lt;50 % av våken tid</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0007</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+          </data>
+        </events>
+      </data>
+    </items>
+    <items xsi:type="OBSERVATION" archetype_node_id="openEHR-EHR-OBSERVATION.karnofsky_performance_status_scale.v1">
+      <name>
+        <value>Karnofsky Performance Status (KPS) scale</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-OBSERVATION.karnofsky_performance_status_scale.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <data archetype_node_id="at0001">
+        <name>
+          <value>History</value>
+        </name>
+        <origin>
+          <value>2025-05-16T22:09:55.9836449+02:00</value>
+        </origin>
+        <events xsi:type="POINT_EVENT" archetype_node_id="at0002">
+          <name>
+            <value>Uspesifisert tidspunkthendelse</value>
+          </name>
+          <time>
+            <value>2025-05-16T22:09:55.9836449+02:00</value>
+          </time>
+          <data xsi:type="ITEM_TREE" archetype_node_id="at0003">
+            <name>
+              <value>Tree</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0004">
+              <name>
+                <value>Karnofsky performance status</value>
+              </name>
+              <value xsi:type="DV_ORDINAL">
+                <value>80</value>
+                <symbol>
+                  <value>Klarer med nød normal aktivitet. Sykdommen gir en del symptomer.</value>
+                  <defining_code>
+                    <terminology_id>
+                      <value>local</value>
+                    </terminology_id>
+                    <code_string>at0013</code_string>
+                  </defining_code>
+                </symbol>
+              </value>
+            </items>
+          </data>
+        </events>
+      </data>
+    </items>
+  </content>
+  <content xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.adhoc.v1">
+    <name>
+      <value>Sosialanamnese_generell</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-SECTION.adhoc.v1</value>
+      </archetype_id>
+      <template_id>
+        <value>samleskjema_sjk_v0.4.0</value>
+      </template_id>
+      <rm_version>1.0.4</rm_version>
+    </archetype_details>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.education_summary.v1">
+      <name>
+        <value>Utdanningssammendrag</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.education_summary.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0002">
+          <name>
+            <value>Høyeste fullførte utdanningsnivå</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Grunnskole</value>
+            <defining_code>
+              <terminology_id>
+                <value>no.utdanningsnivaa</value>
+              </terminology_id>
+              <code_string>1</code_string>
+            </defining_code>
+          </value>
+        </items>
+      </data>
+    </items>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.occupation_summary.v1">
+      <name>
+        <value>Arbeidssammendrag</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.occupation_summary.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0004">
+          <name>
+            <value>Arbeidsstatus</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Under utdanning/studerer</value>
+            <defining_code>
+              <terminology_id>
+                <value>no.arbeidsstatus</value>
+              </terminology_id>
+              <code_string>4</code_string>
+            </defining_code>
+          </value>
+        </items>
+      </data>
+    </items>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.social_network.v1">
+      <name>
+        <value>Sosialt nettverk</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.social_network.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0002">
+          <name>
+            <value>Samlivsstatus</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Ugift/enslig</value>
+            <defining_code>
+              <terminology_id>
+                <value>no.samlivsstatus</value>
+              </terminology_id>
+              <code_string>1</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.oncology_social_details_dips.v1">
+          <name>
+            <value>Detaljer om sosial status</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.oncology_social_details_dips.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>samleskjema_sjk_v0.4.0</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0005">
+            <name>
+              <value>Har pasienten ansvar for barn under 18 år?</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Ja</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0023</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0006">
+            <name>
+              <value>Har pasienten ansvar for egne barn/andre over 18 år?</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Nei</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0024</code_string>
+              </defining_code>
+            </value>
+          </items>
+        </items>
+      </data>
+    </items>
+  </content>
+  <content xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.adhoc.v1">
+    <name>
+      <value>Stimulantia</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-SECTION.adhoc.v1</value>
+      </archetype_id>
+      <template_id>
+        <value>samleskjema_sjk_v0.4.0</value>
+      </template_id>
+      <rm_version>1.0.4</rm_version>
+    </archetype_details>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.alcohol_consumption_summary.v1">
+      <name>
+        <value>Alkohol</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.alcohol_consumption_summary.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0089">
+          <name>
+            <value>Overordnet status</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Tidligere bruker</value>
+            <defining_code>
+              <terminology_id>
+                <value>local</value>
+              </terminology_id>
+              <code_string>at0005</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="at0064">
+          <name>
+            <value>Per episode</value>
+          </name>
+          <items xsi:type="ELEMENT" archetype_node_id="at0023">
+            <name>
+              <value>Typisk bruk (alkoholenheter)</value>
+            </name>
+            <value xsi:type="DV_QUANTITY">
+              <magnitude>33</magnitude>
+              <units>1/wk</units>
+            </value>
+          </items>
+        </items>
+      </data>
+    </items>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.tobacco_smoking_summary.v1">
+      <name>
+        <value>Røyk</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.tobacco_smoking_summary.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0089">
+          <name>
+            <value>Overordnet status</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Røyker</value>
+            <defining_code>
+              <terminology_id>
+                <value>local</value>
+              </terminology_id>
+              <code_string>at0003</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0074">
+          <name>
+            <value>Samlet pakkeår</value>
+          </name>
+          <value xsi:type="DV_COUNT">
+            <magnitude>77</magnitude>
+          </value>
+        </items>
+      </data>
+    </items>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.smokeless_tobacco_summary.v1">
+      <name>
+        <value>Røykfri tobakk/snus</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.smokeless_tobacco_summary.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items xsi:type="ELEMENT" archetype_node_id="at0089">
+          <name>
+            <value>Overordnet status</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Nåværende bruker</value>
+            <defining_code>
+              <terminology_id>
+                <value>local</value>
+              </terminology_id>
+              <code_string>at0003</code_string>
+            </defining_code>
+          </value>
+        </items>
+      </data>
+    </items>
+  </content>
+  <content xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.problem_oncology_sjk.v1">
+    <name>
+      <value>problem_oncology_sjk</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-SECTION.problem_oncology_sjk.v1</value>
+      </archetype_id>
+      <template_id>
+        <value>samleskjema_sjk_v0.4.0</value>
+      </template_id>
+      <rm_version>1.0.4</rm_version>
+    </archetype_details>
+    <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1">
+      <name>
+        <value>Problem/diagnose (inkl TNM)_01</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-EVALUATION.problem_diagnosis.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>nb</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>IANA</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+        <name>
+          <value>structure</value>
+        </name>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.anatomical_location.v1">
+          <name>
+            <value>Anatomisk lokalisering#1</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.anatomical_location.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>samleskjema_sjk_v0.4.0</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0001">
+            <name>
+              <value>Kroppssted</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Patella</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>64234005</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0002">
+            <name>
+              <value>Kroppsside</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Høyre</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0004</code_string>
+              </defining_code>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.oncology_imaging_reference_dips.v1">
+          <name>
+            <value>Bildediagnostikk#1</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.oncology_imaging_reference_dips.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>samleskjema_sjk_v0.4.0</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0005">
+            <name>
+              <value>Dato</value>
+            </name>
+            <value xsi:type="DV_DATE_TIME">
+              <value>2025-06-23T12:11:00+02:00</value>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0002">
+            <name>
+              <value>Modalitet</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Mammografi</value>
+              <defining_code>
+                <terminology_id>
+                  <value>DICOM_modality</value>
+                </terminology_id>
+                <code_string>MG</code_string>
+              </defining_code>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.oncology_imaging_reference_dips.v1">
+          <name>
+            <value>Bildediagnostikk#2</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.oncology_imaging_reference_dips.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>samleskjema_sjk_v0.4.0</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0005">
+            <name>
+              <value>Dato</value>
+            </name>
+            <value xsi:type="DV_DATE_TIME">
+              <value>2025-06-22T00:00:00+02:00</value>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.oncology_biomarker_reference_dips.v1">
+          <name>
+            <value>Biomarkør#1</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.oncology_biomarker_reference_dips.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>samleskjema_sjk_v0.4.0</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="CLUSTER" archetype_node_id="at0010">
+            <name>
+              <value>Analyse#1</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0006">
+              <name>
+                <value>Analysenavn</value>
+              </name>
+              <value xsi:type="DV_CODED_TEXT">
+                <value>TSC1 </value>
+                <defining_code>
+                  <terminology_id>
+                    <value>HGNC</value>
+                  </terminology_id>
+                  <code_string>HGNC:12362 </code_string>
+                </defining_code>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0007">
+              <name>
+                <value>Analyseverdi</value>
+              </name>
+              <value xsi:type="DV_CODED_TEXT">
+                <value>Ikke påvist (ikke tilstede)</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>SNOMED-CT</value>
+                  </terminology_id>
+                  <code_string>2667000</code_string>
+                </defining_code>
+              </value>
+            </items>
+          </items>
+          <items xsi:type="CLUSTER" archetype_node_id="at0010">
+            <name>
+              <value>Analyse#2</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0006">
+              <name>
+                <value>Analysenavn</value>
+              </name>
+              <value xsi:type="DV_CODED_TEXT">
+                <value>TP53 </value>
+                <defining_code>
+                  <terminology_id>
+                    <value>HGNC</value>
+                  </terminology_id>
+                  <code_string>HGNC:11998 </code_string>
+                </defining_code>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0007">
+              <name>
+                <value>Analyseverdi</value>
+              </name>
+              <value xsi:type="DV_CODED_TEXT">
+                <value>Ikke påvist (ikke tilstede)</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>SNOMED-CT</value>
+                  </terminology_id>
+                  <code_string>2667000</code_string>
+                </defining_code>
+              </value>
+            </items>
+          </items>
+          <items xsi:type="CLUSTER" archetype_node_id="at0011">
+            <name>
+              <value>Målinger#1</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0008">
+              <name>
+                <value>Målingstype</value>
+              </name>
+              <value xsi:type="DV_CODED_TEXT">
+                <value>Sp-Alfa-føtoprotein (AFP)</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>NLK</value>
+                  </terminology_id>
+                  <code_string>NPU54011</code_string>
+                </defining_code>
+              </value>
+            </items>
+          </items>
+          <items xsi:type="CLUSTER" archetype_node_id="at0011">
+            <name>
+              <value>Målinger#2</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0008">
+              <name>
+                <value>Målingstype</value>
+              </name>
+              <value xsi:type="DV_CODED_TEXT">
+                <value>Sp-Beta-2-mikroglobulin</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>NLK</value>
+                  </terminology_id>
+                  <code_string>NPU04660</code_string>
+                </defining_code>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0009">
+              <name>
+                <value>Målingsverdi</value>
+              </name>
+              <value xsi:type="DV_QUANTITY">
+                <magnitude>2</magnitude>
+                <units>mg/L</units>
+              </value>
+            </items>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0018">
+            <name>
+              <value>Undersøkelsesnavn</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Genetisk test</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>405824009</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0004">
+            <name>
+              <value>Prøvetakingsmetode</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Biopsi av aksillær lymfeknute (grovnål)</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>234271004</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0005">
+            <name>
+              <value>Type prøvemateriale</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Blodprøve</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>119297000</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0001">
+            <name>
+              <value>Rekvisisjonsnummer</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>euismod euismod erat dolor magna sed sed diam. amet amet erat lorem aliquam sed adipiscing nonummy. dolore amet erat amet elit sit lorem. </value>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0002">
+            <name>
+              <value>Prøvedato</value>
+            </name>
+            <value xsi:type="DV_DATE_TIME">
+              <value>2025-06-10T03:09:55.8375556+02:00</value>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0003">
+            <name>
+              <value>Prøvemateriale navn/ID</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>nibh elit diam dolor laoreet aliquam adipiscing aliquam tincidunt diam. magna magna amet dolor sit euismod lorem diam. </value>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="ELEMENT" archetype_node_id="at0002">
+          <name>
+            <value>Problem/diagnosenavn</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Neoplastisk sykdom</value>
+            <defining_code>
+              <terminology_id>
+                <value>SNOMED-CT</value>
+              </terminology_id>
+              <code_string>55342001</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.problem_diagnosis_dips.v1">
+          <name>
+            <value>Problem/diagnose detaljer</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.problem_diagnosis_dips.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>samleskjema_sjk_v0.4.0</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0001">
+            <name>
+              <value>Diagnosenavn</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>ipsum</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>lorem</code_string>
+              </defining_code>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.tnm.v1">
+          <name>
+            <value>TNM-klassifikasjon klinisk</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.tnm.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>samleskjema_sjk_v0.4.0</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0003">
+            <name>
+              <value>Primærtumor (T)</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>cT1a2</value>
+              <defining_code>
+                <terminology_id>
+                  <value>no.onk.tnm</value>
+                </terminology_id>
+                <code_string>T1a2</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0004">
+            <name>
+              <value>Regionale lymfeknuter (N)</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>cN2</value>
+              <defining_code>
+                <terminology_id>
+                  <value>no.onk.tnm</value>
+                </terminology_id>
+                <code_string>N2</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0005">
+            <name>
+              <value>Fjernmetastase (M)</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>cM1a</value>
+              <defining_code>
+                <terminology_id>
+                  <value>no.onk.tnm</value>
+                </terminology_id>
+                <code_string>M1a</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0027">
+            <name>
+              <value>Residiv (r)</value>
+            </name>
+            <value xsi:type="DV_BOOLEAN">
+              <value>true</value>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0031">
+            <name>
+              <value>Stadium</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Stadium lll</value>
+              <defining_code>
+                <terminology_id>
+                  <value>no.onk.tnm.stadium</value>
+                </terminology_id>
+                <code_string>lll</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0032">
+            <name>
+              <value>TNM-utgave</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>UICC TNM Versjon 8</value>
+              <defining_code>
+                <terminology_id>
+                  <value>UICC-TNM-VERSION</value>
+                </terminology_id>
+                <code_string>Edition8</code_string>
+              </defining_code>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.tnm-pathological.v1">
+          <name>
+            <value>TNM-klassifikasjon patologi</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.tnm-pathological.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>samleskjema_sjk_v0.4.0</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0003.1">
+            <name>
+              <value>Primærtumor (pT)</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>pT1b2</value>
+              <defining_code>
+                <terminology_id>
+                  <value>no.onk.tnm</value>
+                </terminology_id>
+                <code_string>pT1b2</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0004.1">
+            <name>
+              <value>Regionale lymfeknuter (pN)</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>pN1mi</value>
+              <defining_code>
+                <terminology_id>
+                  <value>no.onk.tnm</value>
+                </terminology_id>
+                <code_string>pN1mi</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0005.1">
+            <name>
+              <value>Fjernmetastase (pM)</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>pM1b</value>
+              <defining_code>
+                <terminology_id>
+                  <value>no.onk.tnm</value>
+                </terminology_id>
+                <code_string>pM1b</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0032">
+            <name>
+              <value>TNM-utgave</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>UICC TNM Versjon 8</value>
+              <defining_code>
+                <terminology_id>
+                  <value>UICC-TNM-VERSION</value>
+                </terminology_id>
+                <code_string>Edition8</code_string>
+              </defining_code>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.oncology_problem_details_dips.v1">
+          <name>
+            <value>Oncology problem details dips</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.oncology_problem_details_dips.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>samleskjema_sjk_v0.4.0</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0001">
+            <name>
+              <value>Multiple primærtumorer</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Multiple primærtumorer</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>109359008</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0003">
+            <name>
+              <value>Multifokal tumor</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Multifokal tumor</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>399506006</code_string>
+              </defining_code>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.problem_qualifier.v2">
+          <name>
+            <value>Problem/diagnose-kvalifikator</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.problem_qualifier.v2</value>
+            </archetype_id>
+            <template_id>
+              <value>samleskjema_sjk_v0.4.0</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0083">
+            <name>
+              <value>Residiv</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Residivert</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0097</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0102">
+            <name>
+              <value>Progresjon</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>I forverring</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0105</code_string>
+              </defining_code>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.tumor_hendelse_dips.v1">
+          <name>
+            <value>Tumorhendelse</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.tumor_hendelse_dips.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>samleskjema_sjk_v0.4.0</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="ELEMENT" archetype_node_id="at0002">
+            <name>
+              <value>Metode for påvisning#1</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Klinisk (fysisk) undersøkelse</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>5880005</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0002">
+            <name>
+              <value>Metode for påvisning#2</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Histologisk test</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>714797009</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0002">
+            <name>
+              <value>Metode for påvisning#3</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Bildediagnostikk</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>363679005</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0002">
+            <name>
+              <value>Metode for påvisning#4</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Biokjemisk test</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>41289000</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0006">
+            <name>
+              <value>Spesifisert hendelsestype</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Metastasert</value>
+              <defining_code>
+                <terminology_id>
+                  <value>no.onc.tumorevent.hendelse</value>
+                </terminology_id>
+                <code_string>03</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0008">
+            <name>
+              <value>Dato for forrige kontroll</value>
+            </name>
+            <value xsi:type="DV_DATE_TIME">
+              <value>2025-05-14T13:09:55.7302027+02:00</value>
+            </value>
+          </items>
+        </items>
+        <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.oncology_treatment_summary_reference_dips.v1">
+          <name>
+            <value>Behandlingssammendrag</value>
+          </name>
+          <archetype_details>
+            <archetype_id>
+              <value>openEHR-EHR-CLUSTER.oncology_treatment_summary_reference_dips.v1</value>
+            </archetype_id>
+            <template_id>
+              <value>samleskjema_sjk_v0.4.0</value>
+            </template_id>
+            <rm_version>1.0.4</rm_version>
+          </archetype_details>
+          <items xsi:type="CLUSTER" archetype_node_id="at0022">
+            <name>
+              <value>Kirurgi#1</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0010">
+              <name>
+                <value>Prosedyrekode (NCSP)</value>
+              </name>
+              <value xsi:type="DV_CODED_TEXT">
+                <value>Tilpasning av ekstern protese på overarm</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>NCSP</value>
+                  </terminology_id>
+                  <code_string>NBSY22</code_string>
+                </defining_code>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0011">
+              <name>
+                <value>Operasjon utført for</value>
+              </name>
+              <value xsi:type="DV_CODED_TEXT">
+                <value>Primær malign tumor (disorder)</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>SNOMED-CT</value>
+                  </terminology_id>
+                  <code_string>372087000</code_string>
+                </defining_code>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0012">
+              <name>
+                <value>Dato for utført operasjon</value>
+              </name>
+              <value xsi:type="DV_DATE_TIME">
+                <value>2025-06-23T12:18:00+02:00</value>
+              </value>
+            </items>
+          </items>
+          <items xsi:type="CLUSTER" archetype_node_id="at0024">
+            <name>
+              <value>Medikamentell behandling#1</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0013">
+              <name>
+                <value>Navn på legemiddel / virkestoff / kur</value>
+              </name>
+              <value xsi:type="DV_TEXT">
+                <value>Ipubimab</value>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0014">
+              <name>
+                <value>Behandlingskategori / type MKB</value>
+              </name>
+              <value xsi:type="DV_CODED_TEXT">
+                <value>Målrettet medikamentell kreftbehandling</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>SNOMED-CT</value>
+                  </terminology_id>
+                  <code_string>347531000202105</code_string>
+                </defining_code>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0026">
+              <name>
+                <value>Totalmengde i perioden mengde/enhet</value>
+              </name>
+              <value xsi:type="DV_QUANTITY">
+                <magnitude>3</magnitude>
+                <units>mg</units>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0016">
+              <name>
+                <value>Startdato for bruk</value>
+              </name>
+              <value xsi:type="DV_DATE_TIME">
+                <value>2025-06-22T00:00:00+02:00</value>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0017">
+              <name>
+                <value>Sluttdato for bruk</value>
+              </name>
+              <value xsi:type="DV_DATE_TIME">
+                <value>2025-06-23T12:18:00+02:00</value>
+              </value>
+            </items>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0001">
+            <name>
+              <value>Behandlingsintensjon ved MDT</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Kurativt</value>
+              <defining_code>
+                <terminology_id>
+                  <value>no.onk.behandlingsintensjon</value>
+                </terminology_id>
+                <code_string>K1</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0002">
+            <name>
+              <value>Behandlingkategori (relativt til kirurgi)</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Neoadjuvant hensikt</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>373847000</code_string>
+              </defining_code>
+            </value>
+          </items>
+        </items>
+      </data>
+    </items>
+    <items xsi:type="SECTION" archetype_node_id="openEHR-EHR-SECTION.problem_oncology_metastasis_sjk.v1">
+      <name>
+        <value>Metastaser</value>
+      </name>
+      <archetype_details>
+        <archetype_id>
+          <value>openEHR-EHR-SECTION.problem_oncology_metastasis_sjk.v1</value>
+        </archetype_id>
+        <template_id>
+          <value>samleskjema_sjk_v0.4.0</value>
+        </template_id>
+        <rm_version>1.0.4</rm_version>
+      </archetype_details>
+      <items xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1">
+        <name>
+          <value>Metastase#1</value>
+        </name>
+        <archetype_details>
+          <archetype_id>
+            <value>openEHR-EHR-EVALUATION.problem_diagnosis.v1</value>
+          </archetype_id>
+          <template_id>
+            <value>samleskjema_sjk_v0.4.0</value>
+          </template_id>
+          <rm_version>1.0.4</rm_version>
+        </archetype_details>
+        <language>
+          <terminology_id>
+            <value>ISO_639-1</value>
+          </terminology_id>
+          <code_string>nb</code_string>
+        </language>
+        <encoding>
+          <terminology_id>
+            <value>IANA</value>
+          </terminology_id>
+          <code_string>UTF-8</code_string>
+        </encoding>
+        <subject xsi:type="PARTY_SELF" />
+        <protocol xsi:type="ITEM_TREE" archetype_node_id="at0032">
+          <name>
+            <value>Tree</value>
+          </name>
+          <items xsi:type="ELEMENT" archetype_node_id="at0070">
+            <name>
+              <value>Sist oppdatert</value>
+            </name>
+            <value xsi:type="DV_DATE_TIME">
+              <value>2025-05-30T03:09:55.9496504+02:00</value>
+            </value>
+          </items>
+        </protocol>
+        <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+          <name>
+            <value>structure</value>
+          </name>
+          <items xsi:type="ELEMENT" archetype_node_id="at0002">
+            <name>
+              <value>Metastase</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Metastase</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>128462008</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0079">
+            <name>
+              <value>Variant</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Fjern</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>261007001</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0012">
+            <name>
+              <value>Anatomisk lokalisering</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Retroperitoneum</value>
+              <defining_code>
+                <terminology_id>
+                  <value>SNOMED-CT</value>
+                </terminology_id>
+                <code_string>82849001</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0073">
+            <name>
+              <value>Diagnostisk sikkerhet</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Mistenkt</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0074</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items xsi:type="ELEMENT" archetype_node_id="at0003">
+            <name>
+              <value>Dato/tid for klinisk bekreftelse</value>
+            </name>
+            <value xsi:type="DV_DATE_TIME">
+              <value>2025-05-28T16:09:55.9226479+02:00</value>
+            </value>
+          </items>
+          <items xsi:type="CLUSTER" archetype_node_id="openEHR-EHR-CLUSTER.clinical_evidence.v1">
+            <name>
+              <value>Klinisk grunnlag</value>
+            </name>
+            <archetype_details>
+              <archetype_id>
+                <value>openEHR-EHR-CLUSTER.clinical_evidence.v1</value>
+              </archetype_id>
+              <template_id>
+                <value>samleskjema_sjk_v0.4.0</value>
+              </template_id>
+              <rm_version>1.0.4</rm_version>
+            </archetype_details>
+            <items xsi:type="ELEMENT" archetype_node_id="at0022">
+              <name>
+                <value>Metode#1</value>
+              </name>
+              <value xsi:type="DV_CODED_TEXT">
+                <value>Cytologi</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>SNOMED-CT</value>
+                  </terminology_id>
+                  <code_string>116147009</code_string>
+                </defining_code>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0022">
+              <name>
+                <value>Metode#2</value>
+              </name>
+              <value xsi:type="DV_CODED_TEXT">
+                <value>Reseksjon</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>SNOMED-CT</value>
+                  </terminology_id>
+                  <code_string>65801008</code_string>
+                </defining_code>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0022">
+              <name>
+                <value>Metode#3</value>
+              </name>
+              <value xsi:type="DV_CODED_TEXT">
+                <value>Palpasjon</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>SNOMED-CT</value>
+                  </terminology_id>
+                  <code_string>113011001</code_string>
+                </defining_code>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0001">
+              <name>
+                <value>Spesifiser annen metode</value>
+              </name>
+              <value xsi:type="DV_TEXT">
+                <value>sit euismod aliquam nonummy laoreet amet adipiscing sit tincidunt diam. erat ut dolor diam dolore dolore elit laoreet. </value>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0003">
+              <name>
+                <value>Grunnlag</value>
+              </name>
+              <value xsi:type="DV_CODED_TEXT">
+                <value>Metastatic malignant neoplasm (disorder)</value>
+                <defining_code>
+                  <terminology_id>
+                    <value>SNOMED-CT</value>
+                  </terminology_id>
+                  <code_string>128462008</code_string>
+                </defining_code>
+              </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0006">
+              <name>
+                <value>Dato</value>
+              </name>
+              <value xsi:type="DV_DATE_TIME">
+                <value>2025-06-04T05:09:55.9656439+02:00</value>
+              </value>
+            </items>
+          </items>
+        </data>
+      </items>
+    </items>
+  </content>
+</composition>
